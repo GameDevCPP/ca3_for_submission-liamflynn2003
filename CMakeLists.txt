@@ -11,11 +11,11 @@ SET(OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/")
 # Ouput all DLLs from all libs into main build folder
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIRECTORY})
 
-add_custom_target(copy_resources ALL COMMAND ${CMAKE_COMMAND} 
-  -E copy_directory
-    "${PROJECT_SOURCE_DIR}/res"
-    ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIGURATION>/res
-)
+add_custom_target(copy_resources ALL COMMAND ${CMAKE_COMMAND}
+        -E copy_directory
+        "${PROJECT_SOURCE_DIR}/res"
+        ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIGURATION>/res
+        )
 
 #### Add External Dependencies ####
 # SFML - graphics library
@@ -70,11 +70,20 @@ source_group("resources" FILES ${RESOURCE_FILES})
 #target_include_directories(Drop_Pod SYSTEM PRIVATE ${SFML_INCS} ${B2D_INCS})
 target_link_libraries(Drop_Pod lib_engine)
 set(EXECUTABLES ${EXECUTABLES} Drop_Pod)
-
+# Improved resource copying
+add_custom_command(
+        TARGET Drop_Pod
+        POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${PROJECT_SOURCE_DIR}/res"  # Source directory
+        $<TARGET_FILE_DIR:Drop_Pod>/res  # Destination directory
+)
+message("Resource source dir: ${PROJECT_SOURCE_DIR}/res")
+message("Resource destination dir: $<TARGET_FILE_DIR:Drop_Pod>/res")
 add_dependencies(Drop_Pod copy_resources)
 
-set_target_properties(Drop_Pod 
-    PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY
-    ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$(Configuration)
-)
+set_target_properties(Drop_Pod
+        PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY
+        ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$(Configuration)
+        )
 
