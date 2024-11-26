@@ -76,10 +76,12 @@ add_custom_command(
         POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_directory
         "${PROJECT_SOURCE_DIR}/res"  # Source directory
-        $<TARGET_FILE_DIR:Drop_Pod>/res  # Destination directory
+        ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/res  # Destination directory (bin/res)
+        # $<TARGET_FILE_DIR:Drop_Pod>/res  # Destination debug directory
 )
 message("Resource source dir: ${PROJECT_SOURCE_DIR}/res")
 message("Resource destination dir: $<TARGET_FILE_DIR:Drop_Pod>/res")
+message("Resource destination dir: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/res ")
 add_dependencies(Drop_Pod copy_resources)
 
 set_target_properties(Drop_Pod
