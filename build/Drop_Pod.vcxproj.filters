@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_actor_movement.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_button.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_monster.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_player.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_shooting.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_sprite.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_text.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\drop_pod_game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_actor_movement.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_button.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_monster.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_player.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_shooting.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_sprite.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_text.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\drop_pod_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths\maths.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Idle.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Run.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Space_Background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Terran.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Trash-Monster-Sheet.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Trash-Monster-Sprite-V2.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\bulletGlow.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\grass.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\tileset.png">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\RobotoMono-Regular.ttf">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\font.ttf">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\floorMap.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\maze.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\smallFloorMap.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\vLine.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Click.wav">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Cold-Moon.ogg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Hit.wav">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Shoot_001.wav">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B83E28F8-5C9C-32FA-BBFD-9BC63F220C5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5492309B-DA53-367B-8D48-89C518D27FEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{69DD67A0-8289-3B73-92B1-3BC228F3B9F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{0445D534-38B6-3D5D-B349-5FE8E4CE6BDA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

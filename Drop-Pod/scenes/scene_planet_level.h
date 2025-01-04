@@ -19,7 +19,11 @@ public:
 	sf::Vector2f startingCenter;
 	bool viewToggle;
 	bool pauseGame;
+	bool levelStart;
 	std::string result;
+
+	// Score Manager
+	std::shared_ptr<Entity> scoreManager;
 
 	// Player
 	std::shared_ptr<Entity> player;
@@ -47,6 +51,8 @@ public:
 	sf::Text* timer;
 	sf::Text* endText;
 	sf::Text* endExitText;
+	sf::Text* scoreText;
+	sf::Text* levelStartText;
 
 	// Shooting Delay
 	float fireTime;

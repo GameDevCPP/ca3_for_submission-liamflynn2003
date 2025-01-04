@@ -19,9 +19,14 @@ public:
 	void setHealth(int health);
 	int getHealth();
 
+	void setScore(int score);
+	void addScore(int score);
+	int getScore();
+
 	//void move(const double dt, const float dir_x, const float dir_y);
 
 protected:
 
 	int _health;
+	int _playerScore;
 };

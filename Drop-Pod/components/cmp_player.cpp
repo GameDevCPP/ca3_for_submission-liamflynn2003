@@ -12,6 +12,7 @@ int _health;
 //Constructor
 PlayerComponent::PlayerComponent(Entity* p) : ActorMovementComponent(p) {
 	_health = 100;
+	_playerScore = 0;
 }
 
 void PlayerComponent::setHealth(int health)
@@ -23,6 +24,21 @@ int PlayerComponent::getHealth()
 {
 	return _health;
 }
+
+void PlayerComponent::setScore(int score)
+{
+	_playerScore = score;
+}
+
+int PlayerComponent::getScore()
+{
+	return _playerScore;
+}
+void PlayerComponent::addScore(int score)
+{
+	_playerScore = _playerScore + score;
+}
+
 
 void PlayerComponent::update(const double dt)
 {

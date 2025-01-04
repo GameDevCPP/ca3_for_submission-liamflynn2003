@@ -1,0 +1,10 @@
+^C:\USERS\LIAM\CLIONPROJECTS\CA3_FOR_SUBMISSION-LIAMFLYNN2003\LIB\B2D\BOX2D\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/lib/b2d/Box2D/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

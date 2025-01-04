@@ -13,6 +13,7 @@
 #include <SFML/Graphics.hpp>
 #include <stdio.h>
 
+
 using namespace std;
 using namespace sf;
 
@@ -30,6 +31,7 @@ void PlanetLevelScene::init()
     startingCenter = Vector2f(0, 0);
     viewToggle = false;
     pauseGame = false;
+    levelStart = true;
     result = "Not Set";
 
     // Player Variables
@@ -56,6 +58,8 @@ void PlanetLevelScene::init()
     timer = new Text();
     endText = new Text();
     endExitText = new Text();
+    scoreText = new Text();
+    levelStartText = new Text();
 
     // Shooting Delay
     fireTime = 0.f;
@@ -109,6 +113,8 @@ void PlanetLevelScene::Load() {
 
     auto pshooting = player->addComponent<ShootingComponent>();
 
+    auto score = player->GetCompatibleComponent<PlayerComponent>()[0]->getScore();
+
     // Health Bar ----------------------------------------------------------------------
 
     redBar->setSize(Vector2f(300, 30));
@@ -145,6 +151,22 @@ void PlanetLevelScene::Load() {
                      timer->getLocalBounds().top + timer->getLocalBounds().height / 2.0f);
     timer->setPosition(hudView.getSize().x * 0.5, 20);
 
+    scoreText->setFont(*Resources::get<Font>("RobotoMono-Regular.ttf"));
+    scoreText->setCharacterSize(20);
+    scoreText->setOutlineThickness(2);
+    scoreText->setPosition(hudView.getSize().x - 200, 20);
+
+    // Level start message
+    levelStartText->setString("LEVEL 1: START!");
+    levelStartText->setFont(*Resources::get<Font>("RobotoMono-Regular.ttf"));
+    levelStartText->setCharacterSize(80);
+    levelStartText->setFillColor(Color::White);
+    levelStartText->setOutlineThickness(5);
+    levelStartText->setOutlineColor(Color::Black);
+    levelStartText->setOrigin(levelStartText->getLocalBounds().left + levelStartText->getLocalBounds().width / 2.0f,
+                             levelStartText->getLocalBounds().top + levelStartText->getLocalBounds().height / 2.0f);
+    levelStartText->setPosition(hudView.getSize().x * 0.5, 80);
+
     endText->setString("");
     endText->setFont(*Resources::get<Font>("RobotoMono-Regular.ttf"));
     endText->setCharacterSize(50);
@@ -163,7 +185,10 @@ void PlanetLevelScene::UnLoad()
 }
 
 void PlanetLevelScene::Update(const double& dt) {
-    if (minutes >= 10)
+    if(seconds >= 2) {
+        levelStart = false;
+    }
+    if (player->GetCompatibleComponent<PlayerComponent>()[0]->getScore() > 200)
     {
         pauseGame = true;
         result = "win";
@@ -224,6 +249,12 @@ void PlanetLevelScene::Update(const double& dt) {
         string s = ("Timer: " + min + ":" + sec);
         timer->setString(s);
 
+        string scoreString = "0001";
+
+        auto playerScore = player->GetCompatibleComponent<PlayerComponent>()[0]->getScore();
+
+        scoreText->setString("SCORE: " + to_string(playerScore) + "/200");
+
         auto playerHealth = player->GetCompatibleComponent<PlayerComponent>()[0]->getHealth();
         greenBar->setSize(Vector2f(playerHealth * 3, 30));
         healthText->setString("Health: " + to_string(playerHealth));
@@ -232,42 +263,65 @@ void PlanetLevelScene::Update(const double& dt) {
     }
     else
     {
-        if (Keyboard::isKeyPressed(Keyboard::Enter))
+        if (result == "win" && Keyboard::isKeyPressed(Keyboard::Enter))
         {
-            Engine::ChangeScene(&menu);
+            Engine::ChangeScene(&planetLevel2);
             this->UnLoad();
         }
-
+        else {
+            if (Keyboard::isKeyPressed(Keyboard::Enter))
+            {
+                Engine::ChangeScene(&menu);
+                this->UnLoad();
+            }
+        }
         render_end();
     }
 }
 
 void PlanetLevelScene::Render() {
+    // Set the view for the game scene
     Engine::setView(gameView);
+
+    // Draw the game objects (floor, etc.)
     ls::renderFloor(Engine::GetWindow());
     Scene::Render();
 
+    // Set the view for the HUD
     Engine::setView(hudView);
+
+    // Draw the HUD elements
     Engine::GetWindow().draw(*timer);
     Engine::GetWindow().draw(*endText);
     Engine::GetWindow().draw(*endExitText);
     Engine::GetWindow().draw(*redBar);
     Engine::GetWindow().draw(*greenBar);
     Engine::GetWindow().draw(*healthText);
-
-    Engine::setView(gameView); //duplication????
+    Engine::GetWindow().draw(*scoreText);
+    // Draw the level start text if necessary
+    if(levelStart) {
+        Engine::GetWindow().draw(*levelStartText);
+    }
+    Engine::setView(gameView);
 }
+
 
 void PlanetLevelScene::render_end() const
 {
     if (result == "win")
     {
-        endText->setString("Victory!");
+        endText->setString("Level 1 Complete!");
         endText->setOutlineColor(Color::Black);
         endText->setOutlineThickness(4);
         endText->setPosition(hudView.getSize().x / 2, 200);
         endText->setOrigin(endText->getLocalBounds().left + endText->getLocalBounds().width / 2.0f,
                            endText->getLocalBounds().top + endText->getLocalBounds().height / 2.0f);
+        endExitText->setString("Press the ENTER button to go back to Level 2!");
+        endExitText->setOutlineColor(Color::Black);
+        endExitText->setOutlineThickness(4);
+        endExitText->setPosition(hudView.getSize().x * 0.5, 300);
+        endExitText->setOrigin(endExitText->getLocalBounds().left + endExitText->getLocalBounds().width / 2.0f,
+                               endExitText->getLocalBounds().top + endExitText->getLocalBounds().height / 2.0f);
     }
     if (result == "lose")
     {
@@ -277,14 +331,15 @@ void PlanetLevelScene::render_end() const
         endText->setPosition(hudView.getSize().x / 2, 200);
         endText->setOrigin(endText->getLocalBounds().left + endText->getLocalBounds().width / 2.0f,
                            endText->getLocalBounds().top + endText->getLocalBounds().height / 2.0f);
+        endExitText->setString("Press the ENTER button to go back to menu!");
+        endExitText->setOutlineColor(Color::Black);
+        endExitText->setOutlineThickness(4);
+        endExitText->setPosition(hudView.getSize().x * 0.5, 300);
+        endExitText->setOrigin(endExitText->getLocalBounds().left + endExitText->getLocalBounds().width / 2.0f,
+                               endExitText->getLocalBounds().top + endExitText->getLocalBounds().height / 2.0f);
     }
 
-    endExitText->setString("Press the ENTER button to go back to menu!");
-    endExitText->setOutlineColor(Color::Black);
-    endExitText->setOutlineThickness(4);
-    endExitText->setPosition(hudView.getSize().x * 0.5, 300);
-    endExitText->setOrigin(endExitText->getLocalBounds().left + endExitText->getLocalBounds().width / 2.0f,
-                           endExitText->getLocalBounds().top + endExitText->getLocalBounds().height / 2.0f);
+
 }
 
 Vector2f PlanetLevelScene::random_position() const

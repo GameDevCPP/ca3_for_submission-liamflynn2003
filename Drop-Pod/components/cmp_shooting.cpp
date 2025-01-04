@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "cmp_monster.h"
+#include "cmp_player.h"
 #include "system_renderer.h"
 #include "engine.h"
 
@@ -27,9 +28,16 @@ Vector2f mousePos;
 Texture temp2;
 auto spriteTexture = make_shared<Texture>(temp2);
 
-ShootingComponent::ShootingComponent(Entity* p) : ActorMovementComponent(p) {
+ShootingComponent::ShootingComponent(Entity* p) : ActorMovementComponent(p), _parent(p) {
+	if (_parent == nullptr) {
+		std::cerr << "ShootingComponent parent is nullptr!" << std::endl;
+	} else {
+		std::cout << "ShootingComponent parent initialized successfully." << std::endl;
+		std::cout << "Parent:" << _parent << std::endl;
+	}
 	Bullet::init();
 }
+
 
 void ShootingComponent::update(double dt) {
 	Bullet::update(dt);
@@ -43,7 +51,7 @@ void ShootingComponent::Fire() {
 	auto spriteSize = _parent->GetCompatibleComponent<SpriteComponent>()[0]->getSprite().getLocalBounds();
 	Vector2f spriteCenter = Vector2f(spriteSize.width * 0.5, spriteSize.height * 0.5);
 	// Firing the bullets
-	Bullet::fire(_parent->getPosition());
+	Bullet::fire(_parent->getPosition(), _parent);
 }
 
 Bullet::Bullet()
@@ -83,9 +91,8 @@ void Bullet::render() {
 	}
 }
 
-void Bullet::fire(const Vector2f& pos) {
+void Bullet::fire(const Vector2f& pos, Entity* parent) {
 	RenderWindow& window = Engine::GetWindow();
-
 	auto mousePos = window.mapPixelToCoords(Mouse::getPosition(window));
 
 	bulletCount++;
@@ -93,52 +100,67 @@ void Bullet::fire(const Vector2f& pos) {
 	bullets[bulletCount].setPosition(pos);
 	bullets[bulletCount].isVisible = true;
 
-	// Sets the angle of the bullet.
+	// Set the parentEntity (the player) for this bullet
+	bullets[bulletCount].parentEntity = parent;
+
+	// Set the angle of the bullet
 	*angleshot = atan2(mousePos.y - bullets[bulletCount].getPosition().y, mousePos.x - bullets[bulletCount].getPosition().x);
 	bullets[bulletCount].setAngle(*angleshot, bullets[bulletCount]);
 }
 
 void Bullet::_update(const double dt) {
-	RenderWindow& window = Engine::GetWindow();
-	const View view = window.getView();
+    RenderWindow& window = Engine::GetWindow();
+    const View view = window.getView();
 
-	// If bullet is out of bounds. remove/return;
-	if (getPosition().x < view.getCenter().x - 100 - view.getSize().x * 0.5 || getPosition().x > view.getCenter().x + 100 + view.getSize().x * 0.5
-		|| getPosition().y < view.getCenter().y - 100 - view.getSize().y * 0.5 || getPosition().y > view.getCenter().y + 100 + view.getSize().y * 0.5)
-	{
-		this->isVisible = false;
-		return;
-	}
-	else {
-		this->move(cos(this->angle) * 200.f * dt, 0);
-		this->move(0, sin(this->angle) * 200.f * dt);
-	}
+    // If bullet is out of bounds, remove/return
+    if (getPosition().x < view.getCenter().x - 100 - view.getSize().x * 0.5 || getPosition().x > view.getCenter().x + 100 + view.getSize().x * 0.5
+        || getPosition().y < view.getCenter().y - 100 - view.getSize().y * 0.5 || getPosition().y > view.getCenter().y + 100 + view.getSize().y * 0.5)
+    {
+        this->isVisible = false;
+        return;
+    }
+    else {
+        this->move(cos(this->angle) * 200.f * dt, 0);
+        this->move(0, sin(this->angle) * 200.f * dt);
+    }
 
-	auto ecm = planetLevel.getEcm();
-	auto enemies = ecm.find("enemy");
-	auto boundingBox = getGlobalBounds();
+    auto ecm = planetLevel.getEcm();
+    auto enemies = ecm.find("enemy");
+    auto player = ecm.find("player");
+    auto boundingBox = getGlobalBounds();
 
-	for (auto enemy : enemies)
-	{
-		auto sprite = enemy->GetCompatibleComponent<SpriteComponent>()[0]->getSprite();
-		auto spriteBounds = sprite.getGlobalBounds();
-		spriteBounds.top += 40;
-		spriteBounds.left += 40;
-		spriteBounds.width -= 70;
-		spriteBounds.height -= 70;
-		if (enemy->isAlive() && spriteBounds.intersects(boundingBox))
-		{
-			this->isVisible = false;
-			setPosition(-100, -100);
+    for (auto enemy : enemies) {
+        auto sprite = enemy->GetCompatibleComponent<SpriteComponent>()[0]->getSprite();
+        auto spriteBounds = sprite.getGlobalBounds();
+        spriteBounds.top += 40;
+        spriteBounds.left += 40;
+        spriteBounds.width -= 70;
+        spriteBounds.height -= 70;
 
-			// Hit Sound
-			soundHit_buffer = Resources::get<SoundBuffer>("Hit.wav");
-			soundHit = make_shared<Sound>(*soundHit_buffer);
-			soundHit->setVolume(volume);
-			soundHit->play();
+        if (enemy->isAlive() && spriteBounds.intersects(boundingBox)) {
+            this->isVisible = false;
+            setPosition(-100, -100);
 
-			auto currentHealth = enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health();
-			enemy->GetCompatibleComponent<MonsterComponent>()[0]->set_health(currentHealth - _damage);
-		}
-	}
+            // Hit Sound
+            soundHit_buffer = Resources::get<SoundBuffer>("Hit.wav");
+            soundHit = make_shared<Sound>(*soundHit_buffer);
+            soundHit->setVolume(volume);
+            soundHit->play();
+
+            auto currentHealth = enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health();
+            std::cout << "parent: " << parentEntity << std::endl;
+
+            // Check if the enemy's health is 0 or less and update score
+            if ((enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health() - _damage) <= 0) {
+                auto playerComponent = parentEntity->GetCompatibleComponent<PlayerComponent>();
+                if (!playerComponent.empty()) {
+                    // Log various player attributes
+                    std::cout << "Player Score: " << playerComponent[0]->getScore() << std::endl;
+                    std::cout << "Player Health: " << playerComponent[0]->getHealth() << std::endl;
+                    playerComponent[0]->addScore(10);  // Add 10 points for shooting
+                }
+            }
+            enemy->GetCompatibleComponent<MonsterComponent>()[0]->set_health(currentHealth - _damage);
+        }
+    }
 }

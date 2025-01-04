@@ -1,0 +1,20 @@
+^C:\USERS\LIAM\CLIONPROJECTS\CA3_FOR_SUBMISSION-LIAMFLYNN2003\BUILD\CMAKEFILES\F02BDF61F15B14B659DD7DA889B678C9\COPY_RESOURCES.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/res C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin//Debug/res
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LIAM\CLIONPROJECTS\CA3_FOR_SUBMISSION-LIAMFLYNN2003\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

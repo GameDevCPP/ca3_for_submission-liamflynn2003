@@ -7,6 +7,7 @@
 #include <SFML/Audio.hpp>
 
 class Bullet : sf::Sprite {
+
 protected:
 	void _update(const double dt);
 	bool isVisible;
@@ -20,16 +21,18 @@ protected:
 public:
 	static void update(const double dt);
 	static void render();
-	static void fire(const sf::Vector2f& pos);
+	static void fire(const sf::Vector2f& pos, Entity* parent);
 	static void init();
 	static void setAngle(float a, Bullet& b);
 
 	~Bullet() = default;
 	Bullet();
+	Entity* parentEntity;
 };
 
 class ShootingComponent : public ActorMovementComponent {
 protected:
+	Entity* _parent;
 
 	std::vector<Bullet> bullets;
 	unsigned int bulletCount;

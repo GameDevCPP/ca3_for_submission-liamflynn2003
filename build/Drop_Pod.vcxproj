@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91FAB164-F5C0-3E6F-B8A0-5F8FBF6D60C6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Drop_Pod</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Drop_Pod.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Drop_Pod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Drop_Pod.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Drop_Pod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Drop_Pod.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Drop_Pod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Drop_Pod.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Drop_Pod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\lib_engine.lib;Debug\lib_tile_level_loader.lib;Debug\lib_ecm.lib;Build\bin\Debug\Box2D.lib;lib\sfml\lib\Debug\sfml-graphics-d.lib;lib\sfml\lib\Debug\sfml-window-d.lib;lib\sfml\lib\Debug\sfml-audio-d.lib;lib\sfml\lib\Debug\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/Debug/Drop_Pod.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin/Debug/Drop_Pod.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\lib_engine.lib;Release\lib_tile_level_loader.lib;Release\lib_ecm.lib;Build\bin\Release\Box2D.lib;lib\sfml\lib\Release\sfml-graphics.lib;lib\sfml\lib\Release\sfml-window.lib;lib\sfml\lib\Release\sfml-audio.lib;lib\sfml\lib\Release\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/Release/Drop_Pod.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin/Release/Drop_Pod.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\lib_engine.lib;MinSizeRel\lib_tile_level_loader.lib;MinSizeRel\lib_ecm.lib;Build\bin\MinSizeRel\Box2D.lib;lib\sfml\lib\MinSizeRel\sfml-graphics.lib;lib\sfml\lib\MinSizeRel\sfml-window.lib;lib\sfml\lib\MinSizeRel\sfml-audio.lib;lib\sfml\lib\MinSizeRel\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/MinSizeRel/Drop_Pod.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin/MinSizeRel/Drop_Pod.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\engine;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\SYSTEM;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\b2d\Box2D;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_tile_level_loader;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib\sfml\include;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\lib_engine.lib;RelWithDebInfo\lib_tile_level_loader.lib;RelWithDebInfo\lib_ecm.lib;Build\bin\RelWithDebInfo\Box2D.lib;lib\sfml\lib\RelWithDebInfo\sfml-graphics.lib;lib\sfml\lib\RelWithDebInfo\sfml-window.lib;lib\sfml\lib\RelWithDebInfo\sfml-audio.lib;lib\sfml\lib\RelWithDebInfo\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/RelWithDebInfo/Drop_Pod.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/bin/RelWithDebInfo/Drop_Pod.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_actor_movement.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_actor_movement.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_button.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_button.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_monster.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_monster.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_player.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_player.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_shooting.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_shooting.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_sprite.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_sprite.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_text.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_text.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\drop_pod_game.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\drop_pod_game.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_menu.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_menu.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.h" />
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\RobotoMono-Regular.ttf">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\font.ttf">
+    </None>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Idle.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Run.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Space_Background.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Terran.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Trash-Monster-Sheet.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Trash-Monster-Sprite-V2.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\bulletGlow.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\grass.png">
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\tileset.png">
+    </Image>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\floorMap.txt">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\maze.txt">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\smallFloorMap.txt">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\vLine.txt">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Click.wav">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Cold-Moon.ogg">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Hit.wav">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Shoot_001.wav">
+    </None>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths\maths.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\ZERO_CHECK.vcxproj">
+      <Project>{5BB478BF-1E43-35B5-8624-CB7501B7A019}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib\b2d\Box2D\Box2D.vcxproj">
+      <Project>{87332403-EE50-3192-9DFE-7DF22D5339CC}</Project>
+      <Name>Box2D</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\copy_resources.vcxproj">
+      <Project>{FAA5563A-90E5-3284-BA29-058D0DDD83E7}</Project>
+      <Name>copy_resources</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib_ecm.vcxproj">
+      <Project>{6E2C69F4-93B8-3C82-A6E4-32A2C0BE1530}</Project>
+      <Name>lib_ecm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib_engine.vcxproj">
+      <Project>{567B50F5-FF05-3497-AD88-D2F4202F05A8}</Project>
+      <Name>lib_engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib_tile_level_loader.vcxproj">
+      <Project>{7FCDCB03-D5E2-3A56-B2B8-C117DCEA7742}</Project>
+      <Name>lib_tile_level_loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib\sfml\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{419F2800-A1A9-3BB4-9247-73EB36C70E18}</Project>
+      <Name>sfml-audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib\sfml\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{7F40B634-96D1-3EF1-800B-7A3EEEE352DA}</Project>
+      <Name>sfml-graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib\sfml\src\SFML\System\sfml-system.vcxproj">
+      <Project>{9AD857B8-E33B-3282-8215-8C87B0ADDE0A}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib\sfml\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{6DC22D33-811D-3E06-BFD4-ADA78148814F}</Project>
+      <Name>sfml-window</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

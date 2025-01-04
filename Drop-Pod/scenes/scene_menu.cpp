@@ -20,13 +20,14 @@ shared_ptr<Entity> btnSetting;
 shared_ptr<Entity> btnStart;
 
 Sprite background;
-
+bool shouldRenderBackground = true;
 void MenuScene::Load() {
     cout << "Menu Load \n";
 
     menuView.reset(FloatRect(0, 0, resolution.x, resolution.y));
     RenderWindow& window = Engine::GetWindow();
     Vector2u windowSize = window.getSize();
+
 
     // set background
     try {
@@ -35,8 +36,7 @@ void MenuScene::Load() {
     }
     catch (const std::runtime_error& e) {
         std::cerr << "Resource error: " << e.what() << std::endl;
-        // Fallback: Use a default texture or skip rendering
-        // e.g., `background.setTexture(defaultTexture);`
+        shouldRenderBackground = false;
     }
 
     auto txt = makeEntity();
@@ -93,7 +93,9 @@ void MenuScene::Update(const double& dt) {
 
 void MenuScene::Render()
 {
-    Renderer::queue(&background);
+    if(shouldRenderBackground) {
+        Renderer::queue(&background);
+    }
     Engine::setView(menuView);
     Scene::Render();
 }
