@@ -20,6 +20,7 @@ public:
 	std::shared_ptr<Entity> makeEntity();
 	void addEntity(std::shared_ptr<Entity> entity);
 
+	mutable std::future<void> _unload_future;
 	EntityManager ents;
 	virtual EntityManager getEcm();
 

@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include <future>
 #include <iostream>
+#include <thread>
 
 using namespace sf;
 using namespace std;
@@ -157,22 +158,27 @@ void Engine::changeResolution(int x, int y)
 }
 
 void Engine::ChangeScene(Scene* s) {
-    cout << "Eng: changing scene: " << s << endl;
+    std::cout << "Eng: changing scene: " << s << std::endl;
     auto old = _activeScene;
     _activeScene = s;
 
+    // Ensure that the scene is not currently unloading
     if (old != nullptr) {
-        old->UnLoad(); // todo: Unload Async
+        if (old->_unload_future.valid()) {
+            old->_unload_future.get();  // Wait for async unloading to finish
+        }
+        old->UnLoad(); // Unload asynchronously
     }
 
+    // Load the new scene if it's not already loaded
     if (!s->isLoaded()) {
-        cout << "Eng: Entering Loading Screen\n";
+        std::cout << "Eng: Entering Loading Screen\n";
         loadingTime = 0;
-        //_activeScene->LoadAsync();
-        _activeScene->Load();
+        _activeScene->Load();  // Assuming Load is synchronous
         loading = true;
     }
 }
+
 
 sf::Vector2f Engine::flocking(Entity* thisEnemy, Vector2f toPlayer)
 {
@@ -297,8 +303,14 @@ void Scene::setLoaded(bool b) {
 }
 
 void Scene::UnLoad() {
-    ents.list.clear();
-    setLoaded(false);
+    // Start unloading asynchronously
+    _unload_future = std::async(std::launch::async, [this]() {
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+
+        std::lock_guard<std::mutex> lock(_loaded_mtx);
+        _loaded = false; // Mark scene as unloaded
+        std::cout << "Scene unloaded asynchronously\n";
+    });
 }
 
 void Scene::LoadAsync() { _loaded_future = std::async(&Scene::Load, this); }
