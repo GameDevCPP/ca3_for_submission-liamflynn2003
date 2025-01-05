@@ -12,6 +12,28 @@ sf::Color LevelSystem::getColor(LevelSystem::Tile t) {
     if (it == _colours.end()) {
         _colours[t] = Color::Transparent;
     }
+    if(t == WALL) {
+        if(currentLevel == 2) {
+            _colours[t] = Color::White;
+        }
+        if(currentLevel == 3) {
+            _colours[t] = Color::Black;
+        }
+        if(currentLevel == 4) {
+            _colours[t] = Color::Black;
+        }
+    }
+    if(t == FLOOR) {
+        if(currentLevel == 2) {
+            _colours[t] = Color::Cyan;
+        }
+        if(currentLevel == 3) {
+            _colours[t] = Color::Red;
+        }
+        if(currentLevel == 4) {
+            _colours[t] = Color::Green;
+        }
+    }
     return _colours[t];
 }
 
@@ -34,11 +56,14 @@ IntRect LevelSystem::floorTextureRect = { Vector2i(0, 0), Vector2i(32, 32) };
 Texture LevelSystem::wallTexture;
 IntRect LevelSystem::wallTextureRect = { Vector2i(0, 0), Vector2i(32, 32) };
 
+int LevelSystem::currentLevel = 0;
+
 void LevelSystem::setTextureMap(string path) {
     floorTexture.loadFromFile(path);
 }
 
 void LevelSystem::loadLevelFile(const std::string& path, float tileSize) {
+    currentLevel++;
     _tileSize = tileSize;
     size_t w = 0, h = 0;
     string buffer;

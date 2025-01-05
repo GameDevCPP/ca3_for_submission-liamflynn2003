@@ -61,6 +61,7 @@ public:
 
 	static void setTextureMap(std::string path);
 
+	static int currentLevel;
 protected:
 	static std::unique_ptr<Tile[]> _tiles;
 	static size_t _width;

@@ -188,7 +188,7 @@ void PlanetLevelScene::Update(const double& dt) {
     if(seconds >= 2) {
         levelStart = false;
     }
-    if (player->GetCompatibleComponent<PlayerComponent>()[0]->getScore() >= 200)
+    if (player->GetCompatibleComponent<PlayerComponent>()[0]->getScore() >= 20)
     {
         pauseGame = true;
         result = "win";
