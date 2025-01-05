@@ -110,8 +110,7 @@ void LevelSystem::buildSprites(bool optimise) {
 
     const auto nonempty = tps.size();
 
-    //The following is a refactored version of this student's Droppod code. Note that tileset is loaded once!
-// Preload textures outside the loop
+    // Preload textures outside the loop
     static Texture wallTexture;
     static bool wallTextureLoaded = false;
 
@@ -135,40 +134,11 @@ void LevelSystem::buildSprites(bool optimise) {
             s->setTextureRect(wallTextureRect);
         }
 
-        //why would moving this code after the push cause a problem, besides it not colouring the tiles??? DF.
-//        s->setFillColor(Color::Red);
-        s->setFillColor(t.c);
-        s->setFillColor(Color(rand()%128+128,0,0)); //modified from original. DF.
+        // Only set fill color once
+        s->setFillColor(t.c); // Or use a random color if you want that instead
 
         _sprites.push_back(move(s));
-
     }
-
-
-    ///** Note I left the following in as an example of problem code. It continually loads the tileset!!, instead of just loading once and using it...
-//    for (auto& t : tps) {
-//		auto s = make_unique<sf::RectangleShape>();
-//		s->setPosition(t.p);
-//		s->setSize(t.s);
-//
-//		if (getTileAt(t.p) == 'f')
-//		{
-//			s->setTexture(&floorTexture);
-//			s->setTextureRect(floorTextureRect);
-//		}
-//		else
-//		{
-//			wallTexture.loadFromFile("res/img/tileset.png");
-//			s->setTexture(&wallTexture);
-//			s->setTextureRect(wallTextureRect);
-//		}
-//
-//		_sprites.push_back(move(s));
-
-    //s->setFillColor(Color::Red);
-    //s->setFillColor(t.c);
-    // s->setFillColor(Color(rand()%255,rand()%255,rand()%255));
-    //}
 
     cout << "Level with " << (_width * _height) << " Tiles, With " << nonempty
          << " Not Empty, using: " << _sprites.size() << " Sprites\n";

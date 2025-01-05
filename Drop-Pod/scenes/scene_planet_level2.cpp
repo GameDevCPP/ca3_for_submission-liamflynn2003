@@ -74,8 +74,8 @@ void PlanetLevel2Scene::Load() {
     init();
     *ecm = Scene::getEcm();
 
-    ls::loadLevelFile("res/levels/smallfloorMap.txt");
-    //ls::loadLevelFile("res/levels/floorMap.txt");
+    ls::loadLevelFile("res/levels/levelTwoMap.txt");
+
     xCount = ls::getWidth();
     yCount = ls::getHeight();
 
