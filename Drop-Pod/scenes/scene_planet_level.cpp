@@ -69,7 +69,13 @@ void PlanetLevelScene::Load() {
     init();
     *ecm = Scene::getEcm();
 
+    if(LevelSystem::currentLevel == 2) {
+        hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
+        ls::loadLevelFile("res/levels/levelTwoMap.txt");
+    }
+    else {
     ls::loadLevelFile("res/levels/smallfloorMap.txt");
+    }
     //ls::loadLevelFile("res/levels/floorMap.txt");
     xCount = ls::getWidth();
     yCount = ls::getHeight();
@@ -157,7 +163,7 @@ void PlanetLevelScene::Load() {
     scoreText->setPosition(hudView.getSize().x - 200, 20);
 
     // Level start message
-    levelStartText->setString("LEVEL 1: START!");
+    levelStartText->setString("LEVEL " + to_string(LevelSystem::currentLevel) + ": START!");
     levelStartText->setFont(*Resources::get<Font>("RobotoMono-Regular.ttf"));
     levelStartText->setCharacterSize(80);
     levelStartText->setFillColor(Color::White);
@@ -185,6 +191,7 @@ void PlanetLevelScene::UnLoad()
 }
 
 void PlanetLevelScene::Update(const double& dt) {
+
     if(seconds >= 2) {
         levelStart = false;
     }
@@ -263,11 +270,12 @@ void PlanetLevelScene::Update(const double& dt) {
     }
     else
     {
-        if (result == "win" && Keyboard::isKeyPressed(Keyboard::Enter))
-        {
-            Engine::ChangeScene(&planetLevel2);
-            this->UnLoad();
+
+        if (result == "win" && Keyboard::isKeyPressed(Keyboard::Enter)) {
+            LevelSystem::currentLevel = 2;
+            Engine::ChangeScene(&planetLevel);
         }
+
         else {
             if (Keyboard::isKeyPressed(Keyboard::Enter))
             {
@@ -277,6 +285,7 @@ void PlanetLevelScene::Update(const double& dt) {
         }
         render_end();
     }
+
 }
 
 void PlanetLevelScene::Render() {
@@ -289,7 +298,7 @@ void PlanetLevelScene::Render() {
 
     // Set the view for the HUD
     Engine::setView(hudView);
-
+    std::cout << "HUD view set to: " << hudView.getCenter().x << ", " << hudView.getCenter().y << std::endl;
     // Draw the HUD elements
     Engine::GetWindow().draw(*timer);
     Engine::GetWindow().draw(*endText);
@@ -316,7 +325,7 @@ void PlanetLevelScene::render_end() const
         endText->setPosition(hudView.getSize().x / 2, 200);
         endText->setOrigin(endText->getLocalBounds().left + endText->getLocalBounds().width / 2.0f,
                            endText->getLocalBounds().top + endText->getLocalBounds().height / 2.0f);
-        endExitText->setString("Press the ENTER button to go back to Level 2!");
+        endExitText->setString("Press the ENTER button to go to Level 2!");
         endExitText->setOutlineColor(Color::Black);
         endExitText->setOutlineThickness(4);
         endExitText->setPosition(hudView.getSize().x * 0.5, 300);

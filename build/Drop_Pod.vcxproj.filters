@@ -31,9 +31,6 @@
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -67,9 +64,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.h">
@@ -119,6 +113,9 @@
       <Filter>resources</Filter>
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\floorMap.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelTwoMap.txt">
       <Filter>resources</Filter>
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\maze.txt">

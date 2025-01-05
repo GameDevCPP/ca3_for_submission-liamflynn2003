@@ -360,8 +360,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_menu.h" />
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.cpp" />
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level.h" />
-    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.cpp" />
-    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_planet_level2.h" />
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.cpp" />
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.h" />
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\RobotoMono-Regular.ttf">
@@ -387,6 +385,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\tileset.png">
     </Image>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\floorMap.txt">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelTwoMap.txt">
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\maze.txt">
     </None>

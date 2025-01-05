@@ -56,14 +56,13 @@ IntRect LevelSystem::floorTextureRect = { Vector2i(0, 0), Vector2i(32, 32) };
 Texture LevelSystem::wallTexture;
 IntRect LevelSystem::wallTextureRect = { Vector2i(0, 0), Vector2i(32, 32) };
 
-int LevelSystem::currentLevel = 0;
+int LevelSystem::currentLevel = 1;
 
 void LevelSystem::setTextureMap(string path) {
     floorTexture.loadFromFile(path);
 }
 
 void LevelSystem::loadLevelFile(const std::string& path, float tileSize) {
-    currentLevel++;
     _tileSize = tileSize;
     size_t w = 0, h = 0;
     string buffer;

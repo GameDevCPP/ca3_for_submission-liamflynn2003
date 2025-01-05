@@ -8,7 +8,7 @@ using namespace std;
 MenuScene menu;
 SettingsScene settings;
 PlanetLevelScene planetLevel;
-PlanetLevel2Scene planetLevel2;
+
 short unsigned switchState;
 int volume;
 Vector2i resolution;
