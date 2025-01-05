@@ -220,18 +220,18 @@ void PlanetLevelScene::Update(const double& dt) {
     if(seconds >= 2) {
         levelStart = false;
     }
-    int scoreTarget = 20;
+    int scoreTarget = 100;
     if(LevelSystem::currentLevel == 2) {
-        scoreTarget = 20;
+        scoreTarget = 200;
     }
     else if(LevelSystem::currentLevel == 3) {
-        scoreTarget = 20;
+        scoreTarget = 200;
     }
     else if(LevelSystem::currentLevel == 4) {
-        scoreTarget = 20;
+        scoreTarget = 300;
     }
     else if(LevelSystem::currentLevel == 5) {
-        scoreTarget = 20;
+        scoreTarget = 300;
     }
     if (player->GetCompatibleComponent<PlayerComponent>()[0]->getScore() >= scoreTarget)
     {
@@ -297,19 +297,19 @@ void PlanetLevelScene::Update(const double& dt) {
         auto playerScore = player->GetCompatibleComponent<PlayerComponent>()[0]->getScore();
 
         if(LevelSystem::currentLevel == 2) {
-            scoreText->setString("SCORE: " + to_string(playerScore) + "/300");
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/200");
         }
         else if(LevelSystem::currentLevel == 3) {
-            scoreText->setString("SCORE: " + to_string(playerScore) + "/400");
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/200");
         }
         else if(LevelSystem::currentLevel == 4) {
-            scoreText->setString("SCORE: " + to_string(playerScore) + "/500");
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/300");
         }
         else if(LevelSystem::currentLevel == 5) {
-            scoreText->setString("SCORE: " + to_string(playerScore) + "/600");
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/300");
         }
         else {
-            scoreText->setString("SCORE: " + to_string(playerScore) + "/200");
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/100");
         }
 
 
@@ -371,7 +371,7 @@ void PlanetLevelScene::render_end() const
     if (result == "win")
     {
         if(LevelSystem::currentLevel == 5) {
-            Engine::ChangeScene(&winScreen);
+            Engine::ChangeScene(&win);
         }
         int nextLevel = LevelSystem::currentLevel + 1;
         endText->setString("Level Complete!");

@@ -82,7 +82,6 @@ void MenuScene::Load() {
         music.setLoop(true);
         music.play();
     }
-
     setLoaded(true);
 }
 

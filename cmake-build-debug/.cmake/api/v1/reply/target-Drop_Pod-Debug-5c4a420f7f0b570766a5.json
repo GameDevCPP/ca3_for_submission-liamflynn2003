@@ -133,16 +133,13 @@
 				14,
 				16,
 				18,
-				20
+				20,
+				22
 			]
 		}
 	],
 	"dependencies" : 
 	[
-		{
-			"backtrace" : 2,
-			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
-		},
 		{
 			"backtrace" : 8,
 			"id" : "copy_resources::@6890427a1f51a3e7e1df"
@@ -157,6 +154,10 @@
 		},
 		{
 			"backtrace" : 2,
+			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
@@ -165,11 +166,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
+			"id" : "sfml-audio::@f41189585cfb974df97d"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-audio::@f41189585cfb974df97d"
+			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
 		},
 		{
 			"backtrace" : 2,
@@ -272,7 +273,8 @@
 				14,
 				16,
 				18,
-				20
+				20,
+				22
 			]
 		},
 		{
@@ -283,15 +285,14 @@
 				17,
 				19,
 				21,
-				45
+				23,
+				49
 			]
 		},
 		{
 			"name" : "resources",
 			"sourceIndexes" : 
 			[
-				22,
-				23,
 				24,
 				25,
 				26,
@@ -312,7 +313,11 @@
 				41,
 				42,
 				43,
-				44
+				44,
+				45,
+				46,
+				47,
+				48
 			]
 		}
 	],
@@ -441,6 +446,17 @@
 		},
 		{
 			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drop-Pod/scenes/scene_win.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drop-Pod/scenes/scene_win.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
 			"path" : "res/fonts/RobotoMono-Regular.ttf",
 			"sourceGroupIndex" : 3
 		},
@@ -492,6 +508,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "res/img/tileset.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "res/img/win.png",
 			"sourceGroupIndex" : 3
 		},
 		{
@@ -552,6 +573,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "res/sound/Shoot_001.wav",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "res/sound/win.wav",
 			"sourceGroupIndex" : 3
 		},
 		{

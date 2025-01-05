@@ -20,7 +20,7 @@ sf::Color LevelSystem::getColor(LevelSystem::Tile t) {
             _colours[t] = Color::Black;
         }
         if(currentLevel == 4) {
-            _colours[t] = Color::Black;
+            _colours[t] = Color::Red;
         }
     }
     if(t == FLOOR) {
@@ -32,6 +32,9 @@ sf::Color LevelSystem::getColor(LevelSystem::Tile t) {
         }
         if(currentLevel == 4) {
             _colours[t] = Color::Green;
+        }
+        if(currentLevel == 5) {
+            _colours[t] = Color::White;
         }
     }
     return _colours[t];

@@ -102,11 +102,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
+			"id" : "lib_tile_level_loader::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "lib_tile_level_loader::@6890427a1f51a3e7e1df"
+			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
@@ -118,11 +118,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
+			"id" : "sfml-audio::@f41189585cfb974df97d"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-audio::@f41189585cfb974df97d"
+			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
 		},
 		{
 			"backtrace" : 2,
@@ -157,7 +157,7 @@
 				3,
 				5,
 				7,
-				31
+				33
 			]
 		},
 		{
@@ -186,7 +186,9 @@
 				27,
 				28,
 				29,
-				30
+				30,
+				31,
+				32
 			]
 		}
 	],
@@ -293,6 +295,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "res/img/win.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
 			"path" : "res/levels/floorMap.txt",
 			"sourceGroupIndex" : 2
 		},
@@ -349,6 +356,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "res/sound/Shoot_001.wav",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "res/sound/win.wav",
 			"sourceGroupIndex" : 2
 		},
 		{

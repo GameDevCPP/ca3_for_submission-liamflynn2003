@@ -34,6 +34,9 @@
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_actor_movement.h">
@@ -69,6 +72,9 @@
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_settings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\scenes\scene_win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths\maths.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -102,6 +108,9 @@
       <Filter>resources</Filter>
     </Image>
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\tileset.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\win.png">
       <Filter>resources</Filter>
     </Image>
   </ItemGroup>
@@ -146,6 +155,9 @@
       <Filter>resources</Filter>
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Shoot_001.wav">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\win.wav">
       <Filter>resources</Filter>
     </None>
   </ItemGroup>

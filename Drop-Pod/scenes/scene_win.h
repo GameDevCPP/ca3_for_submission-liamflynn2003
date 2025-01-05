@@ -1,16 +1,24 @@
-//
-// Created by Liam on 05/01/2025.
-//
+#pragma once
 
-#ifndef SCENE_WIN_H
-#define SCENE_WIN_H
+#include "engine.h"
+#include "../components/cmp_button.h"
 
+class WinScene : public Scene {
+public:
+    WinScene() = default;
+    ~WinScene() override = default;
 
+    void Load() override;
 
-class scene_win {
+    void Update(const double& dt) override;
 
+    sf::View winView;
+
+    std::shared_ptr<Entity> winBtnExit;
+
+    sf::Sprite winBackground;
+
+    sf::Music winMusic;
+    sf::Texture texture;
+    void Render() override;
 };
-
-
-
-#endif //SCENE_WIN_H

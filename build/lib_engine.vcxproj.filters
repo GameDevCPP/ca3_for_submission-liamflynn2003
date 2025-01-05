@@ -62,6 +62,9 @@
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\tileset.png">
       <Filter>resources</Filter>
     </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\win.png">
+      <Filter>resources</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\RobotoMono-Regular.ttf">
@@ -104,6 +107,9 @@
       <Filter>resources</Filter>
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Shoot_001.wav">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\win.wav">
       <Filter>resources</Filter>
     </None>
   </ItemGroup>
