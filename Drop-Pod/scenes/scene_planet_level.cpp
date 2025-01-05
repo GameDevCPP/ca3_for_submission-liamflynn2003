@@ -433,8 +433,7 @@ Vector2f PlanetLevelScene::random_position() const
 }
 
 //Creates and enemy and adds it to the entity list for the scene.
-void PlanetLevelScene::SpawnEnemy(int damage, float speed)
-{
+void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
     // Retrieve spawn tiles from LevelSystem
     std::vector<sf::Vector2ul> startTiles = ls::findTiles(LevelSystem::SPAWN);
     if (startTiles.empty()) {
@@ -443,8 +442,11 @@ void PlanetLevelScene::SpawnEnemy(int damage, float speed)
     }
 
     IntRect enemyRect = { Vector2i(0, 0), Vector2i(64, 64) };
+    if (LevelSystem::currentLevel < 4){
     shared_ptr<Texture> enemySprite = Resources::get<Texture>("Trash-Monster-Sheet.png");
-
+    } else {
+        shared_ptr<Texture> enemySprite = Resources::get<Texture>("Trash-Monster-Sprite-V2.png");
+    }
     // Loop through spawn tiles and spawn enemies
     for (size_t i = 0; i < startTiles.size(); ++i) {
         // Get the tile from the spawn list, wrapping around if necessary
