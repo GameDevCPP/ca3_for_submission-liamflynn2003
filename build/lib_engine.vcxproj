@@ -310,6 +310,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </Image>
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Trash-Monster-Sprite-V2.png">
     </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\arrow.png">
+    </Image>
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\bulletGlow.png">
     </Image>
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\grass.png">
@@ -338,11 +340,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Click.wav">
     </None>
-    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Cold-Moon.ogg">
-    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Hit.wav">
     </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\HitWall.wav">
+    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Shoot_001.wav">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\titleScreen.wav">
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\win.wav">
     </None>

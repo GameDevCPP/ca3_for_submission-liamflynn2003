@@ -17,6 +17,8 @@ protected:
 
 	std::shared_ptr<sf::SoundBuffer> soundHit_buffer;
 	std::shared_ptr<sf::Sound> soundHit;
+	std::shared_ptr<sf::SoundBuffer> soundHitWall_buffer;
+	std::shared_ptr<sf::Sound> soundHitWall;
 
 public:
 	static void update(const double dt);
@@ -35,8 +37,8 @@ protected:
 	Entity* _parent;
 
 	std::vector<Bullet> bullets;
-	unsigned int bulletCount;
-	float angleshot;
+	unsigned int bulletCount{};
+	float angleshot{};
 
 public:
 	ShootingComponent() = delete;

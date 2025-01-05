@@ -98,6 +98,9 @@
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\Trash-Monster-Sprite-V2.png">
       <Filter>resources</Filter>
     </Image>
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\arrow.png">
+      <Filter>resources</Filter>
+    </Image>
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\bulletGlow.png">
       <Filter>resources</Filter>
     </Image>
@@ -148,13 +151,16 @@
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Click.wav">
       <Filter>resources</Filter>
     </None>
-    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Cold-Moon.ogg">
-      <Filter>resources</Filter>
-    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Hit.wav">
       <Filter>resources</Filter>
     </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\HitWall.wav">
+      <Filter>resources</Filter>
+    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Shoot_001.wav">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\titleScreen.wav">
       <Filter>resources</Filter>
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\win.wav">

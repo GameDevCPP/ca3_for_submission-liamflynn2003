@@ -9,6 +9,7 @@
 #include "cmp_player.h"
 #include "system_renderer.h"
 #include "engine.h"
+#include "LevelSystem.h"
 
 using namespace std;
 using namespace sf;
@@ -28,12 +29,13 @@ Vector2f mousePos;
 Texture temp2;
 auto spriteTexture = make_shared<Texture>(temp2);
 
-ShootingComponent::ShootingComponent(Entity* p) : ActorMovementComponent(p), _parent(p) {
+bool validMove(const sf::Vector2f& pos) {
+	return (LevelSystem::getTileAt(pos) != LevelSystem::WALL);
+}
+
+ShootingComponent::ShootingComponent(Entity* p) : ActorMovementComponent(p), _parent(p), bulletCount(0), angleshot(0) {
 	if (_parent == nullptr) {
 		std::cerr << "ShootingComponent parent is nullptr!" << std::endl;
-	} else {
-		std::cout << "ShootingComponent parent initialized successfully." << std::endl;
-		std::cout << "Parent:" << _parent << std::endl;
 	}
 	Bullet::init();
 }
@@ -60,7 +62,7 @@ Bullet::Bullet()
 }
 
 void Bullet::init() {
-	spriteTexture = Resources::get<Texture>("bulletGlow.png");
+	spriteTexture = Resources::get<Texture>("arrow.png");
 
 	for (auto& b : bullets) {
 		b.setPosition(Vector2f(-100, -100));
@@ -90,22 +92,26 @@ void Bullet::render() {
 		}
 	}
 }
-
-void Bullet::fire(const Vector2f& pos, Entity* parent) {
-	RenderWindow& window = Engine::GetWindow();
-	auto mousePos = window.mapPixelToCoords(Mouse::getPosition(window));
+void Bullet::fire(const sf::Vector2f& pos, Entity* parent) {
+	sf::RenderWindow& window = Engine::GetWindow();
+	auto mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
 
 	bulletCount++;
 	bulletCount = bulletCount % 256;
 	bullets[bulletCount].setPosition(pos);
 	bullets[bulletCount].isVisible = true;
-
-	// Set the parentEntity (the player) for this bullet
 	bullets[bulletCount].parentEntity = parent;
 
-	// Set the angle of the bullet
-	*angleshot = atan2(mousePos.y - bullets[bulletCount].getPosition().y, mousePos.x - bullets[bulletCount].getPosition().x);
-	bullets[bulletCount].setAngle(*angleshot, bullets[bulletCount]);
+	sf::Vector2f direction = mousePos - pos;
+	direction = sf::normalize(direction);  // Ensure the direction vector is normalized
+
+	// Calculate the angle in degrees
+	float angleDeg = atan2(direction.y, direction.x) * 180.0f / 3.14159265358979323846f;
+
+	// Adjust the rotation by subtracting 90 degrees
+	bullets[bulletCount].setRotation(angleDeg - 10);
+	bullets[bulletCount].setAngle(atan2(direction.y, direction.x), bullets[bulletCount]);
+	bullets[bulletCount].setScale(0.02f, 0.02f);
 }
 
 void Bullet::_update(const double dt) {
@@ -119,11 +125,27 @@ void Bullet::_update(const double dt) {
         this->isVisible = false;
         return;
     }
-    else {
-        this->move(cos(this->angle) * 200.f * dt, 0);
-        this->move(0, sin(this->angle) * 200.f * dt);
+
+    // Calculate the potential new position
+    Vector2f newPos = getPosition();
+    newPos.x += cos(this->angle) * 200.f * dt;
+    newPos.y += sin(this->angle) * 200.f * dt;
+
+    // Check if the new position is valid (not hitting a wall)
+    if (validMove(newPos)) {
+        setPosition(newPos);
+    } else {
+        // If not a valid move (hit a wall), destroy the bullet
+    	soundHitWall_buffer = Resources::get<SoundBuffer>("HitWall.wav");
+    	soundHitWall = make_shared<Sound>(*soundHitWall_buffer);
+    	soundHitWall->setVolume(volume);
+    	soundHitWall->play();
+        this->isVisible = false;
+        setPosition(-100, -100);  // Move the bullet off-screen to "destroy" it
+        return;  // Exit the function since the bullet is destroyed
     }
 
+    // Check for collisions with enemies
     auto ecm = planetLevel.getEcm();
     auto enemies = ecm.find("enemy");
     auto player = ecm.find("player");
@@ -139,7 +161,7 @@ void Bullet::_update(const double dt) {
 
         if (enemy->isAlive() && spriteBounds.intersects(boundingBox)) {
             this->isVisible = false;
-            setPosition(-100, -100);
+            setPosition(-100, -100);  // Bullet disappears after hitting enemy
 
             // Hit Sound
             soundHit_buffer = Resources::get<SoundBuffer>("Hit.wav");
@@ -164,3 +186,4 @@ void Bullet::_update(const double dt) {
         }
     }
 }
+
