@@ -32,7 +32,8 @@ public:
 		WALL = 'w',
 		ENEMY = 'n',
 		WAYPOINT = '+',
-		FLOOR = 'f'
+		FLOOR = 'f',
+		SPAWN = 'p'
 	};
 
 	static Tile getTile(sf::Vector2ul);

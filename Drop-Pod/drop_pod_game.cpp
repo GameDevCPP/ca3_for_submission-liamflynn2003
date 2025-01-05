@@ -8,6 +8,7 @@ using namespace std;
 MenuScene menu;
 SettingsScene settings;
 PlanetLevelScene planetLevel;
+WinScreen winScreen;
 
 short unsigned switchState;
 int volume;

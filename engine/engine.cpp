@@ -33,7 +33,7 @@ void Loading_render() {
     // cout << "Eng: Loading Screen Render\n";
 
     static Sprite background;
-    auto backTexture = Resources::get<Texture>("Space_Background.png");
+    auto backTexture = Resources::get<Texture>("menu_bg.png");
     background.setTexture(*backTexture);
 
     static CircleShape octagon(100);

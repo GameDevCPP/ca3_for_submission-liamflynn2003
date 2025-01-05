@@ -86,7 +86,7 @@ void PlanetLevelScene::Load() {
         ls::loadLevelFile("res/levels/levelFiveMap.txt");
     }
     else {
-    ls::loadLevelFile("res/levels/smallfloorMap.txt");
+    ls::loadLevelFile("res/levels/smallFloorMap.txt");
     }
     //ls::loadLevelFile("res/levels/floorMap.txt");
     xCount = ls::getWidth();
@@ -124,7 +124,6 @@ void PlanetLevelScene::Load() {
     } else {
         // Handle case where no START tile is found (optional)
         std::cerr << "START tile not found in the level!" << std::endl;
-        // Optionally, set the player's position to a default fallback position
         player->setPosition(startingCenter);
     }
 
@@ -166,7 +165,7 @@ void PlanetLevelScene::Load() {
                           healthText->getLocalBounds().top + healthText->getLocalBounds().height / 2.0f);
 
     // Enemies Load --------------------------------------------------------------------
-    monsterCount = 5;
+    monsterCount = 1;
     damage = 2;
     speed = 80;
     for (int i = 0; i < monsterCount; ++i)
@@ -221,7 +220,20 @@ void PlanetLevelScene::Update(const double& dt) {
     if(seconds >= 2) {
         levelStart = false;
     }
-    if (player->GetCompatibleComponent<PlayerComponent>()[0]->getScore() >= 20)
+    int scoreTarget = 20;
+    if(LevelSystem::currentLevel == 2) {
+        scoreTarget = 20;
+    }
+    else if(LevelSystem::currentLevel == 3) {
+        scoreTarget = 20;
+    }
+    else if(LevelSystem::currentLevel == 4) {
+        scoreTarget = 20;
+    }
+    else if(LevelSystem::currentLevel == 5) {
+        scoreTarget = 20;
+    }
+    if (player->GetCompatibleComponent<PlayerComponent>()[0]->getScore() >= scoreTarget)
     {
         pauseGame = true;
         result = "win";
@@ -282,11 +294,24 @@ void PlanetLevelScene::Update(const double& dt) {
         string s = ("Timer: " + min + ":" + sec);
         timer->setString(s);
 
-        string scoreString = "0001";
-
         auto playerScore = player->GetCompatibleComponent<PlayerComponent>()[0]->getScore();
 
-        scoreText->setString("SCORE: " + to_string(playerScore) + "/200");
+        if(LevelSystem::currentLevel == 2) {
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/300");
+        }
+        else if(LevelSystem::currentLevel == 3) {
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/400");
+        }
+        else if(LevelSystem::currentLevel == 4) {
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/500");
+        }
+        else if(LevelSystem::currentLevel == 5) {
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/600");
+        }
+        else {
+            scoreText->setString("SCORE: " + to_string(playerScore) + "/200");
+        }
+
 
         auto playerHealth = player->GetCompatibleComponent<PlayerComponent>()[0]->getHealth();
         greenBar->setSize(Vector2f(playerHealth * 3, 30));
@@ -345,6 +370,9 @@ void PlanetLevelScene::render_end() const
 {
     if (result == "win")
     {
+        if(LevelSystem::currentLevel == 5) {
+            Engine::ChangeScene(&winScreen);
+        }
         int nextLevel = LevelSystem::currentLevel + 1;
         endText->setString("Level Complete!");
         endText->setOutlineColor(Color::Black);
@@ -407,30 +435,49 @@ Vector2f PlanetLevelScene::random_position() const
 //Creates and enemy and adds it to the entity list for the scene.
 void PlanetLevelScene::SpawnEnemy(int damage, float speed)
 {
+    // Retrieve spawn tiles from LevelSystem
+    std::vector<sf::Vector2ul> startTiles = ls::findTiles(LevelSystem::SPAWN);
+    if (startTiles.empty()) {
+        std::cerr << "No spawn tiles found!" << std::endl;
+        return;  // No spawn tiles available
+    }
+
     IntRect enemyRect = { Vector2i(0, 0), Vector2i(64, 64) };
     shared_ptr<Texture> enemySprite = Resources::get<Texture>("Trash-Monster-Sheet.png");
-    shared_ptr<Entity> enemy = makeEntity();
 
-    // Set random position outside of view.
-    auto pos = random_position();
-    enemy->setPosition(pos);
+    // Loop through spawn tiles and spawn enemies
+    for (size_t i = 0; i < startTiles.size(); ++i) {
+        // Get the tile from the spawn list, wrapping around if necessary
+        sf::Vector2ul spawnTile = startTiles[i % startTiles.size()];  // Wrap around using modulo
 
-    auto esprite = enemy->addComponent<SpriteComponent>();
-    esprite->setTexture(enemySprite);
-    esprite->getSprite().setScale(2, 2);
+        // Convert tile coordinates to world coordinates (assuming tile size is 100x100)
+        sf::Vector2f spawnPos(spawnTile.x * 100.f, spawnTile.y * 100.f);
 
-    auto eanimation = enemy->addComponent<AnimationComponent>();
-    eanimation->setAnimation(6, 0.1, enemySprite, enemyRect);
+        // Create the enemy entity
+        shared_ptr<Entity> enemy = makeEntity();
+        enemy->setPosition(spawnPos);  // Set position to the spawn tile
 
-    auto emove = enemy->addComponent<ActorMovementComponent>();
-    emove->setMoving(true);
-    emove->setSpeed(speed);
+        // Set up enemy sprite and animation
+        auto esprite = enemy->addComponent<SpriteComponent>();
+        esprite->setTexture(enemySprite);
+        esprite->getSprite().setScale(2, 2);
 
-    auto eattributes = enemy->addComponent<MonsterComponent>(player);
-    eattributes->set_damage(damage);
+        auto eanimation = enemy->addComponent<AnimationComponent>();
+        eanimation->setAnimation(6, 0.1, enemySprite, enemyRect);
 
-    // This is needed to have the enemy end at the player sprite.
-    esprite->getSprite().setOrigin(32, 32);
+        // Add movement component
+        auto emove = enemy->addComponent<ActorMovementComponent>();
+        emove->setMoving(true);
+        emove->setSpeed(speed);
 
-    enemy->addTag("enemy");
+        // Add monster attributes
+        auto eattributes = enemy->addComponent<MonsterComponent>(player);
+        eattributes->set_damage(damage);
+
+        // This is needed to have the enemy end at the player sprite.
+        esprite->getSprite().setOrigin(32, 32);
+
+        // Add the enemy tag
+        enemy->addTag("enemy");
+    }
 }

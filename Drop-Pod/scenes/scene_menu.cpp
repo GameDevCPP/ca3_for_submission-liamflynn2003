@@ -24,17 +24,34 @@ bool shouldRenderBackground = true;
 void MenuScene::Load() {
     cout << "Menu Load \n";
 
-    menuView.reset(FloatRect(0, 0, resolution.x, resolution.y));
-    RenderWindow& window = Engine::GetWindow();
-    Vector2u windowSize = window.getSize();
+    menuView.reset(sf::FloatRect(0, 0, resolution.x, resolution.y));
+    sf::RenderWindow& window = Engine::GetWindow();
+    sf::Vector2u windowSize = window.getSize();
 
-
-    // set background
+    // Set background
     try {
-        auto backTexture = Resources::get<Texture>("Space_Background.png");
+        auto backTexture = Resources::get<sf::Texture>("menu_bg.png");
         background.setTexture(*backTexture);
-    }
-    catch (const std::runtime_error& e) {
+
+        // Get the background texture size
+        sf::Vector2u textureSize = backTexture->getSize();
+
+        // Calculate the scaling factors to fill the window
+        float scaleX = static_cast<float>(windowSize.x) / textureSize.x;
+        float scaleY = static_cast<float>(windowSize.y) / textureSize.y;
+
+        // Use the larger scale factor to ensure the image covers the entire window
+        float scale = std::max(scaleX, scaleY);
+
+        // Apply the scale to the background sprite
+        background.setScale(scale, scale);
+
+        // Optionally center the background if you want
+        background.setPosition(
+            (windowSize.x - textureSize.x * scale) / 2,
+            (windowSize.y - textureSize.y * scale) / 2
+        );
+    } catch (const std::runtime_error& e) {
         std::cerr << "Resource error: " << e.what() << std::endl;
         shouldRenderBackground = false;
     }
