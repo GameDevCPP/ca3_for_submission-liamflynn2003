@@ -24,7 +24,9 @@ void ActorMovementComponent::move(const sf::Vector2f& p) {
 //Moves the enemy
 void ActorMovementComponent::enemyMove(const sf::Vector2f& p) {
 	auto pp = _parent->getPosition() + p;
-	_parent->setPosition(pp);
+	if (validMove(pp)) {
+		_parent->setPosition(pp);
+	}
 }
 //Takes an x and y value and puts it in a Vector2f to be used in the other move function
 void ActorMovementComponent::move(float x, float y) {

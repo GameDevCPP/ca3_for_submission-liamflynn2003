@@ -136,10 +136,6 @@ std::shared_ptr<Entity> Scene::makeEntity() {
     return std::move(e);
 }
 
-//void Scene::addEntity(shared_ptr<Entity> entity) {
-//	ents.list.push_back(entity);
-//}
-
 void Engine::setVsync(bool b) { _window->setVerticalSyncEnabled(b); }
 
 void Engine::setView(View v) { _window->setView(v); }

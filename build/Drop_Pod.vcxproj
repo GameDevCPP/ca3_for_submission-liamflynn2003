@@ -386,6 +386,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </Image>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\floorMap.txt">
     </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelFiveMap.txt">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelFourMap.txt">
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelThreeMap.txt">
+    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelTwoMap.txt">
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\maze.txt">

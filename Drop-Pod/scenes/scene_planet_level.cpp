@@ -73,6 +73,18 @@ void PlanetLevelScene::Load() {
         hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
         ls::loadLevelFile("res/levels/levelTwoMap.txt");
     }
+    else if(LevelSystem::currentLevel == 3) {
+        hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
+        ls::loadLevelFile("res/levels/levelThreeMap.txt");
+    }
+    else if(LevelSystem::currentLevel == 4) {
+        hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
+        ls::loadLevelFile("res/levels/levelFourMap.txt");
+    }
+    else if(LevelSystem::currentLevel == 5) {
+        hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
+        ls::loadLevelFile("res/levels/levelFiveMap.txt");
+    }
     else {
     ls::loadLevelFile("res/levels/smallfloorMap.txt");
     }
@@ -99,8 +111,22 @@ void PlanetLevelScene::Load() {
     playerSpriteMoving = Resources::get<Texture>("Run.png");
 
     player = makeEntity();
-    //player->setPosition(Vector2f(view.getSize().x * 0.5, view.getSize().y * 0.5));
-    player->setPosition(startingCenter);
+    std::vector<sf::Vector2ul> startTiles = ls::findTiles(LevelSystem::START);
+    if (!startTiles.empty()) {
+        // Assuming there is only one START tile, we can use the first result
+        sf::Vector2ul startPos = startTiles[0];
+
+        // Convert tile coordinates to world coordinates (assuming tile size is 100x100)
+        sf::Vector2f playerStartPos(startPos.x * 100.f, startPos.y * 100.f);
+
+        // Set the player's spawn position
+        player->setPosition(playerStartPos);
+    } else {
+        // Handle case where no START tile is found (optional)
+        std::cerr << "START tile not found in the level!" << std::endl;
+        // Optionally, set the player's position to a default fallback position
+        player->setPosition(startingCenter);
+    }
 
     auto psprite = player->addComponent<SpriteComponent>();
     psprite->setTexture(playerSpriteIdle);
@@ -272,7 +298,7 @@ void PlanetLevelScene::Update(const double& dt) {
     {
 
         if (result == "win" && Keyboard::isKeyPressed(Keyboard::Enter)) {
-            LevelSystem::currentLevel = 2;
+            LevelSystem::currentLevel++;
             Engine::ChangeScene(&planetLevel);
         }
 
@@ -319,13 +345,14 @@ void PlanetLevelScene::render_end() const
 {
     if (result == "win")
     {
-        endText->setString("Level 1 Complete!");
+        int nextLevel = LevelSystem::currentLevel + 1;
+        endText->setString("Level Complete!");
         endText->setOutlineColor(Color::Black);
         endText->setOutlineThickness(4);
         endText->setPosition(hudView.getSize().x / 2, 200);
         endText->setOrigin(endText->getLocalBounds().left + endText->getLocalBounds().width / 2.0f,
                            endText->getLocalBounds().top + endText->getLocalBounds().height / 2.0f);
-        endExitText->setString("Press the ENTER button to go to Level 2!");
+        endExitText->setString("Press the ENTER button to go to Level " + to_string(nextLevel)+"!");
         endExitText->setOutlineColor(Color::Black);
         endExitText->setOutlineThickness(4);
         endExitText->setPosition(hudView.getSize().x * 0.5, 300);

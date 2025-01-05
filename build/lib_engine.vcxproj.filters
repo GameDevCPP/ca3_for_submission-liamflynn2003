@@ -73,6 +73,15 @@
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\floorMap.txt">
       <Filter>resources</Filter>
     </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelFiveMap.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelFourMap.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelThreeMap.txt">
+      <Filter>resources</Filter>
+    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\levels\levelTwoMap.txt">
       <Filter>resources</Filter>
     </None>
