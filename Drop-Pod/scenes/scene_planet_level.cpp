@@ -7,6 +7,7 @@
 #include "../components/cmp_shooting.h"
 #include "../components/cmp_sprite.h"
 #include "../components/cmp_text.h"
+#include "../components/cmp_coin.h"
 #include <LevelSystem.h>
 #include <system_resources.h>
 #include <SFML/System.hpp>
@@ -166,11 +167,34 @@ void PlanetLevelScene::Load() {
 
     // Enemies Load --------------------------------------------------------------------
     monsterCount = 1;
-    damage = 2;
+    damage = 2;  // Base damage
+
+    if (LevelSystem::currentLevel == 2) {
+        damage = 3;
+    } else if (LevelSystem::currentLevel == 3) {
+        damage = 4 ;
+    } else if (LevelSystem::currentLevel >= 4) {
+        damage = 5;
+    }
+
     speed = 80;
     for (int i = 0; i < monsterCount; ++i)
     {
         SpawnEnemy(damage, speed);
+    }
+
+    // Coin load ----------------------------------------------------------------------
+    int numberOfCoins = 0;
+    if (LevelSystem::currentLevel == 2) {
+        numberOfCoins = 10;
+    } else if (LevelSystem::currentLevel == 3) {
+        numberOfCoins = 15 ;
+    } else if (LevelSystem::currentLevel >= 4) {
+        numberOfCoins = 10;
+    }
+    for (int i = 0; i < monsterCount; ++i)
+    {
+        SpawnCoins(numberOfCoins);
     }
 
     // HUD ----------------------------------------------------------------------------
@@ -269,8 +293,7 @@ void PlanetLevelScene::Update(const double& dt) {
         if (totalTime >= 20)
         {
             monsterCount++;
-            damage++;
-            speed += 7;
+            speed++;
             for (int i = 0; i < monsterCount; ++i)
             {
                 SpawnEnemy(damage, speed);
@@ -435,22 +458,21 @@ Vector2f PlanetLevelScene::random_position() const
 //Creates and enemy and adds it to the entity list for the scene.
 void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
     // Retrieve spawn tiles from LevelSystem
-    std::vector<sf::Vector2ul> startTiles = ls::findTiles(LevelSystem::SPAWN);
-    if (startTiles.empty()) {
+    std::vector<sf::Vector2ul> spawnTiles = ls::findTiles(LevelSystem::SPAWN);
+    if (spawnTiles.empty()) {
         std::cerr << "No spawn tiles found!" << std::endl;
         return;  // No spawn tiles available
     }
 
     IntRect enemyRect = { Vector2i(0, 0), Vector2i(64, 64) };
-    if (LevelSystem::currentLevel < 4){
     shared_ptr<Texture> enemySprite = Resources::get<Texture>("Trash-Monster-Sheet.png");
-    } else {
+    if (LevelSystem::currentLevel > 3){
         shared_ptr<Texture> enemySprite = Resources::get<Texture>("Trash-Monster-Sprite-V2.png");
     }
     // Loop through spawn tiles and spawn enemies
-    for (size_t i = 0; i < startTiles.size(); ++i) {
+    for (size_t i = 0; i < spawnTiles.size(); ++i) {
         // Get the tile from the spawn list, wrapping around if necessary
-        sf::Vector2ul spawnTile = startTiles[i % startTiles.size()];  // Wrap around using modulo
+        sf::Vector2ul spawnTile = spawnTiles[i % spawnTiles.size()];  // Wrap around using modulo
 
         // Convert tile coordinates to world coordinates (assuming tile size is 100x100)
         sf::Vector2f spawnPos(spawnTile.x * 100.f, spawnTile.y * 100.f);
@@ -481,5 +503,23 @@ void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
 
         // Add the enemy tag
         enemy->addTag("enemy");
+    }
+}
+
+void PlanetLevelScene::SpawnCoins(int numberOfCoins) {
+    for (int i = 0; i < numberOfCoins; ++i) {
+        // Generate random positions for coins
+        float x = rand() % 800 + 100;
+        float y = rand() % 600 + 100;
+
+        // Create a new entity for the coin
+        shared_ptr<Entity> coin = makeEntity();
+        coin->setPosition(sf::Vector2f(x, y));
+
+        // Add CoinComponent to the entity and pass the player reference
+        auto coinAttributes = coin->addComponent<CoinComponent>(player, 1); // Set value as 1 or customize it
+
+        // Set coin position if needed (depends on how position is managed in your system)
+        coin->setPosition(sf::Vector2f(x, y));
     }
 }

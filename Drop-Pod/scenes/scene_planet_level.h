@@ -71,5 +71,7 @@ public:
 
 	void SpawnEnemy(int damage, float speed);
 
+	void SpawnCoins(int value);
+
 	sf::Vector2f random_position() const;
 };
