@@ -190,7 +190,7 @@ void PlanetLevelScene::Load() {
     } else if (LevelSystem::currentLevel == 3) {
         numberOfCoins = 15 ;
     } else if (LevelSystem::currentLevel >= 4) {
-        numberOfCoins = 10;
+        numberOfCoins = 20;
     }
     SpawnCoins(numberOfCoins);
 
@@ -366,6 +366,7 @@ void PlanetLevelScene::Update(const double& dt) {
 
         if (result == "win" && Keyboard::isKeyPressed(Keyboard::Enter)) {
             LevelSystem::currentLevel++;
+            if(LevelSystem::currentLevel == 6){levelMusic.stop();}
             Engine::ChangeScene(&planetLevel);
         }
 

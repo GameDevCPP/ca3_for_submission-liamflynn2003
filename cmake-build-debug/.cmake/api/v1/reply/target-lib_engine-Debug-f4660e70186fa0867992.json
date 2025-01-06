@@ -102,23 +102,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "lib_tile_level_loader::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "sfml-system::@ade90ebdf211b83bd87c"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@344d4f502e197fb19f4c"
+			"id" : "sfml-audio::@f41189585cfb974df97d"
 		},
 		{
 			"backtrace" : 2,
@@ -126,7 +114,19 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-audio::@f41189585cfb974df97d"
+			"id" : "lib_tile_level_loader::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		}
 	],
 	"id" : "lib_engine::@6890427a1f51a3e7e1df",
@@ -157,7 +157,7 @@
 				3,
 				5,
 				7,
-				37
+				34
 			]
 		},
 		{
@@ -189,10 +189,7 @@
 				30,
 				31,
 				32,
-				33,
-				34,
-				35,
-				36
+				33
 			]
 		}
 	],
@@ -309,11 +306,6 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "res/levels/floorMap.txt",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
 			"path" : "res/levels/levelFiveMap.txt",
 			"sourceGroupIndex" : 2
 		},
@@ -334,17 +326,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "res/levels/maze.txt",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
 			"path" : "res/levels/smallFloorMap.txt",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "res/levels/vLine.txt",
 			"sourceGroupIndex" : 2
 		},
 		{

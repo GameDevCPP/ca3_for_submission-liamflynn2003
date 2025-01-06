@@ -44,6 +44,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Found VORBIS: C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/extlibs/libs-mingw/x64/libvorbisenc.a;C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/extlibs/libs-mingw/x64/libvorbisfile.a;C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/extlibs/libs-mingw/x64/libvorbis.a;C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/extlibs/libs-mingw/x64/libogg.a
 -- Found FLAC: C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/extlibs/libs-mingw/x64/libFLAC.a
--- Configuring done (6.3s)
+-- Configuring done (5.6s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/cmake-build-debug
