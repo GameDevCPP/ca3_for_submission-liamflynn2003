@@ -102,19 +102,19 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "lib_tile_level_loader::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@344d4f502e197fb19f4c"
+			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
 			"backtrace" : 2,
@@ -282,7 +282,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "res/img/bulletGlow.png",
+			"path" : "res/img/coin.png",
 			"sourceGroupIndex" : 2
 		},
 		{

@@ -7,6 +7,9 @@
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_button.cpp">
       <Filter>components</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_coin.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_monster.cpp">
       <Filter>components</Filter>
     </ClCompile>
@@ -43,6 +46,9 @@
       <Filter>components</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_button.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_coin.h">
       <Filter>components</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Drop-Pod\components\cmp_monster.h">
@@ -101,7 +107,7 @@
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\arrow.png">
       <Filter>resources</Filter>
     </Image>
-    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\bulletGlow.png">
+    <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\coin.png">
       <Filter>resources</Filter>
     </Image>
     <Image Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\img\grass.png">

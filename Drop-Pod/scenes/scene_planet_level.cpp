@@ -507,19 +507,68 @@ void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
 }
 
 void PlanetLevelScene::SpawnCoins(int numberOfCoins) {
+    // Define the minimum distance between coins
+    float minDistance = 100.0f;
+
+    // Get the tilemap's width and height in terms of tiles
+    int mapWidth = ls::getWidth();
+    int mapHeight = ls::getHeight();
+
+    // Find all the positions of wall tiles
+    auto wallTiles = ls::findTiles(LevelSystem::WALL);  // Get all wall tile positions
+
     for (int i = 0; i < numberOfCoins; ++i) {
-        // Generate random positions for coins
-        float x = rand() % 800 + 100;
-        float y = rand() % 600 + 100;
+        bool validPosition = false;
+        float x = 0, y = 0;
+
+        while (!validPosition) {
+            // Generate random positions in terms of tile indices
+            int tileX = rand() % mapWidth;
+            int tileY = rand() % mapHeight;
+
+            // Convert the tile indices to pixel positions based on the tile size
+            x = tileX * ls::getTileSize();
+            y = tileY * ls::getTileSize();
+
+            // Check if the new position is far enough from previously spawned coins
+            validPosition = true;
+            for (const auto& otherCoinPos : spawnedCoins) {
+                float distX = x - otherCoinPos.x;
+                float distY = y - otherCoinPos.y;
+                float distance = sqrt(distX * distX + distY * distY);
+
+                if (distance < minDistance) {
+                    validPosition = false;
+                    break;  // Exit loop if the new position is too close to an existing coin
+                }
+            }
+
+            // Now, check if the position is a wall tile
+            if (validPosition) {
+                for (const auto& wallTile : wallTiles) {
+                    // If the randomly generated position is on a wall tile, regenerate the position
+                    if (wallTile.x == tileX && wallTile.y == tileY) {
+                        validPosition = false;
+                        break;  // Don't spawn on the wall tile
+                    }
+                }
+            }
+        }
+
+        spawnedCoins.push_back(sf::Vector2f(x, y));
 
         // Create a new entity for the coin
+        shared_ptr<Texture> coinSprite = Resources::get<Texture>("coin.png");
         shared_ptr<Entity> coin = makeEntity();
+        auto csprite = coin->addComponent<SpriteComponent>();
+        csprite->setTexture(coinSprite);
+        csprite->getSprite().setScale(0.05, 0.05);
+
+        // Set the coin's position
         coin->setPosition(sf::Vector2f(x, y));
 
         // Add CoinComponent to the entity and pass the player reference
-        auto coinAttributes = coin->addComponent<CoinComponent>(player, 1); // Set value as 1 or customize it
-
-        // Set coin position if needed (depends on how position is managed in your system)
-        coin->setPosition(sf::Vector2f(x, y));
+        auto coinAttributes = coin->addComponent<CoinComponent>(player, 1);
     }
 }
+

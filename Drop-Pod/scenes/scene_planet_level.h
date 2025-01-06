@@ -43,7 +43,8 @@ public:
 	int monsterCount;
 	int damage;
 	float monsterSpeed;
-
+	//Coins
+	std::vector<sf::Vector2f> spawnedCoins;
 	// Actual HUD
 	float tempTime;
 	int minutes;

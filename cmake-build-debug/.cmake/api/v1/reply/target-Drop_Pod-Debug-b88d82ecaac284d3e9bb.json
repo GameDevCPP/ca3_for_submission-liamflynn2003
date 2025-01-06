@@ -134,23 +134,20 @@
 				16,
 				18,
 				20,
-				22
+				22,
+				24
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 2,
-			"id" : "lib_engine::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 8,
 			"id" : "copy_resources::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "lib_engine::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
@@ -158,11 +155,15 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@344d4f502e197fb19f4c"
+			"id" : "lib_ecm::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
 			"backtrace" : 2,
@@ -263,38 +264,38 @@
 				10,
 				11,
 				12,
-				13
+				13,
+				14,
+				15
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				14,
 				16,
 				18,
 				20,
-				22
+				22,
+				24
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				15,
 				17,
 				19,
 				21,
 				23,
-				51
+				25,
+				53
 			]
 		},
 		{
 			"name" : "resources",
 			"sourceIndexes" : 
 			[
-				24,
-				25,
 				26,
 				27,
 				28,
@@ -319,7 +320,9 @@
 				47,
 				48,
 				49,
-				50
+				50,
+				51,
+				52
 			]
 		}
 	],
@@ -345,6 +348,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "Drop-Pod/components/cmp_button.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drop-Pod/components/cmp_coin.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drop-Pod/components/cmp_coin.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -499,7 +513,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "res/img/bulletGlow.png",
+			"path" : "res/img/coin.png",
 			"sourceGroupIndex" : 3
 		},
 		{
