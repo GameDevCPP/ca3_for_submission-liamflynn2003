@@ -43,7 +43,7 @@ void PlanetLevelScene::init()
 
     soundShoot_buffer = make_shared<SoundBuffer>();
     soundShoot = make_shared<Sound>();
-
+    turnOffMusic = false;
     redBar = new RectangleShape();
     greenBar = new RectangleShape();
     healthText = new Text();
@@ -259,7 +259,7 @@ void PlanetLevelScene::UnLoad()
 }
 
 void PlanetLevelScene::Update(const double& dt) {
-
+    if(turnOffMusic){levelMusic.stop();}
     if(seconds >= 2) {
         levelStart = false;
     }
@@ -366,7 +366,6 @@ void PlanetLevelScene::Update(const double& dt) {
 
         if (result == "win" && Keyboard::isKeyPressed(Keyboard::Enter)) {
             LevelSystem::currentLevel++;
-            if(LevelSystem::currentLevel == 6){levelMusic.stop();}
             Engine::ChangeScene(&planetLevel);
         }
 
@@ -414,6 +413,7 @@ void PlanetLevelScene::render_end() const
     if (result == "win")
     {
         if(LevelSystem::currentLevel == 5) {
+            turnOffMusic = true;
             Engine::ChangeScene(&win);
         }
         int nextLevel = LevelSystem::currentLevel + 1;

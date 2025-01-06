@@ -31,9 +31,12 @@ public:
 	std::shared_ptr<sf::Texture> playerSpriteMoving;
 	sf::IntRect playerRect;
 
+	// Sound
 	std::shared_ptr<sf::SoundBuffer> soundShoot_buffer;
 	std::shared_ptr<sf::Sound> soundShoot;
+	bool turnOffMusic;
 
+	//HUD
 	sf::RectangleShape* redBar;
 	sf::RectangleShape* greenBar;
 	sf::Text* healthText;
