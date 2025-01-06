@@ -177,9 +177,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{87332403-EE50-3192-9DFE-7DF22D5339CC}</Project>
       <Name>Box2D</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\Drop_Pod.vcxproj">
-      <Project>{91FAB164-F5C0-3E6F-B8A0-5F8FBF6D60C6}</Project>
-      <Name>Drop_Pod</Name>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\Space_Hunt.vcxproj">
+      <Project>{E56E1215-73D7-3B29-95D9-6BB62EBC1862}</Project>
+      <Name>Space_Hunt</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\copy_resources.vcxproj">
       <Project>{FAA5563A-90E5-3284-BA29-058D0DDD83E7}</Project>
@@ -194,6 +194,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib_engine.vcxproj">
       <Project>{567B50F5-FF05-3497-AD88-D2F4202F05A8}</Project>
       <Name>lib_engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib_sound.vcxproj">
+      <Project>{494AED29-D163-3F43-9DC6-2F386D345474}</Project>
+      <Name>lib_sound</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\build\lib_tile_level_loader.vcxproj">
       <Project>{7FCDCB03-D5E2-3A56-B2B8-C117DCEA7742}</Project>

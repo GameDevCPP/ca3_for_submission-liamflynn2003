@@ -1,15 +1,10 @@
 #include "cmp_coin.h"
-#include "cmp_shooting.h"
-#include "../drop_pod_game.h"
+#include "../space_hunt_game.h"
 #include "cmp_actor_movement.h"
-#include "cmp_sprite.h"
-#include <SFML/Graphics.hpp>
-
-#include "cmp_monster.h"
 #include "cmp_player.h"
-#include "system_renderer.h"
 #include "engine.h"
 #include "LevelSystem.h"
+#include "sound.h"
 
 CoinComponent::CoinComponent(Entity* p, std::shared_ptr<Entity> player, int value)
     : ActorMovementComponent(p),
@@ -17,6 +12,12 @@ CoinComponent::CoinComponent(Entity* p, std::shared_ptr<Entity> player, int valu
       _texture(nullptr),
       value(value)
 {
+    SoundManager& soundManager = SoundManager::getInstance();
+    try {
+        soundManager.loadSoundEffect("Coin", "res/sound/Coin.wav");
+    } catch (const std::exception& e) {
+        std::cerr << "Error loading sound effect: " << e.what() << std::endl;
+    }
 }
 
 void CoinComponent::update(double dt)
@@ -31,15 +32,19 @@ void CoinComponent::update(double dt)
 
     auto distance = (xDistance * xDistance) + (yDistance * yDistance);
 
-    // Check if the player is within 100 units of the coin
-    if (distance < 300 && _parent->isVisible())
+    // Check if the player is within 350 units of the coin
+    if (distance < 350 && _parent->isVisible())
     {
         auto playerComponent = _player->GetCompatibleComponent<PlayerComponent>();
         playerComponent[0]->addScore(20);
-        soundCoin_buffer = Resources::get<sf::SoundBuffer>("Coin.wav");
-        soundCoin = std::make_shared<sf::Sound>(*soundCoin_buffer);
-        soundCoin->setVolume(volume);
-        soundCoin->play();
+
+        // SFX
+        SoundManager& soundManager = SoundManager::getInstance();
+        try {
+            soundManager.playSoundEffect("Coin", volume);
+        } catch (const std::exception& e) {
+            std::cerr << "Error playing sound effect: " << e.what() << std::endl;
+        }
         _parent->setVisible(false);
     }
 }

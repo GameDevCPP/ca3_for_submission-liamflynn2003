@@ -53,12 +53,12 @@ build copy_resources: phony CMakeFiles/copy_resources
 #############################################
 # Order-only phony target for lib_engine
 
-build cmake_object_order_depends_target_lib_engine: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
+build cmake_object_order_depends_target_lib_engine: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_sound cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
 
 build CMakeFiles/lib_engine.dir/engine/engine.cpp.obj: CXX_COMPILER__lib_engine_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine/engine.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\engine.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
   TARGET_COMPILE_PDB = CMakeFiles\lib_engine.dir\lib_engine.pdb
@@ -67,7 +67,7 @@ build CMakeFiles/lib_engine.dir/engine/engine.cpp.obj: CXX_COMPILER__lib_engine_
 build CMakeFiles/lib_engine.dir/engine/system_physics.cpp.obj: CXX_COMPILER__lib_engine_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine/system_physics.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\system_physics.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
   TARGET_COMPILE_PDB = CMakeFiles\lib_engine.dir\lib_engine.pdb
@@ -76,7 +76,7 @@ build CMakeFiles/lib_engine.dir/engine/system_physics.cpp.obj: CXX_COMPILER__lib
 build CMakeFiles/lib_engine.dir/engine/system_renderer.cpp.obj: CXX_COMPILER__lib_engine_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine/system_renderer.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\system_renderer.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
   TARGET_COMPILE_PDB = CMakeFiles\lib_engine.dir\lib_engine.pdb
@@ -85,7 +85,7 @@ build CMakeFiles/lib_engine.dir/engine/system_renderer.cpp.obj: CXX_COMPILER__li
 build CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj: CXX_COMPILER__lib_engine_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine/system_resources.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\system_resources.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
   TARGET_COMPILE_PDB = CMakeFiles\lib_engine.dir\lib_engine.pdb
@@ -99,7 +99,7 @@ build CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj: CXX_COMPILER__l
 #############################################
 # Link the static library liblib_engine.a
 
-build liblib_engine.a: CXX_STATIC_LIBRARY_LINKER__lib_engine_Debug CMakeFiles/lib_engine.dir/engine/engine.cpp.obj CMakeFiles/lib_engine.dir/engine/system_physics.cpp.obj CMakeFiles/lib_engine.dir/engine/system_renderer.cpp.obj CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll liblib_ecm.a liblib_tile_level_loader.a
+build liblib_engine.a: CXX_STATIC_LIBRARY_LINKER__lib_engine_Debug CMakeFiles/lib_engine.dir/engine/engine.cpp.obj CMakeFiles/lib_engine.dir/engine/system_physics.cpp.obj CMakeFiles/lib_engine.dir/engine/system_renderer.cpp.obj CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll liblib_ecm.a liblib_sound.a liblib_tile_level_loader.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   POST_BUILD = cd .
@@ -179,149 +179,184 @@ build liblib_ecm.a: CXX_STATIC_LIBRARY_LINKER__lib_ecm_Debug CMakeFiles/lib_ecm.
   TARGET_PDB = liblib_ecm.pdb
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Drop_Pod
+# Object build statements for STATIC_LIBRARY target lib_sound
 
 
 #############################################
-# Order-only phony target for Drop_Pod
+# Order-only phony target for lib_sound
 
-build cmake_object_order_depends_target_Drop_Pod: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_engine cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window copy_resources
+build cmake_object_order_depends_target_lib_sound: phony || cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-system
 
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_actor_movement.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_actor_movement.cpp.obj.d
+build CMakeFiles/lib_sound.dir/lib_sound/sound.cpp.obj: CXX_COMPILER__lib_sound_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound/sound.cpp || cmake_object_order_depends_target_lib_sound
+  DEP_FILE = CMakeFiles\lib_sound.dir\lib_sound\sound.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_button.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_button.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_button.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_coin.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_coin.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_coin.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_monster.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_monster.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_monster.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_player.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_player.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_player.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_shooting.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_shooting.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_shooting.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_sprite.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_sprite.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_sprite.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_text.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_text.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_text.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/drop_pod_game.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/drop_pod_game.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\drop_pod_game.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_menu.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_menu.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_menu.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_planet_level.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_planet_level.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_settings.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_settings.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_settings.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
-
-build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_win.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_win.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_win.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_PDB = bin\Drop_Pod.pdb
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include
+  OBJECT_DIR = CMakeFiles\lib_sound.dir
+  OBJECT_FILE_DIR = CMakeFiles\lib_sound.dir\lib_sound
+  TARGET_COMPILE_PDB = CMakeFiles\lib_sound.dir\lib_sound.pdb
+  TARGET_PDB = liblib_sound.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Drop_Pod
+# Link build statements for STATIC_LIBRARY target lib_sound
 
 
 #############################################
-# Link the executable bin\Drop_Pod.exe
+# Link the static library liblib_sound.a
 
-build bin/Drop_Pod.exe: CXX_EXECUTABLE_LINKER__Drop_Pod_Debug CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_button.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_coin.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_monster.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_player.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_shooting.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_sprite.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_text.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/drop_pod_game.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_menu.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_settings.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_win.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources liblib_ecm.a liblib_engine.a liblib_tile_level_loader.a
-  FLAGS = -g
-  LINK_LIBRARIES = liblib_engine.a  liblib_tile_level_loader.a  liblib_ecm.a  Build/bin/libBox2D.a  lib/sfml/lib/libsfml-graphics-d.a  lib/sfml/lib/libsfml-window-d.a  lib/sfml/lib/libsfml-audio-d.a  lib/sfml/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Drop_Pod.dir
+build liblib_sound.a: CXX_STATIC_LIBRARY_LINKER__lib_sound_Debug CMakeFiles/lib_sound.dir/lib_sound/sound.cpp.obj || bin/sfml-audio-d-2.dll bin/sfml-system-d-2.dll
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\lib_sound.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
-  TARGET_FILE = bin\Drop_Pod.exe
-  TARGET_IMPLIB = libDrop_Pod.dll.a
-  TARGET_PDB = bin\Drop_Pod.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\lib_sound.dir\lib_sound.pdb
+  TARGET_FILE = liblib_sound.a
+  TARGET_PDB = liblib_sound.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Space_Hunt
+
+
+#############################################
+# Order-only phony target for Space_Hunt
+
+build cmake_object_order_depends_target_Space_Hunt: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_engine cmake_object_order_depends_target_lib_sound cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window copy_resources
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_actor_movement.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_actor_movement.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_button.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_button.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_button.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_coin.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_coin.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_coin.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_monster.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_monster.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_monster.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_player.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_player.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_player.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_shooting.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_shooting.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_shooting.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_sprite.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_sprite.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_sprite.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_text.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_text.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\components\cmp_text.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\components
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/drop_pod_game.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/drop_pod_game.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\drop_pod_game.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_menu.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_menu.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes\scene_menu.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_planet_level.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes\scene_planet_level.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_settings.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_settings.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes\scene_settings.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_win.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_win.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes\scene_win.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Space_Hunt
+
+
+#############################################
+# Link the executable bin\Space_Hunt.exe
+
+build bin/Space_Hunt.exe: CXX_EXECUTABLE_LINKER__Space_Hunt_Debug CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_button.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_coin.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_monster.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_player.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_shooting.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_sprite.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_text.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/drop_pod_game.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_menu.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_settings.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_win.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a liblib_sound.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources liblib_ecm.a liblib_engine.a liblib_sound.a liblib_tile_level_loader.a
+  FLAGS = -g
+  LINK_LIBRARIES = liblib_engine.a  liblib_tile_level_loader.a  liblib_ecm.a  liblib_sound.a  Build/bin/libBox2D.a  lib/sfml/lib/libsfml-graphics-d.a  lib/sfml/lib/libsfml-window-d.a  lib/sfml/lib/libsfml-audio-d.a  lib/sfml/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_FILE = bin\Space_Hunt.exe
+  TARGET_IMPLIB = libSpace_Hunt.dll.a
+  TARGET_PDB = bin\Space_Hunt.pdb
 
 
 #############################################
@@ -2660,15 +2695,17 @@ build lib/b2d/Box2D/install/strip: phony lib/b2d/Box2D/CMakeFiles/install/strip.
 
 build Box2D: phony Build/bin/libBox2D.a
 
-build Drop_Pod: phony bin/Drop_Pod.exe
+build Space_Hunt: phony bin/Space_Hunt.exe
 
-build Drop_Pod.exe: phony bin/Drop_Pod.exe
+build Space_Hunt.exe: phony bin/Space_Hunt.exe
 
 build libBox2D.a: phony Build/bin/libBox2D.a
 
 build lib_ecm: phony liblib_ecm.a
 
 build lib_engine: phony liblib_engine.a
+
+build lib_sound: phony liblib_sound.a
 
 build lib_tile_level_loader: phony liblib_tile_level_loader.a
 
@@ -2704,7 +2741,7 @@ build sfml-window-d-2.dll: phony bin/sfml-window-d-2.dll
 #############################################
 # Folder: C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/cmake-build-debug
 
-build all: phony copy_resources liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a bin/Drop_Pod.exe lib/b2d/Box2D/all
+build all: phony copy_resources liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a liblib_sound.a bin/Space_Hunt.exe lib/b2d/Box2D/all
 
 # =============================================================================
 

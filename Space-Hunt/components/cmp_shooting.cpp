@@ -1,6 +1,6 @@
 // Shooting component C++ file
 #include "cmp_shooting.h"
-#include "../drop_pod_game.h"
+#include "../space_hunt_game.h"
 #include "cmp_actor_movement.h"
 #include "cmp_sprite.h"
 #include <SFML/Graphics.hpp>
@@ -10,6 +10,7 @@
 #include "system_renderer.h"
 #include "engine.h"
 #include "LevelSystem.h"
+#include "sound.h"
 
 using namespace std;
 using namespace sf;
@@ -38,7 +39,18 @@ ShootingComponent::ShootingComponent(Entity* p) : ActorMovementComponent(p), _pa
 		std::cerr << "ShootingComponent parent is nullptr!" << std::endl;
 	}
 	Bullet::init();
+
+	// Preload sounds for bullet and wall hit
+	SoundManager& soundManager = SoundManager::getInstance();
+	try {
+		soundManager.loadSoundEffect("BulletShot", "res/sound/Shoot.wav");
+		soundManager.loadSoundEffect("HitWall", "res/sound/HitWall.wav");
+		soundManager.loadSoundEffect("HitEnemy", "res/sound/Hit.wav");
+	} catch (const std::exception& e) {
+		std::cerr << "Error loading sound effect: " << e.what() << std::endl;
+	}
 }
+
 
 
 void ShootingComponent::update(double dt) {
@@ -112,7 +124,16 @@ void Bullet::fire(const sf::Vector2f& pos, Entity* parent) {
 	bullets[bulletCount].setRotation(angleDeg - 10);
 	bullets[bulletCount].setAngle(atan2(direction.y, direction.x), bullets[bulletCount]);
 	bullets[bulletCount].setScale(0.02f, 0.02f);
+
+	// Play the bullet firing sound
+	SoundManager& soundManager = SoundManager::getInstance();
+	try {
+		soundManager.playSoundEffect("BulletShot", volume); // Play the sound when the bullet is fired
+	} catch (const std::exception& e) {
+		std::cerr << "Error playing sound effect: " << e.what() << std::endl;
+	}
 }
+
 
 void Bullet::_update(const double dt) {
     RenderWindow& window = Engine::GetWindow();
@@ -132,18 +153,21 @@ void Bullet::_update(const double dt) {
     newPos.y += sin(this->angle) * 200.f * dt;
 
     // Check if the new position is valid (not hitting a wall)
-    if (validMove(newPos)) {
-        setPosition(newPos);
-    } else {
-        // If not a valid move (hit a wall), destroy the bullet
-    	soundHitWall_buffer = Resources::get<SoundBuffer>("HitWall.wav");
-    	soundHitWall = make_shared<Sound>(*soundHitWall_buffer);
-    	soundHitWall->setVolume(volume);
-    	soundHitWall->play();
-        this->isVisible = false;
-        setPosition(-100, -100);  // Move the bullet off-screen to "destroy" it
-        return;  // Exit the function since the bullet is destroyed
-    }
+	if (validMove(newPos)) {
+		setPosition(newPos);
+	} else {
+		// If not a valid move (hit a wall), destroy the bullet
+		SoundManager& soundManager = SoundManager::getInstance();
+		try {
+			soundManager.playSoundEffect("HitWall", volume); // Play the hit wall sound
+		} catch (const std::exception& e) {
+			std::cerr << "Error playing sound effect: " << e.what() << std::endl;
+		}
+		this->isVisible = false;
+		setPosition(-100, -100);  // Move the bullet off-screen to "destroy" it
+		return;  // Exit the function since the bullet is destroyed
+	}
+
 
     // Check for collisions with enemies
     auto ecm = planetLevel.getEcm();
@@ -163,11 +187,13 @@ void Bullet::_update(const double dt) {
             this->isVisible = false;
             setPosition(-100, -100);  // Bullet disappears after hitting enemy
 
-            // Hit Sound
-            soundHit_buffer = Resources::get<SoundBuffer>("Hit.wav");
-            soundHit = make_shared<Sound>(*soundHit_buffer);
-            soundHit->setVolume(volume);
-            soundHit->play();
+        	// Play hit sound
+        	SoundManager& soundManager = SoundManager::getInstance();
+        	try {
+        		soundManager.playSoundEffect("HitEnemy", volume); // Play the enemy hit sound
+        	} catch (const std::exception& e) {
+        		std::cerr << "Error playing sound effect: " << e.what() << std::endl;
+        	}
 
             auto currentHealth = enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health();
             std::cout << "parent: " << parentEntity << std::endl;

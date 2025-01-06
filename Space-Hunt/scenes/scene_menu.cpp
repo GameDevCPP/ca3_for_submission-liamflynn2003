@@ -1,12 +1,14 @@
 #include "scene_menu.h"
 #include "../components/cmp_text.h"
-#include "../drop_pod_game.h"
+#include "../space_hunt_game.h"
 #include "LevelSystem.h"
 #include <iostream>
 #include"../components/cmp_button.h"
 #include "engine.h"
 #include <SFML/Audio.hpp>
 #include <iostream>
+
+#include "sound.h"
 
 using namespace std;
 using namespace sf;
@@ -58,7 +60,7 @@ void MenuScene::Load() {
 
     auto txt = makeEntity();
     auto pos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f);
-    auto t = txt->addComponent<TextComponent>(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f, "SPACE HUNTER");
+    auto t = txt->addComponent<TextComponent>(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f, "SPACE HUNT");
 
     btnExit = makeEntity();
     auto btnPos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 1.5f);
@@ -72,27 +74,23 @@ void MenuScene::Load() {
     auto btn3Pos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 3.f);
     auto button3 = btnStart->addComponent<Button>(btn3Pos, "Play", sf::Color::White, sf::Color::Green, sf::Color::Red);
 
-    // Ensure the music is loaded and playing
-    auto musicstatus = music.getStatus();
-    if (musicstatus == sf::SoundSource::Stopped || musicstatus == sf::SoundSource::Paused)
-    {
-        try
-        {
-            // Attempt to load the music file
-            if (!music.openFromFile("res/sound/Title.wav"))
-            {
-                throw std::runtime_error("Failed to open music file");
-            }
+    // MUSIC -------------------------------------------------------------------------
+    SoundManager& soundManager = SoundManager::getInstance();
 
-            music.setVolume(volume);
-            music.setLoop(true);
-            music.play();
-        }
-        catch (const std::exception& e)
+    try {
+        // Load and play the title music using SoundManager
+        soundManager.loadMusic("Title", "res/sound/Title.wav");
+
+        // Check if the music is already playing
+        if (soundManager.getMusicStatus("Title") == sf::SoundSource::Stopped ||
+            soundManager.getMusicStatus("Title") == sf::SoundSource::Paused)
         {
-            // Catch and log any errors that occur during the music loading process
-            std::cerr << "Error loading music: " << e.what() << std::endl;
+            soundManager.setMusicVolume("Title", volume);
+            soundManager.setMusicLoop("Title", true);
+            soundManager.playMusic("Title");
         }
+    } catch (const std::exception& e) {
+        std::cerr << "Error loading or playing music: " << e.what() << std::endl;
     }
     setLoaded(true);
 }
@@ -100,9 +98,11 @@ void MenuScene::Load() {
 void MenuScene::Update(const double& dt) {
     if (btnStart->GetCompatibleComponent<Button>()[0]->isPressed())
     {
+        SoundManager& soundManager = SoundManager::getInstance();
+        soundManager.stopMusic("Title");
+
         Engine::ChangeScene(&planetLevel);
         ls::setTextureMap("res/img/grass.png");
-        music.stop();
     }
     else if (btnSetting->GetCompatibleComponent<Button>()[0]->isPressed())
     {

@@ -3,7 +3,7 @@
 #include <SFML/Window.hpp>
 
 #include "cmp_sprite.h"
-#include "../drop_pod_game.h"
+#include "../space_hunt_game.h"
 using namespace std;
 using namespace sf;
 

@@ -368,7 +368,10 @@ VORBIS_INCLUDE_DIR:PATH=C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn
 VORBIS_LIBRARY:FILEPATH=C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/extlibs/libs-mingw/x64/libvorbis.a
 
 //Dependencies for the target
-lib_engine_LIB_DEPENDS:STATIC=general;lib_tile_level_loader;general;lib_maths;general;lib_ecm;general;Box2D;general;sfml-graphics;general;sfml-audio;
+lib_engine_LIB_DEPENDS:STATIC=general;lib_tile_level_loader;general;lib_maths;general;lib_ecm;general;lib_sound;general;Box2D;general;sfml-graphics;general;sfml-audio;
+
+//Dependencies for the target
+lib_sound_LIB_DEPENDS:STATIC=general;sfml-audio;
 
 //Dependencies for the target
 lib_tile_level_loader_LIB_DEPENDS:STATIC=general;lib_maths;general;sfml-graphics;

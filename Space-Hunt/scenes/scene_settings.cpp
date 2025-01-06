@@ -1,6 +1,6 @@
 // Scene for settings menu
 #include "scene_settings.h"
-#include "../drop_pod_game.h"
+#include "../space_hunt_game.h"
 #include <LevelSystem.h>
 #include <iostream>
 #include"../components/cmp_button.h"

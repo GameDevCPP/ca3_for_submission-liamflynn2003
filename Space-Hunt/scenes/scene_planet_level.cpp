@@ -1,6 +1,7 @@
 #include "scene_planet_level.h"
-#include "../drop_pod_game.h"
+#include "../space_hunt_game.h"
 #include "engine.h"
+#include "sound.h"
 #include "../components/cmp_actor_movement.h"
 #include "../components/cmp_player.h"
 #include "../components/cmp_monster.h"
@@ -12,9 +13,9 @@
 #include <system_resources.h>
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
-#include <stdio.h>
 
 
+class SoundManager;
 using namespace std;
 using namespace sf;
 
@@ -100,7 +101,7 @@ void PlanetLevelScene::Load() {
     startingCenter = gameView.getCenter();
 
     // Sound -----------------------------------------------------------------------
-    soundShoot_buffer = Resources::get<SoundBuffer>("Shoot_001.wav");
+    soundShoot_buffer = Resources::get<SoundBuffer>("Shoot.wav");
     soundShoot = make_shared<Sound>(*soundShoot_buffer);
     soundShoot->setVolume(volume);
 
@@ -195,27 +196,24 @@ void PlanetLevelScene::Load() {
     SpawnCoins(numberOfCoins);
 
     // MUSIC -------------------------------------------------------------------------
-    auto musicstatus = levelMusic.getStatus();
-    if (musicstatus == sf::SoundSource::Stopped || musicstatus == sf::SoundSource::Paused)
-    {
-        try
-        {
-            // Attempt to load the music file
-            if (!levelMusic.openFromFile("res/sound/Level.wav"))
-            {
-                throw std::runtime_error("Failed to open music file");
-            }
+    SoundManager& soundManager = SoundManager::getInstance();
 
-            levelMusic.setVolume(volume);
-            levelMusic.setLoop(true);
-            levelMusic.play();
-        }
-        catch (const std::exception& e)
+    try {
+        // Load and play the level music using SoundManager
+        soundManager.loadMusic("Level", "res/sound/Level.wav");
+
+        // Check if the music is already playing
+        if (soundManager.getMusicStatus("Level") == sf::SoundSource::Stopped ||
+            soundManager.getMusicStatus("Level") == sf::SoundSource::Paused)
         {
-            // Catch and log any errors that occur during the music loading process
-            std::cerr << "Error loading music: " << e.what() << std::endl;
+            soundManager.setMusicVolume("Level", 30);
+            soundManager.setMusicLoop("Level", true);
+            soundManager.playMusic("Level");
         }
+    } catch (const std::exception& e) {
+        std::cerr << "Error loading or playing music: " << e.what() << std::endl;
     }
+
     // HUD ----------------------------------------------------------------------------
     timer->setString("Timer: 00:00");
     timer->setFont(*Resources::get<Font>("RobotoMono-Regular.ttf"));
@@ -259,7 +257,10 @@ void PlanetLevelScene::UnLoad()
 }
 
 void PlanetLevelScene::Update(const double& dt) {
-    if(turnOffMusic){levelMusic.stop();}
+    if(turnOffMusic) {
+        SoundManager& soundManager = SoundManager::getInstance();
+        soundManager.stopMusic("Level");
+    }
     if(seconds >= 2) {
         levelStart = false;
     }
@@ -473,8 +474,6 @@ Vector2f PlanetLevelScene::random_position() const
     }
     return {};
 }
-
-//Creates and enemy and adds it to the entity list for the scene.
 void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
     // Retrieve spawn tiles from LevelSystem
     std::vector<sf::Vector2ul> spawnTiles = ls::findTiles(LevelSystem::SPAWN);
@@ -484,10 +483,15 @@ void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
     }
 
     IntRect enemyRect = { Vector2i(0, 0), Vector2i(64, 64) };
-    shared_ptr<Texture> enemySprite = Resources::get<Texture>("Trash-Monster-Sheet.png");
-    if (LevelSystem::currentLevel > 3){
-        shared_ptr<Texture> enemySprite = Resources::get<Texture>("Trash-Monster-Sprite-V2.png");
+    shared_ptr<Texture> enemySprite;
+
+    // Determine which texture to use based on the level
+    if (LevelSystem::currentLevel > 3) {
+        enemySprite = Resources::get<Texture>("Trash-Monster-Sprite-V2.png");
+    } else {
+        enemySprite = Resources::get<Texture>("Trash-Monster-Sheet.png");
     }
+
     // Loop through spawn tiles and spawn enemies
     for (size_t i = 0; i < spawnTiles.size(); ++i) {
         // Get the tile from the spawn list, wrapping around if necessary

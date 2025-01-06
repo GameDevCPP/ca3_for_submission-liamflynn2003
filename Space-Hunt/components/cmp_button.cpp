@@ -4,7 +4,7 @@
 #include <system_renderer.h>
 #include <system_resources.h>
 #include "engine.h"
-#include "../drop_pod_game.h"
+#include "../space_hunt_game.h"
 
 using namespace sf;
 using namespace std;
