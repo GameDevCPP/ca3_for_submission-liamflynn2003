@@ -150,7 +150,7 @@ void Engine::moveView(Vector2f movement) {
 void Engine::changeResolution(int x, int y)
 {
     Vector2f _newResolution(x, y);
-    _window->create(VideoMode(_newResolution.x, _newResolution.y), "Drop Pod");
+    _window->create(VideoMode(_newResolution.x, _newResolution.y), "Space Hunt");
 }
 
 void Engine::ChangeScene(Scene* s) {
