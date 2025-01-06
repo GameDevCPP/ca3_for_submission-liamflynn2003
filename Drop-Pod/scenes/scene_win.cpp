@@ -76,7 +76,7 @@ void WinScene::Load() {
     // Load music (if not already playing)
     auto musicstatus = winMusic.getStatus();
     if (musicstatus == SoundSource::Stopped || musicstatus == SoundSource::Paused) {
-        if (!winMusic.openFromFile("res/sound/win.wav")) {
+        if (!winMusic.openFromFile("res/sound/Win.wav")) {
             std::cerr << "Music broken" << std::endl;
         }
         winMusic.setVolume(volume);

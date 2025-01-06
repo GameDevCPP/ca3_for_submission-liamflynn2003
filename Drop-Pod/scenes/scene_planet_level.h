@@ -54,7 +54,7 @@ public:
 	sf::Text* endExitText;
 	sf::Text* scoreText;
 	sf::Text* levelStartText;
-
+	sf::Music levelMusic;
 	// Shooting Delay
 	float fireTime;
 

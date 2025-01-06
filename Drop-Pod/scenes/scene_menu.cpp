@@ -72,15 +72,27 @@ void MenuScene::Load() {
     auto btn3Pos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 3.f);
     auto button3 = btnStart->addComponent<Button>(btn3Pos, "Play", sf::Color::White, sf::Color::Green, sf::Color::Red);
 
+    // Ensure the music is loaded and playing
     auto musicstatus = music.getStatus();
-    if (musicstatus == SoundSource::Stopped || musicstatus == SoundSource::Paused)
+    if (musicstatus == sf::SoundSource::Stopped || musicstatus == sf::SoundSource::Paused)
     {
-        //A more typical and better approach to just simply print an error message might be to use a try-catch block.
-        if (!music.openFromFile("res/sound/titlescreen.wav")) //How can We Ensure that we alway load the correct asset without having to recompile?? DF.
-            std::cerr << "music broken" <<std::endl; // DF. error message logging is preferred
-        music.setVolume(volume);
-        music.setLoop(true);
-        music.play();
+        try
+        {
+            // Attempt to load the music file
+            if (!music.openFromFile("res/sound/Title.wav"))
+            {
+                throw std::runtime_error("Failed to open music file");
+            }
+
+            music.setVolume(volume);
+            music.setLoop(true);
+            music.play();
+        }
+        catch (const std::exception& e)
+        {
+            // Catch and log any errors that occur during the music loading process
+            std::cerr << "Error loading music: " << e.what() << std::endl;
+        }
     }
     setLoaded(true);
 }

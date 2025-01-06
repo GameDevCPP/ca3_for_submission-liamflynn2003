@@ -194,6 +194,28 @@ void PlanetLevelScene::Load() {
     }
     SpawnCoins(numberOfCoins);
 
+    // MUSIC -------------------------------------------------------------------------
+    auto musicstatus = levelMusic.getStatus();
+    if (musicstatus == sf::SoundSource::Stopped || musicstatus == sf::SoundSource::Paused)
+    {
+        try
+        {
+            // Attempt to load the music file
+            if (!levelMusic.openFromFile("res/sound/Level.wav"))
+            {
+                throw std::runtime_error("Failed to open music file");
+            }
+
+            levelMusic.setVolume(volume);
+            levelMusic.setLoop(true);
+            levelMusic.play();
+        }
+        catch (const std::exception& e)
+        {
+            // Catch and log any errors that occur during the music loading process
+            std::cerr << "Error loading music: " << e.what() << std::endl;
+        }
+    }
     // HUD ----------------------------------------------------------------------------
     timer->setString("Timer: 00:00");
     timer->setFont(*Resources::get<Font>("RobotoMono-Regular.ttf"));

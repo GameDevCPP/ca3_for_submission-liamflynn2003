@@ -340,15 +340,19 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Click.wav">
     </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Coin.wav">
+    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Hit.wav">
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\HitWall.wav">
     </None>
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Level.wav">
+    </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Shoot_001.wav">
     </None>
-    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\titleScreen.wav">
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Title.wav">
     </None>
-    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\win.wav">
+    <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\sound\Win.wav">
     </None>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths\maths.h" />
   </ItemGroup>
