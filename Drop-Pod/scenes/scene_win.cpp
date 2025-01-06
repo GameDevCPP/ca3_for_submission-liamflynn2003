@@ -59,14 +59,19 @@ void WinScene::Load() {
     // "CONGRATULATIONS!" text
     auto congratsText = makeEntity();
     auto pos = Vector2f(winView.getSize().x / 2.0f, winView.getSize().y / 4.0f);
-    auto text = congratsText->addComponent<TextComponent>(pos.x, pos.y, "CONGRATULATIONS!");
+    congratsText->addComponent<TextComponent>(pos.x, pos.y, "CONGRATULATIONS!");
 
-    // Additional text below "CONGRATULATIONS!"
+    // Additional text below "CONGRATULATIONS!" with half scale
     auto additionalText = makeEntity();
-    auto additionalPos = Vector2f(winView.getSize().x / 2.0f, pos.y + 50); // Adjust Y offset as needed
+    auto additionalPos = Vector2f(winView.getSize().x / 2.0f, pos.y + 50);
     auto additionalTextComponent = additionalText->addComponent<TextComponent>(
-        additionalPos.x, additionalPos.y, "You have completed your hunt and escaped alive."
+        additionalPos.x, additionalPos.y, "You have completed your hunt and escaped alive!"
     );
+
+    // Scale down the additional text
+    additionalTextComponent->setTextSize(20);
+
+
 
     // Exit button (back to the main menu)
     winBtnExit = makeEntity();
@@ -80,7 +85,7 @@ void WinScene::Load() {
             std::cerr << "Music broken" << std::endl;
         }
         winMusic.setVolume(volume);
-        winMusic.setLoop(true);
+        winMusic.setLoop(false);
         winMusic.play();
     }
 
