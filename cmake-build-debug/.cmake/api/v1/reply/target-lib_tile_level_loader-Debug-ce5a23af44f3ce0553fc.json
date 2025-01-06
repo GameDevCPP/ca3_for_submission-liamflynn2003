@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "liblib_ecm.a"
+			"path" : "liblib_tile_level_loader.a"
 		}
 	],
 	"backtrace" : 1,
@@ -26,13 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 46,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 48,
+				"line" : 37,
 				"parent" : 0
 			}
 		]
@@ -76,9 +76,24 @@
 			]
 		}
 	],
-	"id" : "lib_ecm::@6890427a1f51a3e7e1df",
-	"name" : "lib_ecm",
-	"nameOnDisk" : "liblib_ecm.a",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
+		}
+	],
+	"id" : "lib_tile_level_loader::@6890427a1f51a3e7e1df",
+	"name" : "lib_tile_level_loader",
+	"nameOnDisk" : "liblib_tile_level_loader.a",
 	"paths" : 
 	{
 		"build" : ".",
@@ -107,12 +122,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib_ecm/ecm.cpp",
+			"path" : "lib_tile_level_loader/LevelSystem.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib_ecm/ecm.h",
+			"path" : "lib_tile_level_loader/LevelSystem.h",
 			"sourceGroupIndex" : 1
 		},
 		{

@@ -26,7 +26,7 @@ events:
       Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 06/01/2025 14:03:14.
+      Build started 06/01/2025 16:17:03.
       Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -52,7 +52,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.91
+      Time Elapsed 00:00:00.98
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -80,7 +80,7 @@ events:
       Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 06/01/2025 14:03:15.
+      Build started 06/01/2025 16:17:04.
       Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -106,7 +106,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.63
+      Time Elapsed 00:00:00.64
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-miuxrk"
-      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-miuxrk"
+      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-mwijk7"
+      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-mwijk7"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -135,39 +135,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-miuxrk'
+        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-mwijk7'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_06047.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f28c2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06/01/2025 14:03:17.
-        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miuxrk\\cmTC_06047.vcxproj" on node 1 (default targets).
+        Build started 06/01/2025 16:17:05.
+        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwijk7\\cmTC_f28c2.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_06047.dir\\Debug\\".
-          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miuxrk\\Debug\\".
-          Creating directory "cmTC_06047.dir\\Debug\\cmTC_06047.tlog\\".
+          Creating directory "cmTC_f28c2.dir\\Debug\\".
+          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwijk7\\Debug\\".
+          Creating directory "cmTC_f28c2.dir\\Debug\\cmTC_f28c2.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_06047.dir\\Debug\\cmTC_06047.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_f28c2.dir\\Debug\\cmTC_f28c2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06047.dir\\Debug\\\\" /Fd"cmTC_06047.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f28c2.dir\\Debug\\\\" /Fd"cmTC_f28c2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06047.dir\\Debug\\\\" /Fd"cmTC_06047.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f28c2.dir\\Debug\\\\" /Fd"cmTC_f28c2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miuxrk\\Debug\\cmTC_06047.exe" /INCREMENTAL /ILK:"cmTC_06047.dir\\Debug\\cmTC_06047.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-miuxrk/Debug/cmTC_06047.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-miuxrk/Debug/cmTC_06047.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_06047.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_06047.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miuxrk\\Debug\\cmTC_06047.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwijk7\\Debug\\cmTC_f28c2.exe" /INCREMENTAL /ILK:"cmTC_f28c2.dir\\Debug\\cmTC_f28c2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-mwijk7/Debug/cmTC_f28c2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-mwijk7/Debug/cmTC_f28c2.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_f28c2.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_f28c2.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwijk7\\Debug\\cmTC_f28c2.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_06047.dir\\Debug\\cmTC_06047.tlog\\unsuccessfulbuild".
-          Touching "cmTC_06047.dir\\Debug\\cmTC_06047.tlog\\cmTC_06047.lastbuildstate".
-        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miuxrk\\cmTC_06047.vcxproj" (default targets).
+          Deleting file "cmTC_f28c2.dir\\Debug\\cmTC_f28c2.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f28c2.dir\\Debug\\cmTC_f28c2.tlog\\cmTC_f28c2.lastbuildstate".
+        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwijk7\\cmTC_f28c2.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.59
+        Time Elapsed 00:00:00.64
         
       exitCode: 0
   -
@@ -207,8 +207,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-sbdjjy"
-      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-sbdjjy"
+      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-95lv8q"
+      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-95lv8q"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -218,33 +218,33 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-sbdjjy'
+        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-95lv8q'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fdeb7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9da06.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06/01/2025 14:03:18.
-        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdjjy\\cmTC_fdeb7.vcxproj" on node 1 (default targets).
+        Build started 06/01/2025 16:17:06.
+        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-95lv8q\\cmTC_9da06.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_fdeb7.dir\\Debug\\".
-          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdjjy\\Debug\\".
-          Creating directory "cmTC_fdeb7.dir\\Debug\\cmTC_fdeb7.tlog\\".
+          Creating directory "cmTC_9da06.dir\\Debug\\".
+          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-95lv8q\\Debug\\".
+          Creating directory "cmTC_9da06.dir\\Debug\\cmTC_9da06.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_fdeb7.dir\\Debug\\cmTC_fdeb7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_9da06.dir\\Debug\\cmTC_9da06.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_fdeb7.dir\\Debug\\\\" /Fd"cmTC_fdeb7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_9da06.dir\\Debug\\\\" /Fd"cmTC_9da06.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_fdeb7.dir\\Debug\\\\" /Fd"cmTC_fdeb7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_9da06.dir\\Debug\\\\" /Fd"cmTC_9da06.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdjjy\\Debug\\cmTC_fdeb7.exe" /INCREMENTAL /ILK:"cmTC_fdeb7.dir\\Debug\\cmTC_fdeb7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-sbdjjy/Debug/cmTC_fdeb7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-sbdjjy/Debug/cmTC_fdeb7.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_fdeb7.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_fdeb7.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdjjy\\Debug\\cmTC_fdeb7.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-95lv8q\\Debug\\cmTC_9da06.exe" /INCREMENTAL /ILK:"cmTC_9da06.dir\\Debug\\cmTC_9da06.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-95lv8q/Debug/cmTC_9da06.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-95lv8q/Debug/cmTC_9da06.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_9da06.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_9da06.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-95lv8q\\Debug\\cmTC_9da06.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_fdeb7.dir\\Debug\\cmTC_fdeb7.tlog\\unsuccessfulbuild".
-          Touching "cmTC_fdeb7.dir\\Debug\\cmTC_fdeb7.tlog\\cmTC_fdeb7.lastbuildstate".
-        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdjjy\\cmTC_fdeb7.vcxproj" (default targets).
+          Deleting file "cmTC_9da06.dir\\Debug\\cmTC_9da06.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9da06.dir\\Debug\\cmTC_9da06.tlog\\cmTC_9da06.lastbuildstate".
+        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-95lv8q\\cmTC_9da06.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -291,8 +291,8 @@ events:
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-nbe8rp"
-      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-nbe8rp"
+      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-exwvzx"
+      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-exwvzx"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_OSX_ARCHITECTURES: "x86_64"
@@ -301,39 +301,39 @@ events:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-nbe8rp'
+        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-exwvzx'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4464b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_02308.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06/01/2025 14:03:19.
-        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nbe8rp\\cmTC_4464b.vcxproj" on node 1 (default targets).
+        Build started 06/01/2025 16:17:07.
+        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-exwvzx\\cmTC_02308.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_4464b.dir\\Debug\\".
-          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nbe8rp\\Debug\\".
-          Creating directory "cmTC_4464b.dir\\Debug\\cmTC_4464b.tlog\\".
+          Creating directory "cmTC_02308.dir\\Debug\\".
+          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-exwvzx\\Debug\\".
+          Creating directory "cmTC_02308.dir\\Debug\\cmTC_02308.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_4464b.dir\\Debug\\cmTC_4464b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_02308.dir\\Debug\\cmTC_02308.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4464b.dir\\Debug\\\\" /Fd"cmTC_4464b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nbe8rp\\CheckIncludeFile.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_02308.dir\\Debug\\\\" /Fd"cmTC_02308.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-exwvzx\\CheckIncludeFile.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
           CheckIncludeFile.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4464b.dir\\Debug\\\\" /Fd"cmTC_4464b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nbe8rp\\CheckIncludeFile.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_02308.dir\\Debug\\\\" /Fd"cmTC_02308.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-exwvzx\\CheckIncludeFile.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nbe8rp\\Debug\\cmTC_4464b.exe" /INCREMENTAL /ILK:"cmTC_4464b.dir\\Debug\\cmTC_4464b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-nbe8rp/Debug/cmTC_4464b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-nbe8rp/Debug/cmTC_4464b.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_4464b.dir\\Debug\\CheckIncludeFile.obj
-          cmTC_4464b.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nbe8rp\\Debug\\cmTC_4464b.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-exwvzx\\Debug\\cmTC_02308.exe" /INCREMENTAL /ILK:"cmTC_02308.dir\\Debug\\cmTC_02308.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-exwvzx/Debug/cmTC_02308.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-exwvzx/Debug/cmTC_02308.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_02308.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_02308.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-exwvzx\\Debug\\cmTC_02308.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_4464b.dir\\Debug\\cmTC_4464b.tlog\\unsuccessfulbuild".
-          Touching "cmTC_4464b.dir\\Debug\\cmTC_4464b.tlog\\cmTC_4464b.lastbuildstate".
-        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nbe8rp\\cmTC_4464b.vcxproj" (default targets).
+          Deleting file "cmTC_02308.dir\\Debug\\cmTC_02308.tlog\\unsuccessfulbuild".
+          Touching "cmTC_02308.dir\\Debug\\cmTC_02308.tlog\\cmTC_02308.lastbuildstate".
+        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-exwvzx\\cmTC_02308.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.63
+        Time Elapsed 00:00:00.57
         
       exitCode: 0
   -
@@ -346,8 +346,8 @@ events:
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-zudqej"
-      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-zudqej"
+      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-z7a34v"
+      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-z7a34v"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_OSX_ARCHITECTURES: "x86_64"
@@ -356,39 +356,39 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-zudqej'
+        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-z7a34v'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dc745.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b893d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06/01/2025 14:03:20.
-        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zudqej\\cmTC_dc745.vcxproj" on node 1 (default targets).
+        Build started 06/01/2025 16:17:08.
+        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z7a34v\\cmTC_b893d.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_dc745.dir\\Debug\\".
-          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zudqej\\Debug\\".
-          Creating directory "cmTC_dc745.dir\\Debug\\cmTC_dc745.tlog\\".
+          Creating directory "cmTC_b893d.dir\\Debug\\".
+          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z7a34v\\Debug\\".
+          Creating directory "cmTC_b893d.dir\\Debug\\cmTC_b893d.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_dc745.dir\\Debug\\cmTC_dc745.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_b893d.dir\\Debug\\cmTC_b893d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dc745.dir\\Debug\\\\" /Fd"cmTC_dc745.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zudqej\\CheckIncludeFile.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b893d.dir\\Debug\\\\" /Fd"cmTC_b893d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z7a34v\\CheckIncludeFile.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
           CheckIncludeFile.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dc745.dir\\Debug\\\\" /Fd"cmTC_dc745.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zudqej\\CheckIncludeFile.c"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b893d.dir\\Debug\\\\" /Fd"cmTC_b893d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z7a34v\\CheckIncludeFile.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zudqej\\Debug\\cmTC_dc745.exe" /INCREMENTAL /ILK:"cmTC_dc745.dir\\Debug\\cmTC_dc745.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-zudqej/Debug/cmTC_dc745.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-zudqej/Debug/cmTC_dc745.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_dc745.dir\\Debug\\CheckIncludeFile.obj
-          cmTC_dc745.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zudqej\\Debug\\cmTC_dc745.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z7a34v\\Debug\\cmTC_b893d.exe" /INCREMENTAL /ILK:"cmTC_b893d.dir\\Debug\\cmTC_b893d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-z7a34v/Debug/cmTC_b893d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-z7a34v/Debug/cmTC_b893d.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_b893d.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_b893d.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z7a34v\\Debug\\cmTC_b893d.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_dc745.dir\\Debug\\cmTC_dc745.tlog\\unsuccessfulbuild".
-          Touching "cmTC_dc745.dir\\Debug\\cmTC_dc745.tlog\\cmTC_dc745.lastbuildstate".
-        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zudqej\\cmTC_dc745.vcxproj" (default targets).
+          Deleting file "cmTC_b893d.dir\\Debug\\cmTC_b893d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b893d.dir\\Debug\\cmTC_b893d.tlog\\cmTC_b893d.lastbuildstate".
+        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z7a34v\\cmTC_b893d.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.96
+        Time Elapsed 00:00:00.57
         
       exitCode: 0
   -
@@ -401,8 +401,8 @@ events:
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-bg31la"
-      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-bg31la"
+      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-93gw30"
+      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-93gw30"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_OSX_ARCHITECTURES: "x86_64"
@@ -411,39 +411,39 @@ events:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-bg31la'
+        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-93gw30'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ee45e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8b437.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06/01/2025 14:03:21.
-        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bg31la\\cmTC_ee45e.vcxproj" on node 1 (default targets).
+        Build started 06/01/2025 16:17:09.
+        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-93gw30\\cmTC_8b437.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ee45e.dir\\Debug\\".
-          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bg31la\\Debug\\".
-          Creating directory "cmTC_ee45e.dir\\Debug\\cmTC_ee45e.tlog\\".
+          Creating directory "cmTC_8b437.dir\\Debug\\".
+          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-93gw30\\Debug\\".
+          Creating directory "cmTC_8b437.dir\\Debug\\cmTC_8b437.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ee45e.dir\\Debug\\cmTC_ee45e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_8b437.dir\\Debug\\cmTC_8b437.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee45e.dir\\Debug\\\\" /Fd"cmTC_ee45e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bg31la\\CheckIncludeFile.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8b437.dir\\Debug\\\\" /Fd"cmTC_8b437.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-93gw30\\CheckIncludeFile.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
-          CheckIncludeFile.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee45e.dir\\Debug\\\\" /Fd"cmTC_ee45e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bg31la\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8b437.dir\\Debug\\\\" /Fd"cmTC_8b437.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-93gw30\\CheckIncludeFile.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bg31la\\Debug\\cmTC_ee45e.exe" /INCREMENTAL /ILK:"cmTC_ee45e.dir\\Debug\\cmTC_ee45e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-bg31la/Debug/cmTC_ee45e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-bg31la/Debug/cmTC_ee45e.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_ee45e.dir\\Debug\\CheckIncludeFile.obj
-          cmTC_ee45e.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bg31la\\Debug\\cmTC_ee45e.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-93gw30\\Debug\\cmTC_8b437.exe" /INCREMENTAL /ILK:"cmTC_8b437.dir\\Debug\\cmTC_8b437.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-93gw30/Debug/cmTC_8b437.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-93gw30/Debug/cmTC_8b437.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_8b437.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_8b437.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-93gw30\\Debug\\cmTC_8b437.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ee45e.dir\\Debug\\cmTC_ee45e.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ee45e.dir\\Debug\\cmTC_ee45e.tlog\\cmTC_ee45e.lastbuildstate".
-        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bg31la\\cmTC_ee45e.vcxproj" (default targets).
+          Deleting file "cmTC_8b437.dir\\Debug\\cmTC_8b437.tlog\\unsuccessfulbuild".
+          Touching "cmTC_8b437.dir\\Debug\\cmTC_8b437.tlog\\cmTC_8b437.lastbuildstate".
+        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-93gw30\\cmTC_8b437.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.98
+        Time Elapsed 00:00:00.57
         
       exitCode: 0
   -
@@ -456,8 +456,8 @@ events:
     checks:
       - "Check size of void*"
     directories:
-      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-ck15ri"
-      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-ck15ri"
+      source: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-esdov1"
+      binary: "C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-esdov1"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_OSX_ARCHITECTURES: "x86_64"
@@ -466,39 +466,39 @@ events:
       variable: "HAVE_SIZEOF_VOID_PTR"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-ck15ri'
+        Change Dir: 'C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-esdov1'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e9365.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6b578.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06/01/2025 14:03:23.
-        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ck15ri\\cmTC_e9365.vcxproj" on node 1 (default targets).
+        Build started 06/01/2025 16:17:10.
+        Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-esdov1\\cmTC_6b578.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_e9365.dir\\Debug\\".
-          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ck15ri\\Debug\\".
-          Creating directory "cmTC_e9365.dir\\Debug\\cmTC_e9365.tlog\\".
+          Creating directory "cmTC_6b578.dir\\Debug\\".
+          Creating directory "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-esdov1\\Debug\\".
+          Creating directory "cmTC_6b578.dir\\Debug\\cmTC_6b578.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e9365.dir\\Debug\\cmTC_e9365.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_6b578.dir\\Debug\\cmTC_6b578.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9365.dir\\Debug\\\\" /Fd"cmTC_e9365.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ck15ri\\SIZEOF_VOID_PTR.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b578.dir\\Debug\\\\" /Fd"cmTC_6b578.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-esdov1\\SIZEOF_VOID_PTR.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
           SIZEOF_VOID_PTR.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9365.dir\\Debug\\\\" /Fd"cmTC_e9365.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ck15ri\\SIZEOF_VOID_PTR.c"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b578.dir\\Debug\\\\" /Fd"cmTC_6b578.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-esdov1\\SIZEOF_VOID_PTR.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ck15ri\\Debug\\cmTC_e9365.exe" /INCREMENTAL /ILK:"cmTC_e9365.dir\\Debug\\cmTC_e9365.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-ck15ri/Debug/cmTC_e9365.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-ck15ri/Debug/cmTC_e9365.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_e9365.dir\\Debug\\SIZEOF_VOID_PTR.obj
-          cmTC_e9365.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ck15ri\\Debug\\cmTC_e9365.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-esdov1\\Debug\\cmTC_6b578.exe" /INCREMENTAL /ILK:"cmTC_6b578.dir\\Debug\\cmTC_6b578.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-esdov1/Debug/cmTC_6b578.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/CMakeFiles/CMakeScratch/TryCompile-esdov1/Debug/cmTC_6b578.lib" /MACHINE:X64 /pdbthreads:6  /machine:x64 cmTC_6b578.dir\\Debug\\SIZEOF_VOID_PTR.obj
+          cmTC_6b578.vcxproj -> C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-esdov1\\Debug\\cmTC_6b578.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_e9365.dir\\Debug\\cmTC_e9365.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e9365.dir\\Debug\\cmTC_e9365.tlog\\cmTC_e9365.lastbuildstate".
-        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ck15ri\\cmTC_e9365.vcxproj" (default targets).
+          Deleting file "cmTC_6b578.dir\\Debug\\cmTC_6b578.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6b578.dir\\Debug\\cmTC_6b578.tlog\\cmTC_6b578.lastbuildstate".
+        Done Building Project "C:\\Users\\Liam\\CLionProjects\\ca3_for_submission-liamflynn2003\\build\\CMakeFiles\\CMakeScratch\\TryCompile-esdov1\\cmTC_6b578.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.72
+        Time Elapsed 00:00:00.57
         
       exitCode: 0
 ...

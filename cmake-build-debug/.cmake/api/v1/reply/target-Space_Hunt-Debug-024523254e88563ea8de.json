@@ -31,13 +31,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 61,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 64,
+				"line" : 65,
 				"parent" : 0
 			},
 			{
@@ -67,7 +67,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 67,
+				"line" : 68,
 				"parent" : 0
 			}
 		]
@@ -167,19 +167,19 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@344d4f502e197fb19f4c"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "sfml-system::@ade90ebdf211b83bd87c"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "sfml-audio::@f41189585cfb974df97d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
 		},
 		{
 			"backtrace" : 2,

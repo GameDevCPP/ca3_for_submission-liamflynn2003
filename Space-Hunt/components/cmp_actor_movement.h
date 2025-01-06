@@ -1,6 +1,7 @@
 // Header file that handles movement of entities
 #pragma once
 #include <ecm.h>
+#include "../pathfinding/AStar.h"
 
 class ActorMovementComponent : public Component {
 protected:
@@ -8,7 +9,7 @@ protected:
 	float _speed;
 	bool _moving;
 	bool _direction;
-
+	AStar _pathfinding;
 public:
 	void update(double dt) override;
 	void move(const sf::Vector2f&);
