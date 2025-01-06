@@ -356,8 +356,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\components\cmp_sprite.h" />
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\components\cmp_text.cpp" />
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\components\cmp_text.h" />
-    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\drop_pod_game.cpp" />
-    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\drop_pod_game.h" />
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_menu.cpp" />
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_menu.h" />
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_planet_level.cpp" />
@@ -366,6 +364,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_settings.h" />
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_win.cpp" />
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_win.h" />
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\space_hunt_game.cpp" />
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\space_hunt_game.h" />
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\RobotoMono-Regular.ttf">
     </None>
     <None Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\res\fonts\font.ttf">

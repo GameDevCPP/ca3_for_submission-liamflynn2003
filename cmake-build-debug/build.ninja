@@ -294,15 +294,6 @@ build CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_text.cpp.obj: CXX_COMP
   TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
   TARGET_PDB = bin\Space_Hunt.pdb
 
-build CMakeFiles/Space_Hunt.dir/Space-Hunt/drop_pod_game.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/drop_pod_game.cpp || cmake_object_order_depends_target_Space_Hunt
-  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\drop_pod_game.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
-  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
-  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt
-  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
-  TARGET_PDB = bin\Space_Hunt.pdb
-
 build CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_menu.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_menu.cpp || cmake_object_order_depends_target_Space_Hunt
   DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\scenes\scene_menu.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
@@ -339,6 +330,15 @@ build CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_win.cpp.obj: CXX_COMPILE
   TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
   TARGET_PDB = bin\Space_Hunt.pdb
 
+build CMakeFiles/Space_Hunt.dir/Space-Hunt/space_hunt_game.cpp.obj: CXX_COMPILER__Space_Hunt_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/space_hunt_game.cpp || cmake_object_order_depends_target_Space_Hunt
+  DEP_FILE = CMakeFiles\Space_Hunt.dir\Space-Hunt\space_hunt_game.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_sound
+  OBJECT_DIR = CMakeFiles\Space_Hunt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Space_Hunt.dir\Space-Hunt
+  TARGET_COMPILE_PDB = CMakeFiles\Space_Hunt.dir\
+  TARGET_PDB = bin\Space_Hunt.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Space_Hunt
@@ -347,7 +347,7 @@ build CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_win.cpp.obj: CXX_COMPILE
 #############################################
 # Link the executable bin\Space_Hunt.exe
 
-build bin/Space_Hunt.exe: CXX_EXECUTABLE_LINKER__Space_Hunt_Debug CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_button.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_coin.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_monster.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_player.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_shooting.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_sprite.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_text.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/drop_pod_game.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_menu.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_settings.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_win.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a liblib_sound.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources liblib_ecm.a liblib_engine.a liblib_sound.a liblib_tile_level_loader.a
+build bin/Space_Hunt.exe: CXX_EXECUTABLE_LINKER__Space_Hunt_Debug CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_button.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_coin.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_monster.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_player.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_shooting.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_sprite.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_text.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_menu.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_settings.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_win.cpp.obj CMakeFiles/Space_Hunt.dir/Space-Hunt/space_hunt_game.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a liblib_sound.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources liblib_ecm.a liblib_engine.a liblib_sound.a liblib_tile_level_loader.a
   FLAGS = -g
   LINK_LIBRARIES = liblib_engine.a  liblib_tile_level_loader.a  liblib_ecm.a  liblib_sound.a  Build/bin/libBox2D.a  lib/sfml/lib/libsfml-graphics-d.a  lib/sfml/lib/libsfml-window-d.a  lib/sfml/lib/libsfml-audio-d.a  lib/sfml/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Space_Hunt.dir

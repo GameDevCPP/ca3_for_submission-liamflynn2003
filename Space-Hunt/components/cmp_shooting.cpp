@@ -62,8 +62,6 @@ void ShootingComponent::render() {
 }
 
 void ShootingComponent::Fire() {
-	auto spriteSize = _parent->GetCompatibleComponent<SpriteComponent>()[0]->getSprite().getLocalBounds();
-	Vector2f spriteCenter = Vector2f(spriteSize.width * 0.5, spriteSize.height * 0.5);
 	// Firing the bullets
 	Bullet::fire(_parent->getPosition(), _parent);
 }
@@ -120,8 +118,8 @@ void Bullet::fire(const sf::Vector2f& pos, Entity* parent) {
 	// Calculate the angle in degrees
 	float angleDeg = atan2(direction.y, direction.x) * 180.0f / 3.14159265358979323846f;
 
-	// Adjust the rotation by subtracting 90 degrees
-	bullets[bulletCount].setRotation(angleDeg - 10);
+	// Adjust the rotation
+	bullets[bulletCount].setRotation(angleDeg - 0);
 	bullets[bulletCount].setAngle(atan2(direction.y, direction.x), bullets[bulletCount]);
 	bullets[bulletCount].setScale(0.02f, 0.02f);
 
@@ -139,7 +137,7 @@ void Bullet::_update(const double dt) {
     RenderWindow& window = Engine::GetWindow();
     const View view = window.getView();
 
-    // If bullet is out of bounds, remove/return
+    // If bullet is out of bounds, remove
     if (getPosition().x < view.getCenter().x - 100 - view.getSize().x * 0.5 || getPosition().x > view.getCenter().x + 100 + view.getSize().x * 0.5
         || getPosition().y < view.getCenter().y - 100 - view.getSize().y * 0.5 || getPosition().y > view.getCenter().y + 100 + view.getSize().y * 0.5)
     {
@@ -165,7 +163,7 @@ void Bullet::_update(const double dt) {
 		}
 		this->isVisible = false;
 		setPosition(-100, -100);  // Move the bullet off-screen to "destroy" it
-		return;  // Exit the function since the bullet is destroyed
+		return;
 	}
 
 
@@ -202,7 +200,7 @@ void Bullet::_update(const double dt) {
             if ((enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health() - _damage) <= 0) {
                 auto playerComponent = parentEntity->GetCompatibleComponent<PlayerComponent>();
                 if (!playerComponent.empty()) {
-                    playerComponent[0]->addScore(10);  // Add 10 points for shooting
+                    playerComponent[0]->addScore(10);  // Add 10 points for killing an enemy
                 }
             }
             enemy->GetCompatibleComponent<MonsterComponent>()[0]->set_health(currentHealth - _damage);

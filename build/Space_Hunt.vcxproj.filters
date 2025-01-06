@@ -25,9 +25,6 @@
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\components\cmp_text.cpp">
       <Filter>components</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\drop_pod_game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -38,6 +35,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\space_hunt_game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -66,9 +66,6 @@
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\components\cmp_text.h">
       <Filter>components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\drop_pod_game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -79,6 +76,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\scenes\scene_win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\Space-Hunt\space_hunt_game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths\maths.h">

@@ -132,7 +132,6 @@ void PlanetLevelScene::Load() {
     auto psprite = player->addComponent<SpriteComponent>();
     psprite->setTexture(playerSpriteIdle);
 
-    auto pspriteBounds = Vector2f(psprite->getSprite().getTextureRect().width * 0.5f, psprite->getSprite().getTextureRect().height * 0.5f);
     psprite->getSprite().setOrigin(75, 75);
     psprite->getSprite().setScale(2, 2);
 
@@ -145,8 +144,6 @@ void PlanetLevelScene::Load() {
     auto pattributes = player->addComponent<PlayerComponent>();
 
     auto pshooting = player->addComponent<ShootingComponent>();
-
-    auto score = player->GetCompatibleComponent<PlayerComponent>()[0]->getScore();
 
     // Health Bar ----------------------------------------------------------------------
 
@@ -364,7 +361,6 @@ void PlanetLevelScene::Update(const double& dt) {
     }
     else
     {
-
         if (result == "win" && Keyboard::isKeyPressed(Keyboard::Enter)) {
             LevelSystem::currentLevel++;
             Engine::ChangeScene(&planetLevel);
@@ -386,13 +382,14 @@ void PlanetLevelScene::Render() {
     // Set the view for the game scene
     Engine::setView(gameView);
 
-    // Draw the game objects (floor, etc.)
+    // Draw the game objects
     ls::renderFloor(Engine::GetWindow());
     Scene::Render();
 
     // Set the view for the HUD
     Engine::setView(hudView);
     std::cout << "HUD view set to: " << hudView.getCenter().x << ", " << hudView.getCenter().y << std::endl;
+
     // Draw the HUD elements
     Engine::GetWindow().draw(*timer);
     Engine::GetWindow().draw(*endText);
@@ -401,7 +398,8 @@ void PlanetLevelScene::Render() {
     Engine::GetWindow().draw(*greenBar);
     Engine::GetWindow().draw(*healthText);
     Engine::GetWindow().draw(*scoreText);
-    // Draw the level start text if necessary
+
+    // Draw the level start text
     if(levelStart) {
         Engine::GetWindow().draw(*levelStartText);
     }
@@ -416,6 +414,7 @@ void PlanetLevelScene::render_end() {
             turnOffMusic = true;
             Engine::ChangeScene(&win);
         }
+
         int nextLevel = LevelSystem::currentLevel + 1;
         endText->setString("Level Complete!");
         endText->setOutlineColor(Color::Black);
@@ -475,7 +474,7 @@ Vector2f PlanetLevelScene::random_position() const
     return {};
 }
 void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
-    // Retrieve spawn tiles from LevelSystem
+    // Retrieve spawn tiles
     std::vector<sf::Vector2ul> spawnTiles = ls::findTiles(LevelSystem::SPAWN);
     if (spawnTiles.empty()) {
         std::cerr << "No spawn tiles found!" << std::endl;
@@ -494,15 +493,13 @@ void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
 
     // Loop through spawn tiles and spawn enemies
     for (size_t i = 0; i < spawnTiles.size(); ++i) {
-        // Get the tile from the spawn list, wrapping around if necessary
-        sf::Vector2ul spawnTile = spawnTiles[i % spawnTiles.size()];  // Wrap around using modulo
-
-        // Convert tile coordinates to world coordinates (assuming tile size is 100x100)
+        // Get the tile from the spawn list
+        sf::Vector2ul spawnTile = spawnTiles[i % spawnTiles.size()];
         sf::Vector2f spawnPos(spawnTile.x * 100.f, spawnTile.y * 100.f);
 
         // Create the enemy entity
         shared_ptr<Entity> enemy = makeEntity();
-        enemy->setPosition(spawnPos);  // Set position to the spawn tile
+        enemy->setPosition(spawnPos);
 
         // Set up enemy sprite and animation
         auto esprite = enemy->addComponent<SpriteComponent>();
@@ -530,7 +527,7 @@ void PlanetLevelScene::SpawnEnemy(int damage, float speed) {
 }
 
 void PlanetLevelScene::SpawnCoins(int numberOfCoins) {
-    // Define the minimum distance between coins
+    //  Minimum distance between coins
     float minDistance = 100.0f;
 
     // Get the tilemap's width and height in terms of tiles
@@ -538,7 +535,7 @@ void PlanetLevelScene::SpawnCoins(int numberOfCoins) {
     int mapHeight = ls::getHeight();
 
     // Find all the positions of wall tiles
-    auto wallTiles = ls::findTiles(LevelSystem::WALL);  // Get all wall tile positions
+    auto wallTiles = ls::findTiles(LevelSystem::WALL);
 
     for (int i = 0; i < numberOfCoins; ++i) {
         bool validPosition = false;
@@ -548,8 +545,7 @@ void PlanetLevelScene::SpawnCoins(int numberOfCoins) {
             // Generate random positions in terms of tile indices
             int tileX = rand() % mapWidth;
             int tileY = rand() % mapHeight;
-
-            // Convert the tile indices to pixel positions based on the tile size
+            // Adjust for tile size
             x = tileX * ls::getTileSize();
             y = tileY * ls::getTileSize();
 
@@ -562,7 +558,7 @@ void PlanetLevelScene::SpawnCoins(int numberOfCoins) {
 
                 if (distance < minDistance) {
                     validPosition = false;
-                    break;  // Exit loop if the new position is too close to an existing coin
+                    break;
                 }
             }
 

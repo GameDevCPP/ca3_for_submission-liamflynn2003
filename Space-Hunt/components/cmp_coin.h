@@ -1,4 +1,3 @@
-// Header file: CoinComponent.h
 #pragma once
 
 #include "cmp_actor_movement.h"

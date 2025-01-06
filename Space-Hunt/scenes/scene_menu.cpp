@@ -6,7 +6,6 @@
 #include"../components/cmp_button.h"
 #include "engine.h"
 #include <SFML/Audio.hpp>
-#include <iostream>
 
 #include "sound.h"
 
@@ -48,7 +47,6 @@ void MenuScene::Load() {
         // Apply the scale to the background sprite
         background.setScale(scale, scale);
 
-        // Optionally center the background if you want
         background.setPosition(
             (windowSize.x - textureSize.x * scale) / 2,
             (windowSize.y - textureSize.y * scale) / 2
@@ -59,7 +57,6 @@ void MenuScene::Load() {
     }
 
     auto txt = makeEntity();
-    auto pos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f);
     auto t = txt->addComponent<TextComponent>(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f, "SPACE HUNT");
 
     btnExit = makeEntity();

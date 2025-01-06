@@ -23,8 +23,6 @@ public:
 	void addScore(int score);
 	int getScore();
 
-	//void move(const double dt, const float dir_x, const float dir_y);
-
 protected:
 
 	int _health;
