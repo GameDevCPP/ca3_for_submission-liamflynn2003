@@ -192,10 +192,7 @@ void PlanetLevelScene::Load() {
     } else if (LevelSystem::currentLevel >= 4) {
         numberOfCoins = 10;
     }
-    for (int i = 0; i < monsterCount; ++i)
-    {
-        SpawnCoins(numberOfCoins);
-    }
+    SpawnCoins(numberOfCoins);
 
     // HUD ----------------------------------------------------------------------------
     timer->setString("Timer: 00:00");

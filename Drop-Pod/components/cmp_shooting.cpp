@@ -176,9 +176,6 @@ void Bullet::_update(const double dt) {
             if ((enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health() - _damage) <= 0) {
                 auto playerComponent = parentEntity->GetCompatibleComponent<PlayerComponent>();
                 if (!playerComponent.empty()) {
-                    // Log various player attributes
-                    std::cout << "Player Score: " << playerComponent[0]->getScore() << std::endl;
-                    std::cout << "Player Health: " << playerComponent[0]->getHealth() << std::endl;
                     playerComponent[0]->addScore(10);  // Add 10 points for shooting
                 }
             }
