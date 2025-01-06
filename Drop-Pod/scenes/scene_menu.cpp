@@ -58,7 +58,7 @@ void MenuScene::Load() {
 
     auto txt = makeEntity();
     auto pos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f);
-    auto t = txt->addComponent<TextComponent>(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f, "DROP POD");
+    auto t = txt->addComponent<TextComponent>(menuView.getSize().x / 2.0f, menuView.getSize().y / 5.0f, "SPACE HUNTER");
 
     btnExit = makeEntity();
     auto btnPos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 1.5f);

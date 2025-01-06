@@ -89,7 +89,7 @@ void PlanetLevelScene::Load() {
     else {
     ls::loadLevelFile("res/levels/smallFloorMap.txt");
     }
-    //ls::loadLevelFile("res/levels/floorMap.txt");
+
     xCount = ls::getWidth();
     yCount = ls::getHeight();
 

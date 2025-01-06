@@ -5,7 +5,7 @@ using namespace std;
 using namespace sf;
 
 std::map<LevelSystem::Tile, sf::Color> LevelSystem::_colours{
-        {WALL, Color::White}, {END, Color::Red}, {FLOOR, Color::Magenta}, {START, Color::Green } };
+        {WALL, Color::White}, {END, Color::Red}, {FLOOR, Color::Magenta}, {START, Color::Green }, {SPAWN, Color::Red} };
 
 sf::Color LevelSystem::getColor(LevelSystem::Tile t) {
     auto it = _colours.find(t);
@@ -22,6 +22,9 @@ sf::Color LevelSystem::getColor(LevelSystem::Tile t) {
         if(currentLevel == 4) {
             _colours[t] = Color::Red;
         }
+        if(currentLevel == 5) {
+            _colours[t] = Color::White;
+        }
     }
     if(t == FLOOR) {
         if(currentLevel == 2) {
@@ -31,16 +34,16 @@ sf::Color LevelSystem::getColor(LevelSystem::Tile t) {
             _colours[t] = Color::Red;
         }
         if(currentLevel == 4) {
-            _colours[t] = Color::Green;
+            _colours[t] = Color::Black;
         }
         if(currentLevel == 5) {
-            _colours[t] = Color::White;
+            _colours[t] = Color::Red;
         }
     }
     return _colours[t];
 }
 
-void LevelSystem::setColor(LevelSystem::Tile t, sf::Color c) {
+void LevelSystem::setColor(Tile t, Color c) {
     _colours[t] = c;
 }
 
