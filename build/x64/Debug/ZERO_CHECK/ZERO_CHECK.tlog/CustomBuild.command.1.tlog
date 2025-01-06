@@ -1,6 +1,6 @@
 ^C:\USERS\LIAM\CLIONPROJECTS\CA3_FOR_SUBMISSION-LIAMFLYNN2003\BUILD\CMAKEFILES\F02BDF61F15B14B659DD7DA889B678C9\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/Drop-Pod.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003 -BC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/build/Space-Hunt.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

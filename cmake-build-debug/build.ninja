@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Drop-Pod
+# Project: Space-Hunt
 # Configurations: Debug
 # =============================================================================
 
@@ -187,120 +187,120 @@ build liblib_ecm.a: CXX_STATIC_LIBRARY_LINKER__lib_ecm_Debug CMakeFiles/lib_ecm.
 
 build cmake_object_order_depends_target_Drop_Pod: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_engine cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window copy_resources
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_actor_movement.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_actor_movement.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_actor_movement.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_actor_movement.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_actor_movement.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_button.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_button.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_button.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_button.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_button.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_button.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_coin.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_coin.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_coin.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_coin.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_coin.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_coin.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_monster.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_monster.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_monster.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_monster.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_monster.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_monster.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_player.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_player.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_player.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_player.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_player.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_player.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_shooting.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_shooting.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_shooting.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_shooting.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_shooting.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_shooting.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_sprite.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_sprite.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_sprite.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_sprite.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_sprite.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_sprite.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_text.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/components/cmp_text.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\components\cmp_text.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_text.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/components/cmp_text.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\components\cmp_text.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\components
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\components
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/drop_pod_game.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/drop_pod_game.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\drop_pod_game.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/drop_pod_game.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/drop_pod_game.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\drop_pod_game.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_menu.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/scenes/scene_menu.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes\scene_menu.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_menu.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_menu.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_menu.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_planet_level.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/scenes/scene_planet_level.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes\scene_planet_level.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_planet_level.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_planet_level.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_settings.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/scenes/scene_settings.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes\scene_settings.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_settings.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_settings.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_settings.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
-build CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_win.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Drop-Pod/scenes/scene_win.cpp || cmake_object_order_depends_target_Drop_Pod
-  DEP_FILE = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes\scene_win.cpp.obj.d
+build CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_win.cpp.obj: CXX_COMPILER__Drop_Pod_unscanned_Debug C$:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/Space-Hunt/scenes/scene_win.cpp || cmake_object_order_depends_target_Drop_Pod
+  DEP_FILE = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes\scene_win.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/engine -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/SYSTEM -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/b2d/Box2D -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_tile_level_loader -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_maths -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib/sfml/include -IC:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/lib_ecm
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir
-  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Drop-Pod\scenes
+  OBJECT_FILE_DIR = CMakeFiles\Drop_Pod.dir\Space-Hunt\scenes
   TARGET_COMPILE_PDB = CMakeFiles\Drop_Pod.dir\
   TARGET_PDB = bin\Drop_Pod.pdb
 
@@ -312,7 +312,7 @@ build CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_win.cpp.obj: CXX_COMPILER__D
 #############################################
 # Link the executable bin\Drop_Pod.exe
 
-build bin/Drop_Pod.exe: CXX_EXECUTABLE_LINKER__Drop_Pod_Debug CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_actor_movement.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_button.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_coin.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_monster.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_player.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_shooting.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_sprite.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/components/cmp_text.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/drop_pod_game.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_menu.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_planet_level.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_settings.cpp.obj CMakeFiles/Drop_Pod.dir/Drop-Pod/scenes/scene_win.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources liblib_ecm.a liblib_engine.a liblib_tile_level_loader.a
+build bin/Drop_Pod.exe: CXX_EXECUTABLE_LINKER__Drop_Pod_Debug CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_button.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_coin.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_monster.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_player.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_shooting.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_sprite.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/components/cmp_text.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/drop_pod_game.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_menu.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_settings.cpp.obj CMakeFiles/Drop_Pod.dir/Space-Hunt/scenes/scene_win.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources liblib_ecm.a liblib_engine.a liblib_tile_level_loader.a
   FLAGS = -g
   LINK_LIBRARIES = liblib_engine.a  liblib_tile_level_loader.a  liblib_ecm.a  Build/bin/libBox2D.a  lib/sfml/lib/libsfml-graphics-d.a  lib/sfml/lib/libsfml-window-d.a  lib/sfml/lib/libsfml-audio-d.a  lib/sfml/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Drop_Pod.dir

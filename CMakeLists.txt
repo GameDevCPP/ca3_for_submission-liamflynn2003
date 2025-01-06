@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.11)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-project(Drop-Pod)
+project(Space-Hunt)
 
 #### Setup Directories ####
 set(OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/")
@@ -48,9 +48,9 @@ target_include_directories(lib_ecm INTERFACE "${CMAKE_SOURCE_DIR}/lib_ecm/")
 target_link_libraries(lib_ecm PRIVATE lib_maths)
 
 #### Drop-Pod ####
-file(GLOB_RECURSE SOURCES Drop-Pod/*.cpp Drop-Pod/*.h)
-file(GLOB_RECURSE CMPNTS Drop-Pod/components/*.cpp Drop-Pod/components/*.h)
-file(GLOB_RECURSE SCENES Drop-Pod/scenes/*.cpp Drop-Pod/scenes/*.h)
+file(GLOB_RECURSE SOURCES Space-Hunt/*.cpp Space-Hunt/*.h)
+file(GLOB_RECURSE CMPNTS Space-Hunt/components/*.cpp Space-Hunt/components/*.h)
+file(GLOB_RECURSE SCENES Space-Hunt/scenes/*.cpp Space-Hunt/scenes/*.h)
 add_executable(Drop_Pod ${SOURCES} ${RESOURCE_FILES})
 source_group("components" FILES ${CMPNTS})
 source_group("resources" FILES ${RESOURCE_FILES})
