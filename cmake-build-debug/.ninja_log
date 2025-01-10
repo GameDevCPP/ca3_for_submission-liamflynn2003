@@ -255,3 +255,7 @@
 1890	4016	7578851824134040	CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_shooting.cpp.obj	8f296725933ad036
 1957	4634	7578851824805788	CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj	c3b5bb071fec31c4
 4635	6390	7578851851578008	bin/Space_Hunt.exe	733dd69130454aa0
+181	1557	7582185446326554	CMakeFiles/copy_resources	74c3031afd68e8f
+181	1557	7582185446326554	C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/cmake-build-debug/CMakeFiles/copy_resources	74c3031afd68e8f
+1558	4350	7582185460092032	CMakeFiles/Space_Hunt.dir/Space-Hunt/components/cmp_actor_movement.cpp.obj	6d6c2a4030de72c5
+4351	9525	7582185488030432	bin/Space_Hunt.exe	733dd69130454aa0

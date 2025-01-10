@@ -12,7 +12,6 @@ ActorMovementComponent::ActorMovementComponent(Entity* p)
 
 bool ActorMovementComponent::validMove(const sf::Vector2f& pos) {
 	return (LevelSystem::getTileAt(pos) != LevelSystem::WALL);
-	// return true;
 }
 //Moves the player
 void ActorMovementComponent::move(const sf::Vector2f& p) {

@@ -33,7 +33,7 @@ std::vector<AStarNode*> AStar::getNeighbors(AStarNode* node) {
     };
 
     for (const auto& dir : directions) {
-        sf::Vector2ul neighborPos = node->position + dir;  // Now using sf::Vector2ul
+        sf::Vector2ul neighborPos = node->position + dir;
         if (isWalkable(neighborPos)) {
             neighbors.push_back(new AStarNode(neighborPos, node));
         }
@@ -64,7 +64,7 @@ std::vector<sf::Vector2ul> AStar::findPath(const sf::Vector2ul& start, const sf:
             }
             std::reverse(path.begin(), path.end());
 
-            // Cleanup dynamically allocated nodes
+            // Cleanup nodes
             for (auto node : openSet) {
                 delete node;
             }
@@ -75,7 +75,7 @@ std::vector<sf::Vector2ul> AStar::findPath(const sf::Vector2ul& start, const sf:
             return path;
         }
 
-        closedList.insert(current);  // Mark current node as closed
+        closedList.insert(current);
 
         // Check the neighbors
         for (AStarNode* neighbor : getNeighbors(current)) {
@@ -83,7 +83,7 @@ std::vector<sf::Vector2ul> AStar::findPath(const sf::Vector2ul& start, const sf:
                 continue;  // Ignore the neighbor
             }
 
-            float tentativeG = current->gCost + 1;  // Assume each move has a cost of 1
+            float tentativeG = current->gCost + 1;
             if (tentativeG < neighbor->gCost || openSet.find(neighbor) == openSet.end()) {
                 neighbor->gCost = tentativeG;
                 neighbor->hCost = abs(static_cast<int>(neighbor->position.x) - static_cast<int>(end.x)) +
@@ -100,7 +100,7 @@ std::vector<sf::Vector2ul> AStar::findPath(const sf::Vector2ul& start, const sf:
         }
     }
 
-    // Cleanup dynamically allocated nodes in case no path was found
+    // Cleanup nodes in case no path was found
     for (auto node : openSet) {
         delete node;
     }
@@ -112,4 +112,4 @@ std::vector<sf::Vector2ul> AStar::findPath(const sf::Vector2ul& start, const sf:
     return {};
 }
 
-#endif // ASTAR_H
+#endif

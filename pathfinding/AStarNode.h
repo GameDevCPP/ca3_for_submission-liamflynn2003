@@ -2,7 +2,6 @@
 #define ASTARNODE_H
 #include <maths.h>
 
-// A* Node structure
 class AStarNode {
 public:
     sf::Vector2ul position;
@@ -23,7 +22,6 @@ public:
 };
 
 
-// Comparator for the priority queue (min-heap based on fCost)
 struct AStarNodeComparator {
     bool operator()(const AStarNode* lhs, const AStarNode* rhs) const {
         return lhs->fCost > rhs->fCost;
