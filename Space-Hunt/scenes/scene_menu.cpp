@@ -65,7 +65,7 @@ void MenuScene::Load() {
 
     btnSetting = makeEntity();
     auto btn2Pos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 2.f);
-    auto button2 = btnSetting->addComponent<Button>(btn2Pos, "Setting", sf::Color::White, sf::Color::Green, sf::Color::Red);
+    auto button2 = btnSetting->addComponent<Button>(btn2Pos, "Settings", sf::Color::White, sf::Color::Green, sf::Color::Red);
 
     btnStart = makeEntity();
     auto btn3Pos = Vector2f(menuView.getSize().x / 2.0f, menuView.getSize().y / 3.f);
