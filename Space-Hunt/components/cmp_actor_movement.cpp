@@ -20,13 +20,50 @@ void ActorMovementComponent::move(const sf::Vector2f& p) {
 		_parent->setPosition(pp);
 	}
 }
-//Moves the enemy
-void ActorMovementComponent::enemyMove(const sf::Vector2f& p) {
-	auto pp = _parent->getPosition() + p;
-	if (validMove(pp)) {
-		_parent->setPosition(pp);
+
+void ActorMovementComponent::adjustVerticalMovement(sf::Vector2f& pp, bool moveUp) {
+	if (moveUp) {
+		pp.y = _parent->getPosition().y + getSpeed(); // Move up
+	} else {
+		pp.y = _parent->getPosition().y - getSpeed(); // Move down
 	}
 }
+
+void ActorMovementComponent::enemyMove(const sf::Vector2f& p) {
+	auto pp = _parent->getPosition() + p;
+
+	if (validMove(pp)) {
+		_parent->setPosition(pp);
+	} else {
+		// Handle collision or invalid move by adjusting direction
+		if (_parent->getPosition().x > pp.x) { // Enemy moving left
+			adjustVerticalMovement(pp, _parent->getPosition().y > pp.y); // Move up or down based on player position
+			pp.x = _parent->getPosition().x; // Prevent horizontal movement
+		}
+
+		else if (_parent->getPosition().x < pp.x) { // Enemy moving right
+			adjustVerticalMovement(pp, _parent->getPosition().y > pp.y); // Move up or down based on player position
+			pp.x = _parent->getPosition().x; // Prevent horizontal movement
+		}
+
+		else if (_parent->getPosition().y > pp.y) { // Enemy moving up
+			pp.x = _parent->getPosition().x + getSpeed(); // Adjust to the right
+			pp.y = _parent->getPosition().y; // Prevent vertical movement
+		}
+
+		else if (_parent->getPosition().y < pp.y) { // Enemy moving down
+			pp.x = _parent->getPosition().x - getSpeed(); // Adjust to the left
+			pp.y = _parent->getPosition().y; // Prevent vertical movement
+		}
+
+		// After adjusting for an obstacle, ensure the new position is valid
+		if (validMove(pp)) {
+			_parent->setPosition(pp);
+		}
+	}
+}
+
+
 //Takes an x and y value and puts it in a Vector2f to be used in the other move function
 void ActorMovementComponent::move(float x, float y) {
 	move(Vector2f(x, y));

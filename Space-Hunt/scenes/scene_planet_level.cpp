@@ -124,8 +124,7 @@ void PlanetLevelScene::Load() {
         // Set the player's spawn position
         player->setPosition(playerStartPos);
     } else {
-        // Handle case where no START tile is found (optional)
-        std::cerr << "START tile not found in the level!" << std::endl;
+        // Handle case where no START tile is found
         player->setPosition(startingCenter);
     }
 
@@ -388,6 +387,8 @@ void PlanetLevelScene::Render() {
 
     // Set the view for the HUD
     Engine::setView(hudView);
+
+    // DONT REMOVE THIS LOG - BREAKS GAME WITHOUT IT FOR SOME REASON
     std::cout << "HUD view set to: " << hudView.getCenter().x << ", " << hudView.getCenter().y << std::endl;
 
     // Draw the HUD elements

@@ -13,6 +13,9 @@ protected:
 public:
 	void update(double dt) override;
 	void move(const sf::Vector2f&);
+
+	void adjustVerticalMovement(sf::Vector2f &pp, bool moveUp);
+
 	void enemyMove(const sf::Vector2f&);
 	void move(float x, float y);
 	void render() override {}
