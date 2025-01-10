@@ -25,9 +25,9 @@ bool renderBackground = true;
 void WinScene::Load() {
     cout << "Win Screen Load \n";
 
-    winView.reset(sf::FloatRect(0, 0, resolution.x, resolution.y));
-    sf::RenderWindow& window = Engine::GetWindow();
-    sf::Vector2u windowSize = window.getSize();
+    winView.reset(sf::FloatRect(0, 0, static_cast<float>(resolution.x), static_cast<float>(resolution.y)));
+    const sf::RenderWindow& window = Engine::GetWindow();
+    const sf::Vector2u windowSize = window.getSize();
 
     // Set background
     try {
@@ -37,17 +37,16 @@ void WinScene::Load() {
         sf::Vector2u textureSize = backTexture->getSize();
 
         // Calculate the scaling factors to fill the window
-        float scaleX = static_cast<float>(windowSize.x) / textureSize.x;
-        float scaleY = static_cast<float>(windowSize.y) / textureSize.y;
+        const float scaleX = static_cast<float>(windowSize.x) / static_cast<float>(textureSize.x);
+        const float scaleY = static_cast<float>(windowSize.y) / static_cast<float>(textureSize.y);
+
         float scale = std::max(scaleX, scaleY);
 
         // Apply the scale to the background sprite
         winBackground.setScale(scale, scale);
-
-        // Optionally center the background if you want
         winBackground.setPosition(
-            (windowSize.x - textureSize.x * scale) / 2,
-            (windowSize.y - textureSize.y * scale) / 2
+            (static_cast<float>(windowSize.x) - static_cast<float>(textureSize.x) * scale) / 2.0f,
+            (static_cast<float>(windowSize.y) - static_cast<float>(textureSize.y) * scale) / 2.0f
         );
     } catch (const std::runtime_error& e) {
         std::cerr << "Resource error: " << e.what() << std::endl;
