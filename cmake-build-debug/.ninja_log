@@ -173,3 +173,8 @@
 33882	36454	7582289909410352	CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_planet_level.cpp.obj	c3b5bb071fec31c4
 35445	36601	7582289925052259	CMakeFiles/Space_Hunt.dir/Space-Hunt/space_hunt_game.cpp.obj	35eb368d5ef0c286
 36601	38273	7582289936603249	bin/Space_Hunt.exe	733dd69130454aa0
+56	467	7582293701191247	CMakeFiles/copy_resources	74c3031afd68e8f
+56	467	7582293701191247	C:/Users/Liam/CLionProjects/ca3_for_submission-liamflynn2003/cmake-build-debug/CMakeFiles/copy_resources	74c3031afd68e8f
+474	2169	7582293705376386	CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_win.cpp.obj	fbe864dfb167053f
+468	2204	7582293705309011	CMakeFiles/Space_Hunt.dir/Space-Hunt/scenes/scene_menu.cpp.obj	5f813681d8da2c20
+2204	3974	7582293722676484	bin/Space_Hunt.exe	733dd69130454aa0
