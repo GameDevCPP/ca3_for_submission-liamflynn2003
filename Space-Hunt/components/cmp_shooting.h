@@ -6,13 +6,13 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
-class Bullet : sf::Sprite {
+class Bullet final : sf::Sprite {
 
 protected:
-	void _update(const double dt);
-	bool isVisible;
+	void _update(double dt);
+	bool isVisible{};
 	sf::Vector2f mousePos;
-	float angle;
+	float angle{};
 	int _damage;
 
 	std::shared_ptr<sf::SoundBuffer> soundHit_buffer;
@@ -21,15 +21,15 @@ protected:
 	std::shared_ptr<sf::Sound> soundHitWall;
 
 public:
-	static void update(const double dt);
+	static void update(double dt);
 	static void render();
 	static void fire(const sf::Vector2f& pos, Entity* parent);
 	static void init();
 	static void setAngle(float a, Bullet& b);
 
-	~Bullet() = default;
+	~Bullet() override = default;
 	Bullet();
-	Entity* parentEntity;
+	Entity* parentEntity{};
 };
 
 class ShootingComponent : public ActorMovementComponent {
@@ -45,7 +45,7 @@ public:
 
 	explicit ShootingComponent(Entity* p);
 
-	void Fire();
-	void update(double dt) override;
+	void Fire() const;
+	void update(float dt) override;
 	void render() override;
 };

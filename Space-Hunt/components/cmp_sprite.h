@@ -13,14 +13,14 @@ public:
 	SpriteComponent() = delete;
 
 	explicit SpriteComponent(Entity* p);
-	void update(double dt) override;
+	void update(float dt) override;
 	void render() override;
 
 	sf::Sprite& getSprite() const;
 
 	void setTexture(std::shared_ptr<sf::Texture> tex);
 	std::shared_ptr<sf::Texture> getTexture();
-	void setTextureRect(sf::IntRect rect);
+	void setTextureRect(sf::IntRect rect) const;
 };
 
 class ShapeComponent : public Component {
@@ -33,7 +33,7 @@ public:
 
 	explicit ShapeComponent(Entity* p);
 
-	void update(double dt) override;
+	void update(float dt) override;
 	void render() override;
 	sf::Shape& getShape() const;
 	template <typename T, typename... Targs> void setShape(Targs... params) {
@@ -62,7 +62,7 @@ public:
 
 	explicit AnimationComponent(Entity* p);
 
-	void update(double dt) override;
+	void update(float dt) override;
 	void addFrame(Frame& frame);
 	void render();
 

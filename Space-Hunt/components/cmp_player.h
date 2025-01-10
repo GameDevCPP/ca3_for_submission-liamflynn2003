@@ -12,16 +12,19 @@ public:
 	PlayerComponent() = delete;
 	explicit PlayerComponent(Entity* p);
 
-	void update(double dt) override;
+	void update(float dt) override;
 	void render() override;
 	~PlayerComponent() override = default;
 
 	void setHealth(int health);
-	int getHealth();
+
+	int getHealth() const;
 
 	void setScore(int score);
+
+	int getScore() const;
+
 	void addScore(int score);
-	int getScore();
 
 protected:
 

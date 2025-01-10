@@ -11,5 +11,5 @@ extern PlanetLevelScene planetLevel;
 extern WinScene win;
 extern short unsigned switchState;
 extern short unsigned switchRes;
-extern int volume;
+extern float volume;
 extern sf::Vector2i resolution;

@@ -13,7 +13,7 @@ PlanetLevelScene planetLevel;
 WinScene win;
 
 short unsigned switchState;
-int volume;
+float volume;
 Vector2i resolution;
 
 int main() {

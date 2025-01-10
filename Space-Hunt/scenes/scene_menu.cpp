@@ -26,8 +26,8 @@ void MenuScene::Load() {
     cout << "Menu Load \n";
 
     menuView.reset(sf::FloatRect(0, 0, resolution.x, resolution.y));
-    sf::RenderWindow& window = Engine::GetWindow();
-    sf::Vector2u windowSize = window.getSize();
+    const sf::RenderWindow& window = Engine::GetWindow();
+    const sf::Vector2u windowSize = window.getSize();
 
     // Set background
     try {

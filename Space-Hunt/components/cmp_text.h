@@ -8,7 +8,7 @@ public:
 	int sizeOfText;
 	TextComponent() = delete;
 	explicit TextComponent(Entity* p, float x, float y, const std::string& str = "");
-	void update(double dt) override;
+	void update(float dt) override;
 
 	void render() override;
 

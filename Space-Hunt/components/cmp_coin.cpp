@@ -1,4 +1,6 @@
 #include "cmp_coin.h"
+
+#include <utility>
 #include "../space_hunt_game.h"
 #include "cmp_actor_movement.h"
 #include "cmp_player.h"
@@ -6,9 +8,9 @@
 #include "LevelSystem.h"
 #include "sound.h"
 
-CoinComponent::CoinComponent(Entity* p, std::shared_ptr<Entity> player, int value)
+CoinComponent::CoinComponent(Entity* p, std::shared_ptr<Entity> player, const int value)
     : ActorMovementComponent(p),
-      _player(player),
+      _player(std::move(player)),
       _texture(nullptr),
       value(value)
 {
@@ -20,17 +22,17 @@ CoinComponent::CoinComponent(Entity* p, std::shared_ptr<Entity> player, int valu
     }
 }
 
-void CoinComponent::update(double dt)
+void CoinComponent::update(const float dt)
 {
     // Get player position and coin position
     auto& playerPos = _player->getPosition();
     auto& coinPos = _parent->getPosition();
 
     // Calculate the distance between the player and the coin
-    float xDistance = playerPos.x - coinPos.x;
-    float yDistance = playerPos.y - coinPos.y;
+    const float xDistance = playerPos.x - coinPos.x;
+    const float yDistance = playerPos.y - coinPos.y;
 
-    auto distance = (xDistance * xDistance) + (yDistance * yDistance);
+    const auto distance = (xDistance * xDistance) + (yDistance * yDistance);
 
     // Check if the player is within 350 units of the coin
     if (distance < 350 && _parent->isVisible())

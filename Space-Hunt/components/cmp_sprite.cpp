@@ -1,5 +1,7 @@
 // Sprite, Shape and Animation components C++ file
 #include "cmp_sprite.h"
+
+#include <utility>
 #include "system_renderer.h"
 
 using namespace std;
@@ -8,7 +10,7 @@ using namespace sf;
 // Sprite ---------------------------------------------------------------------------------------------------------------
 void SpriteComponent::setTexture(shared_ptr<Texture> tex)
 {
-	_texture = tex;
+	_texture = std::move(tex);
 	_sprite->setTexture(*_texture);
 }
 
@@ -17,15 +19,14 @@ shared_ptr<Texture> SpriteComponent::getTexture()
 	return _texture;
 }
 
-void SpriteComponent::setTextureRect(sf::IntRect rect)
-{
+void SpriteComponent::setTextureRect(const sf::IntRect rect) const {
 	_sprite->setTextureRect(rect);
 }
 
 SpriteComponent::SpriteComponent(Entity* p)
 	: Component(p), _sprite(make_shared<Sprite>()) {}
 
-void SpriteComponent::update(double dt) {
+void SpriteComponent::update(const float dt) {
 	_sprite->setPosition(_parent->getPosition());
 	_sprite->setRotation(deg2rad(_parent->getRotation()));
 }
@@ -33,7 +34,7 @@ void SpriteComponent::update(double dt) {
 // Shape ---------------------------------------------------------------------------------------------------------------
 void SpriteComponent::render() { Renderer::queue(_sprite.get()); }
 
-void ShapeComponent::update(double dt) {
+void ShapeComponent::update(const float dt) {
 	_shape->setPosition(_parent->getPosition());
 	_shape->setRotation(deg2rad(_parent->getRotation()));
 }
@@ -48,8 +49,7 @@ ShapeComponent::ShapeComponent(Entity* p)
 Sprite& SpriteComponent::getSprite() const { return *_sprite; }
 
 // Animation ----------------------------------------------------------------------------------------------------------
-AnimationComponent::AnimationComponent(Entity* p) : Component(p), frameCount(0), _row(0)
-{
+AnimationComponent::AnimationComponent(Entity* p) : Component(p), target(nullptr), frameCount(0), _row(0) {
 	totalProgress = 0.f;
 	totalLength = 0.f;
 }
@@ -61,12 +61,12 @@ void AnimationComponent::addFrame(Frame& frame) {
 
 void AnimationComponent::setAnimation(int size, float duration, shared_ptr<Texture> texture, IntRect rect)
 {
-	_parent->GetCompatibleComponent<SpriteComponent>()[0]->setTexture(texture);
+	_parent->GetCompatibleComponent<SpriteComponent>()[0]->setTexture(std::move(texture));
 
 	for (auto i = 0; i < size; i++)
 	{
 		Frame tempFrame;
-		auto width = rect.width;
+		const auto width = rect.width;
 		tempFrame.rect = rect;
 		tempFrame.rect.left = width * i;
 		tempFrame.duration = duration;
@@ -100,7 +100,7 @@ void AnimationComponent::setDuration(float duration)
 	}
 }
 
-void AnimationComponent::update(double dt) {
+void AnimationComponent::update(const float dt) {
 	totalProgress += dt;
 	if (totalProgress >= totalLength / frames.size())
 	{

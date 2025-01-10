@@ -2,7 +2,7 @@
 #include <system_renderer.h>
 #include <system_resources.h>
 
-void TextComponent::update(double dt) {}
+void TextComponent::update(const float dt) {}
 
 void TextComponent::render() { Renderer::queue(&_text); }
 

@@ -202,7 +202,7 @@ void PlanetLevelScene::Load() {
         if (soundManager.getMusicStatus("Level") == sf::SoundSource::Stopped ||
             soundManager.getMusicStatus("Level") == sf::SoundSource::Paused)
         {
-            soundManager.setMusicVolume("Level", 30);
+            soundManager.setMusicVolume("Level", volume);
             soundManager.setMusicLoop("Level", true);
             soundManager.playMusic("Level");
         }
@@ -330,10 +330,10 @@ void PlanetLevelScene::Update(const double& dt) {
         if (minutes < 10) { min = "0" + to_string(minutes); }
         else { min = to_string(minutes); }
 
-        string s = ("Timer: " + min + ":" + sec);
+        const string s = ("Timer: " + min + ":" + sec);
         timer->setString(s);
 
-        auto playerScore = player->GetCompatibleComponent<PlayerComponent>()[0]->getScore();
+        const auto playerScore = player->GetCompatibleComponent<PlayerComponent>()[0]->getScore();
 
         if(LevelSystem::currentLevel == 2) {
             scoreText->setString("SCORE: " + to_string(playerScore) + "/200");
@@ -457,20 +457,21 @@ Vector2f PlanetLevelScene::random_position() const
     int xSize = viewSize.x;
     auto randNumberX = rand() % xSize + (-viewSize.x * 0.5);
 
-    int ySize = viewSize.y;
-    auto randNumberY = rand() % ySize + (-viewSize.y * 0.5);
+    const int ySize = viewSize.y;
+    const auto randNumberY = rand() % ySize + (-viewSize.y * 0.5);
 
-    int number = rand() % 3;
+    const int number = rand() % 3;
     switch (number)
     {
         case 0:
-            return Vector2f(viewCenter.x + randNumberX, viewCenter.y - viewSize.y * 0.5 - 100);
+            return {static_cast<float>(viewCenter.x + randNumberX), static_cast<float>(viewCenter.y - viewSize.y * 0.5 - 100)};
         case 1:
-            return Vector2f(viewCenter.x + randNumberX, viewCenter.y + viewSize.y * 0.5 + 100);
+            return {static_cast<float>(viewCenter.x + randNumberX), static_cast<float>(viewCenter.y + viewSize.y * 0.5 + 100)};
         case 2:
-            return Vector2f(viewCenter.x - viewSize.x * 0.5 - 100, viewCenter.y + randNumberY);
+            return {static_cast<float>(viewCenter.x - viewSize.x * 0.5 - 100), static_cast<float>(viewCenter.y + randNumberY)};
         case 3:
-            return Vector2f(viewCenter.x + viewSize.x * 0.5 + 100, viewCenter.y + randNumberY);
+            return {static_cast<float>(viewCenter.x + viewSize.x * 0.5 + 100), static_cast<float>(viewCenter.y + randNumberY)};
+        default: ;
     }
     return {};
 }

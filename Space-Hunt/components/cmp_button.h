@@ -26,13 +26,15 @@ public:
 
 	Button() = delete;
 
-	explicit Button(Entity* p, sf::Vector2f position, std::string text, sf::Color idleColor, sf::Color hoverColor, sf::Color activeColor);
-	void LoadMusic();
-	void update(double dt) override;
+	void update(float dt) override;
 	void render() override;
+
+	Button(Entity *p, sf::Vector2f position, const std::string &text, sf::Color idleColor, sf::Color hoverColor,
+	       sf::Color activeColor);
+
 	~Button() override = default;
 
-	const bool isPressed() const;
+	bool isPressed() const;
 
 	static button_states _mouseState;
 };

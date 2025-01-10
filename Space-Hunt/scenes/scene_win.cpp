@@ -7,7 +7,6 @@
 #include "../components/cmp_button.h"
 #include "engine.h"
 #include <SFML/Audio.hpp>
-#include <iostream>
 
 #include "sound.h"
 
@@ -32,7 +31,7 @@ void WinScene::Load() {
 
     // Set background
     try {
-        auto backTexture = Resources::get<sf::Texture>("win.png");
+        const auto backTexture = Resources::get<sf::Texture>("win.png");
         winBackground.setTexture(*backTexture);
 
         sf::Vector2u textureSize = backTexture->getSize();

@@ -53,7 +53,7 @@ ShootingComponent::ShootingComponent(Entity* p) : ActorMovementComponent(p), _pa
 
 
 
-void ShootingComponent::update(double dt) {
+void ShootingComponent::update(const float dt) {
 	Bullet::update(dt);
 }
 
@@ -61,13 +61,12 @@ void ShootingComponent::render() {
 	Bullet::render();
 }
 
-void ShootingComponent::Fire() {
+void ShootingComponent::Fire() const {
 	// Firing the bullets
 	Bullet::fire(_parent->getPosition(), _parent);
 }
 
-Bullet::Bullet()
-{
+Bullet::Bullet(): isVisible(false), angle(0), parentEntity(nullptr) {
 	_damage = 34;
 }
 
@@ -77,9 +76,9 @@ void Bullet::init() {
 	for (auto& b : bullets) {
 		b.setPosition(Vector2f(-100, -100));
 		b.setTexture(*spriteTexture);
-		b.setTextureRect(IntRect(Vector2i(0, 0), Vector2i(spriteTexture->getSize().x, spriteTexture->getSize().y)));
-		b.setOrigin(Vector2f(spriteTexture->getSize().x * 0.5, spriteTexture->getSize().y * 0.5));
-		b.setAngle(0.f, b);
+		b.setTextureRect(IntRect(Vector2i(0, 0), Vector2i(static_cast<int>(spriteTexture->getSize().x), static_cast<int>(spriteTexture->getSize().y))));
+		b.setOrigin(Vector2f(static_cast<float>(spriteTexture->getSize().x) * 0.5f, static_cast<float>(spriteTexture->getSize().y) * 0.5f));
+		Bullet::setAngle(0.f, b);
 		b.mousePos = Vector2f(0, 0);
 		b.isVisible = false;
 	}
@@ -120,7 +119,7 @@ void Bullet::fire(const sf::Vector2f& pos, Entity* parent) {
 
 	// Adjust the rotation
 	bullets[bulletCount].setRotation(angleDeg - 0);
-	bullets[bulletCount].setAngle(atan2(direction.y, direction.x), bullets[bulletCount]);
+	__gnu_cxx::__alloc_traits<std::allocator<Bullet>>::value_type::setAngle(atan2(direction.y, direction.x), bullets[bulletCount]);
 	bullets[bulletCount].setScale(0.02f, 0.02f);
 
 	// Play the bullet firing sound
@@ -173,7 +172,7 @@ void Bullet::_update(const double dt) {
     auto player = ecm.find("player");
     auto boundingBox = getGlobalBounds();
 
-    for (auto enemy : enemies) {
+    for (const auto& enemy : enemies) {
         auto sprite = enemy->GetCompatibleComponent<SpriteComponent>()[0]->getSprite();
         auto spriteBounds = sprite.getGlobalBounds();
         spriteBounds.top += 40;
@@ -193,7 +192,7 @@ void Bullet::_update(const double dt) {
         		std::cerr << "Error playing sound effect: " << e.what() << std::endl;
         	}
 
-            auto currentHealth = enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health();
+            const auto currentHealth = enemy->GetCompatibleComponent<MonsterComponent>()[0]->get_health();
             std::cout << "parent: " << parentEntity << std::endl;
 
             // Check if the enemy's health is 0 or less and update score

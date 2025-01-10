@@ -11,14 +11,11 @@ namespace sf {
     class Texture;
 }
 
-class CoinComponent : public ActorMovementComponent {
+class CoinComponent final : public ActorMovementComponent {
 public:
     CoinComponent(Entity* p, std::shared_ptr<Entity> player, int value = 1);
 
-    void update(double dt);
-
-    int getValue() const;
-    void setValue(int value);
+    void update(float dt) override;
     std::shared_ptr<Entity> _player;
     std::shared_ptr<sf::Texture> _texture;
     std::shared_ptr<sf::SoundBuffer> soundCoin_buffer;

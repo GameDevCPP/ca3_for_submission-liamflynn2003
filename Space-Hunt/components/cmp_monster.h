@@ -22,15 +22,15 @@ public:
 	MonsterComponent() = delete;
 	explicit MonsterComponent(Entity* p, std::shared_ptr<Entity> player);
 
-	void update(double dt) override;
+	void update(float dt) override;
 	void render() override;
-	void move();
 	~MonsterComponent() override = default;
 
 	void set_health(int health);
-	int get_health();
+
+	int get_health() const;
 
 	void set_damage(int damage);
 
-	void attack(double dt);
+	void attack(float dt);
 };
