@@ -44,11 +44,12 @@ Each level increases in difficulty, and once the player completes the fifth and 
 ## Gameplay
 Players spawn on a set spawn tile in each level. Level One features no coins, but 4 enemies will spawn and run towards the player.
 The player character, the Hunter, has 100 hp, and each enemy attack reduces it by 2 hp - once an enemy reaches the player, they hunter, they will attack.
+If the player reaches 0 HP, the game will pause, and "Game Over" text will be displayed. the player can then press the enter key to return to the title screen.
+
 Each wolf kill provides the player with 10 score, and each coin they collect provides the player with 20 score, which is displayed in the HUD.
 Wolves spawn from "enemy spawn" tiles, which are location in certain locations in each level. Once spawned, they will begin to move towards the player.
-Wolves spawn every 20 seconds.
+Wolves spawn every 20 seconds and move around walls if they block access to the player.
 Levels become increasingly more mazelike as the game progresses, making coins harder to find, and making it easier to be caught by the wolves and pinned in a dead-end / corner.
-Wolves will move around walls if blocked access to the player.
 Coins spawn at random locations in each level, from Level 2 onwards. They cannot spawn too close to each other, and can only spawn on floor tiles.
 
 ## Levels
@@ -139,13 +140,34 @@ Thesee are the textures used for the hunter while they are running (run sprites)
 these sprites are used for the monsters in the game. From level 4 onwards, v2 is used, signifying the increasing danger of the late-game levels.
 
 ## Sound (sound effects)
-* Describe how sound is implemented and managed using SFML
-* Describe what sound effects your game has
+The SoundManager class in the lib_sound library handles sound using SFML. It follows the singleton pattern, ensuring only one instance exists throughout the app. This instance manages both background music and sound effects.
+
+For music, the "loadMusic" function loads a music file and stores it in a map with a name as the key. The "playMusic" function retrieves and plays the music, allowing you to set the volume and loop it. You can also stop, pause, or adjust the music's volume and looping settings. For sound effects, "loadSoundEffect" loads a sound file into a buffer and links it to a sound object. The "playSoundEffect" function plays the sound with the specified volume. If a sound or music isn't found, an error message is displayed.
+
+### List of Music and SFX
+![image](https://github.com/user-attachments/assets/02ddc757-bb01-4a60-a36e-22d4bb65e948)
+
+* Click.wav: SFX for when a menu button is clicked.
+* Coin.wav: SFX for when a coin is picked up.
+
+* Hit.wav: SFX for when an arrow hits an enemy.
+* HitWall.wav: SFX for when an arrow hits a wall.
+* Level.wav: Music for the levels in the game.
+* Shoot.wav: SFX for shooting an arrow.
+* Title.wav: Title Screen music.
+* Win.wav: Win scene music.
 
 ## Music
-* Describe the music used and its source/origin
-* Is there a menu track, and a track for main game (level).
-* Is the music randomly chosen for each game.
+![image](https://github.com/user-attachments/assets/02ddc757-bb01-4a60-a36e-22d4bb65e948)
+
+* Gameover.wav: Music for the Game Over event. Source: Undertale OST: "Determination" (https://www.youtube.com/watch?v=9kwKkGxF6_w)
+* Level.wav: Music for the levels in the game. Source: VVVVVV OST: "Pushing Onwards" (https://www.youtube.com/watch?v=3Gj_88IMv3o)
+* Title.wav: Title Screen music. Source: Metroid Prime: "Title Screen": (https://www.youtube.com/watch?v=42u0KB6f5eU)
+* Win.wav: Win scene music. Source: Sonic Adventure 2; "Level Clear" OST: (https://www.youtube.com/watch?v=5HGUb9HXpOI)
+
+Music was chosen for the game that would fit the space theme and pixel graphics.
+VVVVVV and undertale both being pixelated indie games meant their OSTs were good choices for use in my game, and the Metroid Prime title screen music fit as a forebodeing soundtrack for the intro to the game.
+The win screen music is intended to be jovial and celebratory, so a more light hearted tune was chosen for that track.
 
 ## Video Demo
 https://www.youtube.com/@liamflynn439
