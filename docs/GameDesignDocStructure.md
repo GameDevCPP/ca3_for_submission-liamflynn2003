@@ -32,7 +32,7 @@ The game is built using a combination of external libraries and custom modules, 
  - **Physics and Collision Detection**: The game uses Box2D for physics simulation and collision detection, handling interactions between game entities like the player, enemies, and environmental objects.
 
 ## Backstory
-In a world where humanity explores the stars, you play as a huntter, whose ship has crash landed on a strange planet. Dedicated to your duties, you resolve to make the most of your unwanted trip - by hunting the local fauna and collecting treasure as you survive the hostile planet and attempt escape.
+In a world where humanity explores the stars, you play as a hunter whose ship has crash landed on a strange planet. Dedicated to your duties, you resolve to make the most of your unwanted trip - by hunting the local fauna and collecting treasure as you survive the hostile planet and attempt escape.
 
 Having ejected from his ship, the hunter is only left with rudimentary arrow weapons which he crafted. With these arrows as his only weapons, and with monster alien wolves hunting him at every step, the hunter begins his journey.
 
@@ -76,18 +76,27 @@ Players use WASD to move, and left click to shoot. This player has the option to
 
 ## GUI/In-game menu
 ### Splash Screen + Menu
+![image](https://github.com/user-attachments/assets/75fd073e-8535-4d1c-8d9f-48d52dbe23a8)
+
+Space Hunt features a title screen that displays the game name and background art. this screen is where settings can be adjusted and the game can be initiated or closed.
+
+### Settings Screen
+![image](https://github.com/user-attachments/assets/defa2e38-9a6c-46d6-b1e7-637b97ded8e0)
+
+The settings screen features multiple buttons whicih allow the player to make changes to the game.
 
 ### In Game GUI
+![image](https://github.com/user-attachments/assets/ce9a5b73-03db-4e33-8741-647b95497281)
+
+The in game GUI displays the timer, the player's health, current score and the target score they must reach to proced to the next level.
 
 ## Artwork
 * Describe the artwork used and source/origin of the artwork
 * Describe how you implemented and managed the textures (was memory management techniques used)
 
-
 ## Sound (sound effects)
 * Describe how sound is implemented and managed using SFML
 * Describe what sound effects your game has
-
 
 ## Music
 * Describe the music used and its source/origin
