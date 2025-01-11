@@ -147,5 +147,5 @@ these sprites are used for the monsters in the game. From level 4 onwards, v2 is
 * Is there a menu track, and a track for main game (level).
 * Is the music randomly chosen for each game.
 
-* ## Video Demo
-* https://www.youtube.com/@liamflynn439
+## Video Demo
+https://www.youtube.com/@liamflynn439
