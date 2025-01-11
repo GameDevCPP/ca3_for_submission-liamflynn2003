@@ -91,8 +91,44 @@ The settings screen features multiple buttons whicih allow the player to make ch
 The in game GUI displays the timer, the player's health, current score and the target score they must reach to proced to the next level.
 
 ## Artwork
-* Describe the artwork used and source/origin of the artwork
-* Describe how you implemented and managed the textures (was memory management techniques used)
+
+### Arrow Sprite
+![image](https://github.com/user-attachments/assets/ebf89051-64e8-46f5-909a-e676ddae1ca2)
+
+Source: https://www.pixilart.com/art/game-o-games-arrow-sprite-667f585cd1cffae
+
+### Coin Sprite
+![image](https://github.com/user-attachments/assets/e209affc-f137-4b69-9cf1-6bba2d541bdd)
+
+Source: https://iconduck.com/icons/313561/gold-coin
+
+### Win Background
+![image](https://github.com/user-attachments/assets/65c2a89a-6e7c-4439-9fa7-4990f8539e09)
+
+Source: https://www.reddit.com/r/PixelArt/comments/f1wg26/space_background/
+
+### Title Background
+![image](https://github.com/user-attachments/assets/208d69c0-758f-48d5-98c0-73a913088d51)
+
+Source: https://www.freepik.com/free-photos-vectors/space-background
+
+## Textures and Sprites Derived from "Drop-Pod" GitHub Classroom Repo:
+
+### Grass Textures
+![image](https://github.com/user-attachments/assets/46e456d0-6449-4513-95b9-890783f8deee)
+
+### Wall Textures
+![image](https://github.com/user-attachments/assets/d5e04e5b-7cda-413e-9b86-93e47cfffc97)
+
+### Player Run & Idle Sprites
+![image](https://github.com/user-attachments/assets/c9aaa7b3-4b26-48c3-a1d2-e74ad884d7c5)
+![image](https://github.com/user-attachments/assets/1e2928ba-b7a0-4290-b948-bbc97d9e020f)
+
+### Monster Sprites v1 and v2
+![image](https://github.com/user-attachments/assets/3b4a75b4-0fff-46dc-8e73-845034c50691)
+
+![image](https://github.com/user-attachments/assets/36bcd731-a0e6-46b2-acea-ce8799bdcf25)
+
 
 ## Sound (sound effects)
 * Describe how sound is implemented and managed using SFML
