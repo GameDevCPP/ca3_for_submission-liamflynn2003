@@ -197,6 +197,7 @@ void PlanetLevelScene::Load() {
     try {
         // Load and play the level music using SoundManager
         soundManager.loadMusic("Level", "res/sound/Level.wav");
+        soundManager.loadMusic("GameOver", "res/sound/Gameover.wav");
 
         // Check if the music is already playing
         if (soundManager.getMusicStatus("Level") == sf::SoundSource::Stopped ||
@@ -296,11 +297,6 @@ void PlanetLevelScene::Update(const double& dt) {
             soundShoot->play();
         }
 
-        if (Keyboard::isKeyPressed(Keyboard::P))
-        {
-            player->GetCompatibleComponent<PlayerComponent>()[0]->setHealth(0);
-        }
-
         gameView.setCenter(player->getPosition());
 
         // Enemies spawning Timeline -------------------------------------------------------------------------------------
@@ -370,6 +366,8 @@ void PlanetLevelScene::Update(const double& dt) {
             {
                 Engine::ChangeScene(&menu);
                 this->UnLoad();
+                SoundManager& soundManager = SoundManager::getInstance();
+                soundManager.stopMusic("GameOver");
             }
         }
         render_end();
@@ -433,12 +431,24 @@ void PlanetLevelScene::render_end() {
     if (result == "lose")
     {
         endText->setString("Defeat!");
+
+        SoundManager& soundManager = SoundManager::getInstance();
+        soundManager.stopMusic("Level");
+
+        if (soundManager.getMusicStatus("GameOver") == sf::SoundSource::Stopped ||
+            soundManager.getMusicStatus("GameOver") == sf::SoundSource::Paused)
+        {
+            soundManager.setMusicVolume("GameOver", volume);
+            soundManager.setMusicLoop("GameOver", false);
+            soundManager.playMusic("GameOver");
+        }
         endText->setOutlineColor(Color::Black);
         endText->setOutlineThickness(4);
         endText->setPosition(hudView.getSize().x / 2, 200);
         endText->setOrigin(endText->getLocalBounds().left + endText->getLocalBounds().width / 2.0f,
                            endText->getLocalBounds().top + endText->getLocalBounds().height / 2.0f);
         endExitText->setString("Press the ENTER button to go back to menu!");
+
         endExitText->setOutlineColor(Color::Black);
         endExitText->setOutlineThickness(4);
         endExitText->setPosition(hudView.getSize().x * 0.5, 300);
