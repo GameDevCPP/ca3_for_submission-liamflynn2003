@@ -436,9 +436,7 @@ void PlanetLevelScene::render_end() {
         if (soundManager.getMusicStatus("GameOver") == sf::SoundSource::Stopped ||
             soundManager.getMusicStatus("GameOver") == sf::SoundSource::Paused)
         {
-            soundManager.setMusicVolume("GameOver", volume);
-            soundManager.setMusicLoop("GameOver", false);
-            soundManager.playMusic("GameOver");
+            soundManager.playMusic("GameOver", volume, false);
         }
         endText->setOutlineColor(Color::Black);
         endText->setOutlineThickness(4);
