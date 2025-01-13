@@ -32,7 +32,8 @@ public:
 		WALL = 'w',
 		ENEMY = 'n',
 		WAYPOINT = '+',
-		FLOOR = 'f'
+		FLOOR = 'f',
+		SPAWN = 'p'
 	};
 
 	static Tile getTile(sf::Vector2ul);
@@ -61,6 +62,7 @@ public:
 
 	static void setTextureMap(std::string path);
 
+	static int currentLevel;
 protected:
 	static std::unique_ptr<Tile[]> _tiles;
 	static size_t _width;

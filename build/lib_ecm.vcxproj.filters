@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm\ecm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\pathfinding\AStar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_ecm\ecm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\lib_maths\maths.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Liam\CLionProjects\ca3_for_submission-liamflynn2003\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B83E28F8-5C9C-32FA-BBFD-9BC63F220C5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5492309B-DA53-367B-8D48-89C518D27FEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

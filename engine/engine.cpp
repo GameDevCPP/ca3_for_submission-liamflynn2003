@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include <future>
 #include <iostream>
+#include <thread>
 
 using namespace sf;
 using namespace std;
@@ -32,7 +33,7 @@ void Loading_render() {
     // cout << "Eng: Loading Screen Render\n";
 
     static Sprite background;
-    auto backTexture = Resources::get<Texture>("Space_Background.png");
+    auto backTexture = Resources::get<Texture>("menu_bg.png");
     background.setTexture(*backTexture);
 
     static CircleShape octagon(100);
@@ -135,10 +136,6 @@ std::shared_ptr<Entity> Scene::makeEntity() {
     return std::move(e);
 }
 
-//void Scene::addEntity(shared_ptr<Entity> entity) {
-//	ents.list.push_back(entity);
-//}
-
 void Engine::setVsync(bool b) { _window->setVerticalSyncEnabled(b); }
 
 void Engine::setView(View v) { _window->setView(v); }
@@ -153,24 +150,34 @@ void Engine::moveView(Vector2f movement) {
 void Engine::changeResolution(int x, int y)
 {
     Vector2f _newResolution(x, y);
-    _window->create(VideoMode(_newResolution.x, _newResolution.y), "Drop Pod");
+    _window->create(VideoMode(_newResolution.x, _newResolution.y), "Space Hunt");
 }
 
 void Engine::ChangeScene(Scene* s) {
-    cout << "Eng: changing scene: " << s << endl;
+    std::cout << "Eng: Changing scene: " << s << std::endl;
+
+    // Store the old scene for later unloading
     auto old = _activeScene;
     _activeScene = s;
 
     if (old != nullptr) {
-        old->UnLoad(); // todo: Unload Async
+        // Unload the old scene
+        old->UnLoad();
     }
 
     if (!s->isLoaded()) {
-        cout << "Eng: Entering Loading Screen\n";
+        std::cout << "Eng: Entering Loading Screen\n";
         loadingTime = 0;
-        //_activeScene->LoadAsync();
-        _activeScene->Load();
+
+        _activeScene->LoadAsync();
         loading = true;
+    } else {
+        _activeScene->Render();
+    }
+
+    // Call Render for the new scene to display it
+    if (_activeScene != nullptr) {
+        _activeScene->Render();
     }
 }
 
@@ -300,6 +307,7 @@ void Scene::UnLoad() {
     ents.list.clear();
     setLoaded(false);
 }
+
 
 void Scene::LoadAsync() { _loaded_future = std::async(&Scene::Load, this); }
 

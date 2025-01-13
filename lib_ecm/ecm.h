@@ -22,7 +22,7 @@ public:
 
 	bool is_fordeletion() const;
 
-	virtual void update(double dt) = 0;
+	virtual void update(float dt) = 0;
 
 	virtual void render() = 0;
 
