@@ -28,8 +28,8 @@ void PlanetLevelScene::init()
 
     // Level global variables
     speed = 0;
-    xCount = 0;
-    yCount = 0;
+    xCount = 640;
+    yCount = 360;
     startingCenter = Vector2f(0, 0);
     viewToggle = false;
     pauseGame = false;
@@ -71,34 +71,43 @@ void PlanetLevelScene::Load() {
     init();
     *ecm = Scene::getEcm();
 
-    if(LevelSystem::currentLevel == 2) {
+    std::cout << "Setting HUD center for level: " << LevelSystem::currentLevel << std::endl;
+
+    // Default to center HUD
+    if(LevelSystem::currentLevel > 1) {
         hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
-        ls::loadLevelFile("res/levels/levelTwoMap.txt");
     }
-    else if(LevelSystem::currentLevel == 3) {
-        hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
-        ls::loadLevelFile("res/levels/levelThreeMap.txt");
-    }
-    else if(LevelSystem::currentLevel == 4) {
-        hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
-        ls::loadLevelFile("res/levels/levelFourMap.txt");
-    }
-    else if(LevelSystem::currentLevel == 5) {
-        hudView.setCenter(Engine::GetWindow().getSize().x / 2, Engine::GetWindow().getSize().y / 2);
-        ls::loadLevelFile("res/levels/levelFiveMap.txt");
-    }
-    else {
-    ls::loadLevelFile("res/levels/smallFloorMap.txt");
+    std::string levelFile;
+    switch (LevelSystem::currentLevel) {
+        case 2:
+            levelFile = "res/levels/levelTwoMap.txt";
+        break;
+        case 3:
+            levelFile = "res/levels/levelThreeMap.txt";
+        break;
+        case 4:
+            levelFile = "res/levels/levelFourMap.txt";
+        break;
+        case 5:
+            levelFile = "res/levels/levelFiveMap.txt";
+        break;
+        default:
+            levelFile = "res/levels/smallFloorMap.txt";
+        break;
     }
 
+    ls::loadLevelFile(levelFile);
+
+    // Set the level size
     xCount = ls::getWidth();
     yCount = ls::getHeight();
 
-    // Setting the center position and the size of the view.
+    // Reset game view
     gameView.reset(sf::FloatRect(xCount * 100 * 0.5, yCount * 100 * 0.5, Engine::GetWindow().getSize().x, Engine::GetWindow().getSize().y));
     Engine::setView(gameView);
 
     startingCenter = gameView.getCenter();
+
 
     // Sound -----------------------------------------------------------------------
     soundShoot_buffer = Resources::get<SoundBuffer>("Shoot.wav");
