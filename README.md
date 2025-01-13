@@ -169,4 +169,4 @@ VVVVVV and Undertale both being pixelated indie games meant their OSTs were good
 The win screen music is intended to be jovial and celebratory, so a more light hearted tune was chosen for that track.
 
 ## Video Demo
-https://www.youtube.com/@liamflynn439
+[https://www.youtube.com/@liamflynn439](https://youtu.be/M4SjrTKm2xw)
