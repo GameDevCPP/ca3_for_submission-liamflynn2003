@@ -261,10 +261,6 @@ void PlanetLevelScene::UnLoad()
 }
 
 void PlanetLevelScene::Update(const double& dt) {
-    if(turnOffMusic) {
-        SoundManager& soundManager = SoundManager::getInstance();
-        soundManager.stopMusic("Level");
-    }
     if(seconds >= 2) {
         levelStart = false;
     }
@@ -417,7 +413,7 @@ void PlanetLevelScene::render_end() {
     if (result == "win")
     {
         if(LevelSystem::currentLevel == 5) {
-            turnOffMusic = true;
+            LevelSystem::currentLevel = 1;
             Engine::ChangeScene(&win);
         }
 

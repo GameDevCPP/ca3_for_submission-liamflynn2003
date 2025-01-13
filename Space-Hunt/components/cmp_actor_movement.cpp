@@ -54,7 +54,7 @@ void ActorMovementComponent::enemyMove(const sf::Vector2f& p) const {
 		pp.x = currentPos.x;  // Prevent horizontal movement
 	}
 	else if (currentPos.y != pp.y) { // Vertical distance (up or down)
-		adjustHorizontalMovement(pp, currentPos.x > pp.x);  // Adjust horizontal position
+		adjustHorizontalMovement(pp, moveRight);  // Adjust horizontal position
 		pp.y = currentPos.y;  // Prevent vertical movement
 	}
 

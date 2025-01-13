@@ -81,9 +81,8 @@ void WinScene::Load() {
         if (soundManager.getMusicStatus("Win") == sf::SoundSource::Stopped ||
             soundManager.getMusicStatus("Win") == sf::SoundSource::Paused)
         {
-            soundManager.setMusicVolume("Win", volume);
-            soundManager.setMusicLoop("Win", false);
-            soundManager.playMusic("Win");
+            soundManager.stopMusic("Level");
+            soundManager.playMusic("Win", volume, false);
         }
     } catch (const std::exception& e) {
         std::cerr << "Error loading or playing music: " << e.what() << std::endl;
