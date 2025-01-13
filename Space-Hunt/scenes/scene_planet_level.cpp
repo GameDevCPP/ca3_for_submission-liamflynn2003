@@ -203,9 +203,7 @@ void PlanetLevelScene::Load() {
         if (soundManager.getMusicStatus("Level") == sf::SoundSource::Stopped ||
             soundManager.getMusicStatus("Level") == sf::SoundSource::Paused)
         {
-            soundManager.setMusicVolume("Level", volume);
-            soundManager.setMusicLoop("Level", true);
-            soundManager.playMusic("Level");
+            soundManager.playMusic("Level", volume, true);
         }
     } catch (const std::exception& e) {
         std::cerr << "Error loading or playing music: " << e.what() << std::endl;

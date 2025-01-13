@@ -82,9 +82,7 @@ void MenuScene::Load() {
         if (soundManager.getMusicStatus("Title") == sf::SoundSource::Stopped ||
             soundManager.getMusicStatus("Title") == sf::SoundSource::Paused)
         {
-            soundManager.setMusicVolume("Title", volume);
-            soundManager.setMusicLoop("Title", true);
-            soundManager.playMusic("Title");
+            soundManager.playMusic("Title", volume, true);
         }
     } catch (const std::exception& e) {
         std::cerr << "Error loading or playing music: " << e.what() << std::endl;
